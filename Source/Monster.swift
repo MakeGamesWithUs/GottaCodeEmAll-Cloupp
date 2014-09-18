@@ -12,10 +12,6 @@ enum MonsterType {
   case Water, Fire, Leaf, None
 }
 
-enum AttackType {
-  case Tackle, Swipe, Elemental
-}
-
 class Monster: CCNode {
   
   var type = MonsterType.None
@@ -23,12 +19,28 @@ class Monster: CCNode {
   var health = 25
   let totalHealth = 25
   
+  let opponent: Monster?
+  let nextAttack = MonsterAttack()
+  
   override init() {
     super.init()
   }
   
-  func attack(attackType: AttackType) {
-    Battle.sharedInstance.queueAttackForPlayer(attackType)
+  func attack(attackType: MonsterAttackType) {
+    switch attackType {
+      case MonsterAttackType.Tackle:
+        break
+      case MonsterAttackType.Elemental:
+        break
+      case MonsterAttackType.Swipe:
+        break
+      default:
+        break
+    }
+  }
+  
+  func readyToBattle() {
+    Battle.sharedInstance.player = self
   }
   
 }

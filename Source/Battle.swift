@@ -18,8 +18,9 @@ enum CodeStep {
 
 class Battle: CCScene {
   
-  let enemy: Monster?
-  let player: Monster?
+  var enemy: Monster?
+  var player: Monster?
+  let playerAttack = MonsterAttack()
   
   var currentStep: CodeStep?
   var state: BattleState = BattleState.FixCode
@@ -37,10 +38,6 @@ class Battle: CCScene {
   }
   
   func checkCodeForCurrentStep() {
-    
-  }
-  
-  func queueAttackForPlayer(type: AttackType) {
     
   }
   

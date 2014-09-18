@@ -11,27 +11,36 @@ import Foundation
 class MyMonster: Monster {
   
   func addToBattle() {
-    
+    type = MonsterType.Leaf
+    readyToBattle()
   }
   
   func tackleAttack() {
-    
+    attack(MonsterAttackType.Tackle)
   }
   
   func fireAttack() {
-    
+    if opponent?.type == MonsterType.Leaf {
+      attack(MonsterAttackType.Elemental)
+    }
   }
   
   func waterAttack() {
-    
+    if opponent?.type == MonsterType.Fire {
+      attack(MonsterAttackType.Elemental)
+    }
   }
   
   func leafAttack() {
-    
+    if opponent?.type == MonsterType.Water {
+      attack(MonsterAttackType.Elemental)
+    }
   }
   
   func swipeAttack(numberOfSwipes: Int) {
-    
+    for _ in 1...numberOfSwipes {
+      attack(MonsterAttackType.Swipe)
+    }
   }
   
 }
