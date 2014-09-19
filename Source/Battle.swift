@@ -16,10 +16,23 @@ enum CodeStep {
   case InitMonster, TeachTackle, TeachElemental, TeachSwipes
 }
 
-class Battle: CCScene {
+class GameState {
   
+  class var sharedInstance : GameState {
+  struct Static {
+    static let instance : GameState = GameState()
+    }
+    return Static.instance
+  }
+  
+  var battle: Battle?
   var enemy: Monster?
   var player: Monster?
+  
+}
+
+class Battle: CCScene {
+
   let playerAttack = MonsterAttack()
   
   var currentStep: CodeStep?
@@ -27,15 +40,9 @@ class Battle: CCScene {
   
   var tapToContinue: CCLabelTTF?
   
-  class var sharedInstance : Battle {
-    struct Static {
-      static let instance : Battle = Battle()
-    }
-    return Static.instance
-  }
-  
   override init() {
     super.init()
+    GameState.sharedInstance.battle = self
     self.checkCodeForCurrentStep()
   }
   

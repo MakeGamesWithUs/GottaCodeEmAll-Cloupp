@@ -40,7 +40,7 @@ class Monster: CCNode {
   }
   
   func readyToBattle() {
-    Battle.sharedInstance.player = self
+    GameState.sharedInstance.player = self
   }
   
 }

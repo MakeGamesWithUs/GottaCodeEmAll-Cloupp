@@ -9,7 +9,7 @@
 import Foundation
 
 enum MonsterAttackType {
-  case Tackle, Swipe, Elemental, None
+  case None, Tackle, Elemental, Swipe
 }
 
 class MonsterAttack {
