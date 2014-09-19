@@ -35,6 +35,8 @@
 		B77F1B3E17B978D7009739AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3D17B978D7009739AE /* Foundation.framework */; };
 		B77F1B4017B978D7009739AE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B3F17B978D7009739AE /* CoreGraphics.framework */; };
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
+		BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2AD19CCAF6E00309135 /* MessageBox.swift */; };
+		BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2B019CCAF8700309135 /* HealthBox.swift */; };
 		BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* MonsterAttack.swift */; };
 		BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
 		BCF642E219C78B5F0084D32F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
@@ -93,6 +95,8 @@
 		B77F1B3F17B978D7009739AE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		B77F1B4117B978D7009739AE /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
+		BC01F2AD19CCAF6E00309135 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = Source/MessageBox.swift; sourceTree = "<group>"; };
+		BC01F2B019CCAF8700309135 /* HealthBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthBox.swift; path = Source/HealthBox.swift; sourceTree = "<group>"; };
 		BC49B68319CA0E9B00324923 /* MonsterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonsterAttack.swift; path = Source/MonsterAttack.swift; sourceTree = "<group>"; };
 		BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMonster.swift; path = Source/MyMonster.swift; sourceTree = "<group>"; };
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -136,6 +140,8 @@
 			isa = PBXGroup;
 			children = (
 				BCF642E319C78B6B0084D32F /* Battle.swift */,
+				BC01F2AD19CCAF6E00309135 /* MessageBox.swift */,
+				BC01F2B019CCAF8700309135 /* HealthBox.swift */,
 				BCF642E919C79C8F0084D32F /* MainScene.swift */,
 				BC49B68319CA0E9B00324923 /* MonsterAttack.swift */,
 				BCF642E119C78B5F0084D32F /* Monster.swift */,
@@ -266,7 +272,7 @@
 				ORGANIZATIONNAME = Apportable;
 				TargetAttributes = {
 					B77F1B2D17B978D7009739AE = {
-						DevelopmentTeam = SBVP8ED765;
+						DevelopmentTeam = 2J7CV2WKGX;
 						SystemCapabilities = {
 							com.apple.GameCenter = {
 								enabled = 0;
@@ -360,7 +366,9 @@
 				BCF642E419C78B6B0084D32F /* Battle.swift in Sources */,
 				BCF642EA19C79C8F0084D32F /* MainScene.swift in Sources */,
 				BCF642E819C78B910084D32F /* Player.swift in Sources */,
+				BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */,
 				BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */,
 				BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */,
 			);

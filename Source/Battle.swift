@@ -25,6 +25,8 @@ class Battle: CCScene {
   var currentStep: CodeStep?
   var state: BattleState = BattleState.FixCode
   
+  var tapToContinue: CCLabelTTF?
+  
   class var sharedInstance : Battle {
     struct Static {
       static let instance : Battle = Battle()
