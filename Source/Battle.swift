@@ -35,10 +35,13 @@ class Battle: CCScene {
 
   let playerAttack = MonsterAttack()
   
-  var currentStep: CodeStep?
+  var currentStep: CodeStep = CodeStep.InitMonster
   var state: BattleState = BattleState.FixCode
   
-  var tapToContinue: CCLabelTTF?
+  var messageBox: MessageBox?
+  var attackBox: AttackBox?
+  var playerHealth: HealthBox?
+  var enemyHealth: HealthBox?
   
   override init() {
     super.init()
@@ -46,8 +49,21 @@ class Battle: CCScene {
     self.checkCodeForCurrentStep()
   }
   
-  func checkCodeForCurrentStep() {
+  func didLoadFromCCB() {
     
+  }
+  
+  func checkCodeForCurrentStep() {
+    switch currentStep {
+      case CodeStep.InitMonster:
+        break
+      case CodeStep.TeachTackle:
+        break
+      case CodeStep.TeachElemental:
+        break
+      case CodeStep.TeachSwipes:
+        break
+    }
   }
   
   func showMessage(message: String) {

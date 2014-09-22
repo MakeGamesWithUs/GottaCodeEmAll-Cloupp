@@ -188,23 +188,10 @@
 						<array/>
 						<key>customClass</key>
 						<string>AttackButton</string>
-						<key>customProperties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>attackType</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>1</string>
-							</dict>
-						</array>
 						<key>displayName</key>
 						<string>tackle</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>tackleButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -300,23 +287,10 @@
 						<array/>
 						<key>customClass</key>
 						<string>AttackButton</string>
-						<key>customProperties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>attackType</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>2</string>
-							</dict>
-						</array>
 						<key>displayName</key>
 						<string>elemental</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>elementalButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -412,23 +386,10 @@
 						<array/>
 						<key>customClass</key>
 						<string>AttackButton</string>
-						<key>customProperties</key>
-						<array>
-							<dict>
-								<key>name</key>
-								<string>attackType</string>
-								<key>optimized</key>
-								<false/>
-								<key>type</key>
-								<integer>0</integer>
-								<key>value</key>
-								<string>3</string>
-							</dict>
-						</array>
 						<key>displayName</key>
 						<string>swipe</string>
 						<key>memberVarAssignmentName</key>
-						<string></string>
+						<string>swipeButton</string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
@@ -534,7 +495,7 @@
 						<key>type</key>
 						<string>Check</string>
 						<key>value</key>
-						<true/>
+						<false/>
 					</dict>
 					<dict>
 						<key>name</key>
@@ -607,12 +568,14 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
-		<string></string>
+		<string>AttackBox</string>
 		<key>displayName</key>
 		<string>CCNode</string>
 		<key>memberVarAssignmentName</key>
@@ -736,7 +699,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.66666668653488159</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

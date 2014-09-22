@@ -38,7 +38,7 @@
 		BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2AD19CCAF6E00309135 /* MessageBox.swift */; };
 		BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2B019CCAF8700309135 /* HealthBox.swift */; };
 		BC11E69719CCE50C00F14992 /* EnemyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyMonster.swift */; };
-		BC11E69919CCED6C00F14992 /* AttackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackButton.swift */; };
+		BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackBox.swift */; };
 		BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* MonsterAttack.swift */; };
 		BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
 		BCF642E219C78B5F0084D32F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
@@ -99,7 +99,7 @@
 		BC01F2AD19CCAF6E00309135 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = Source/MessageBox.swift; sourceTree = "<group>"; };
 		BC01F2B019CCAF8700309135 /* HealthBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthBox.swift; path = Source/HealthBox.swift; sourceTree = "<group>"; };
 		BC11E69619CCE50C00F14992 /* EnemyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnemyMonster.swift; path = Source/EnemyMonster.swift; sourceTree = "<group>"; };
-		BC11E69819CCED6C00F14992 /* AttackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttackButton.swift; path = Source/AttackButton.swift; sourceTree = "<group>"; };
+		BC11E69819CCED6C00F14992 /* AttackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttackBox.swift; path = Source/AttackBox.swift; sourceTree = "<group>"; };
 		BC49B68319CA0E9B00324923 /* MonsterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonsterAttack.swift; path = Source/MonsterAttack.swift; sourceTree = "<group>"; };
 		BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMonster.swift; path = Source/MyMonster.swift; sourceTree = "<group>"; };
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -142,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				BCF642E319C78B6B0084D32F /* Battle.swift */,
-				BC11E69819CCED6C00F14992 /* AttackButton.swift */,
+				BC11E69819CCED6C00F14992 /* AttackBox.swift */,
 				BC01F2AD19CCAF6E00309135 /* MessageBox.swift */,
 				BC01F2B019CCAF8700309135 /* HealthBox.swift */,
 				BC49B68319CA0E9B00324923 /* MonsterAttack.swift */,
@@ -371,7 +371,7 @@
 				BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */,
-				BC11E69919CCED6C00F14992 /* AttackButton.swift in Sources */,
+				BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */,
 				BC11E69719CCE50C00F14992 /* EnemyMonster.swift in Sources */,
 				BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */,
 				BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */,

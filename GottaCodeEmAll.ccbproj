@@ -76,7 +76,7 @@
 		<key></key>
 		<dict>
 			<key>previewFolderHidden</key>
-			<true/>
+			<false/>
 		</dict>
 		<key>Sprites</key>
 		<dict/>

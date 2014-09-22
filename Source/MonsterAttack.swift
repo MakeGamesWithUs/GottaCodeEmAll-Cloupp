@@ -10,6 +10,19 @@ import Foundation
 
 enum MonsterAttackType {
   case None, Tackle, Elemental, Swipe
+  
+  func description() -> String {
+    switch self {
+      case .None:
+        return "None"
+      case .Tackle:
+        return "Tackle"
+      case .Elemental:
+        return "Elemental"
+      case .Swipe:
+        return "Swipe"
+    }
+  }
 }
 
 class MonsterAttack {
