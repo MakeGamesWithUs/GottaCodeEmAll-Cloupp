@@ -27,13 +27,14 @@ class Monster: CCNode {
   }
   
   func attack(attackType: MonsterAttackType) {
+    var attack = GameState.sharedInstance.battle?.playerAttack
     switch attackType {
       case MonsterAttackType.Tackle:
-        break
+        attack?.tackle()
       case MonsterAttackType.Elemental:
-        break
+        attack?.elemental()
       case MonsterAttackType.Swipe:
-        break
+        attack?.swipe()
       default:
         break
     }

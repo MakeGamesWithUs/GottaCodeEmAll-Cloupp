@@ -26,8 +26,8 @@ class GameState {
   }
   
   var battle: Battle?
-  var enemy: Monster?
-  var player: Monster?
+  var enemy: EnemyMonster?
+  var player: MyMonster?
   
 }
 

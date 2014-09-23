@@ -217,8 +217,6 @@
 						<string>AttackBox.ccb</string>
 					</dict>
 				</array>
-				<key>selected</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -619,7 +617,7 @@
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>0.96666663885116577</real>
+			<real>0.0</real>
 			<key>name</key>
 			<string>Default Timeline</string>
 			<key>offset</key>
