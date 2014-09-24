@@ -27,21 +27,47 @@ class Monster: CCNode {
   }
   
   func attack(attackType: MonsterAttackType) {
-    var attack = GameState.sharedInstance.battle?.playerAttack
     switch attackType {
       case MonsterAttackType.Tackle:
-        attack?.tackle()
+        nextAttack.tackle()
       case MonsterAttackType.Elemental:
-        attack?.elemental()
+        nextAttack.elemental()
       case MonsterAttackType.Swipe:
-        attack?.swipe()
+        nextAttack.swipe()
       default:
         break
     }
   }
   
+  func performTackle() {
+    var tackleDamage = level * 2
+    damageOpponent(tackleDamage)
+  }
+  
+  func performElemental() {
+    var elementalDamage = level * 5
+    damageOpponent(elementalDamage)
+  }
+  
+  func performSwipe() {
+    var swipeDamage = level
+    damageOpponent(swipeDamage)
+  }
+  
+  func damageOpponent(damage: Int) {
+    if self !== GameState.sharedInstance.enemy! {
+      GameState.sharedInstance.enemy!.takeDamage(damage)
+    } else {
+      GameState.sharedInstance.player!.takeDamage(damage)
+    }
+  }
+  
+  func takeDamage(damage: Int) {
+    health -= damage
+  }
+  
   func readyToBattle() {
-    GameState.sharedInstance.player = self
+    GameState.sharedInstance.player = self as? MyMonster
   }
   
 }

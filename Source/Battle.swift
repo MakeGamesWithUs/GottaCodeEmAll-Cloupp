@@ -70,4 +70,20 @@ class Battle: CCScene {
     
   }
   
+  func processAttacks() {
+    state = BattleState.Attacking
+    var player = GameState.sharedInstance.player
+    var playerAttack = player!.nextAttack
+    switch playerAttack.attack {
+      case MonsterAttackType.Tackle:
+        player?.performTackle()
+      case MonsterAttackType.Elemental:
+        player?.performElemental()
+      case MonsterAttackType.Swipe:
+        player?.performSwipe()
+      case MonsterAttackType.None:
+        GameState.sharedInstance.enemy?.performTackle()
+    }
+  }
+  
 }

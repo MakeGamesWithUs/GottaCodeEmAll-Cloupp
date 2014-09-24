@@ -22,18 +22,24 @@ class MyMonster: Monster {
   func fireAttack() {
     if opponent?.type == MonsterType.Leaf {
       attack(MonsterAttackType.Elemental)
+    } else {
+      attack(MonsterAttackType.Tackle)
     }
   }
   
   func waterAttack() {
     if opponent?.type == MonsterType.Fire {
       attack(MonsterAttackType.Elemental)
+    } else {
+      attack(MonsterAttackType.Tackle)
     }
   }
   
   func leafAttack() {
     if opponent?.type == MonsterType.Water {
       attack(MonsterAttackType.Elemental)
+    } else {
+      attack(MonsterAttackType.Tackle)
     }
   }
   

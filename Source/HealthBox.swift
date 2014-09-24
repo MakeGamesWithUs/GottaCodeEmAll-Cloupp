@@ -12,4 +12,10 @@ class HealthBox: CCNode {
   
   var health: String?
   
+  func updateHealth(newHealth: Int) {
+    health = String(newHealth)
+    
+    // update health bar
+  }
+  
 }

@@ -13,6 +13,7 @@ class EnemyMonster: Monster {
   override init() {
     super.init()
     GameState.sharedInstance.enemy = self
+    nextAttack.tackle()
   }
   
 }
