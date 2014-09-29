@@ -18,28 +18,28 @@ class AttackButton: CCNodeColor {
   
   override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
     println("Touched \(attackType.description())")
-    var player = GameState.sharedInstance.player?
-    switch attackType {
-      case MonsterAttackType.Tackle:
-        player?.tackleAttack()
-      case MonsterAttackType.Elemental:
-        switch player!.type {
-          case MonsterType.Fire:
-            player?.fireAttack()
-          case MonsterType.Water:
-            player?.waterAttack()
-          case MonsterType.Leaf:
-            player?.leafAttack()
-          case MonsterType.None:
-            println("MonsterType.None! This should not have happened...")
-        }
-      case MonsterAttackType.Swipe:
-        var numberOfSwipes: Int = Int(arc4random_uniform(5)) + 1
-        player?.swipeAttack(numberOfSwipes)
-        
-      case MonsterAttackType.None:
-        println("\(attackType.description()) touched! This should not have happened...")
-    }
+//    var player = GameState.sharedInstance.player?
+//    switch attackType {
+//      case MonsterAttackType.Tackle:
+//        player?.tackleAttack()
+//      case MonsterAttackType.Elemental:
+//        switch player!.type {
+//          case MonsterType.Fire:
+//            player?.fireAttack()
+//          case MonsterType.Water:
+//            player?.waterAttack()
+//          case MonsterType.Leaf:
+//            player?.leafAttack()
+//          case MonsterType.None:
+//            println("MonsterType.None! This should not have happened...")
+//        }
+//      case MonsterAttackType.Swipe:
+//        var numberOfSwipes: Int = Int(arc4random_uniform(5)) + 1
+//        player?.swipeAttack(numberOfSwipes)
+//        
+//      case MonsterAttackType.None:
+//        println("\(attackType.description()) touched! This should not have happened...")
+//    }
   }
   
 }

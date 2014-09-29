@@ -19,7 +19,7 @@ class Monster: CCNode {
   var health = 25
   let totalHealth = 25
   
-  let opponent: Monster?
+  let opponent: Monster!
   let nextAttack = MonsterAttack()
   
   override init() {

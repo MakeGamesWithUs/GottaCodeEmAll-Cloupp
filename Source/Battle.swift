@@ -25,7 +25,7 @@ class GameState {
     return Static.instance
   }
   
-  var battle: Battle?
+  var battle: Battle!
   var enemy: EnemyMonster?
   var player: MyMonster?
   
@@ -38,10 +38,10 @@ class Battle: CCScene {
   var currentStep: CodeStep = CodeStep.InitMonster
   var state: BattleState = BattleState.FixCode
   
-  var messageBox: MessageBox?
-  var attackBox: AttackBox?
-  var playerHealth: HealthBox?
-  var enemyHealth: HealthBox?
+  var messageBox: MessageBox!
+  var attackBox: AttackBox!
+  var playerHealth: HealthBox!
+  var enemyHealth: HealthBox!
   
   override init() {
     super.init()

@@ -20,7 +20,7 @@ class MyMonster: Monster {
   }
   
   func fireAttack() {
-    if opponent?.type == MonsterType.Leaf {
+    if opponent.type == MonsterType.Leaf {
       attack(MonsterAttackType.Elemental)
     } else {
       attack(MonsterAttackType.Tackle)
@@ -28,7 +28,7 @@ class MyMonster: Monster {
   }
   
   func waterAttack() {
-    if opponent?.type == MonsterType.Fire {
+    if opponent.type == MonsterType.Fire {
       attack(MonsterAttackType.Elemental)
     } else {
       attack(MonsterAttackType.Tackle)
@@ -36,7 +36,7 @@ class MyMonster: Monster {
   }
   
   func leafAttack() {
-    if opponent?.type == MonsterType.Water {
+    if opponent.type == MonsterType.Water {
       attack(MonsterAttackType.Elemental)
     } else {
       attack(MonsterAttackType.Tackle)
