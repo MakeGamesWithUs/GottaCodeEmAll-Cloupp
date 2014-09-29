@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>activeLanguages</key>
+	<array>
+		<string>en</string>
+		<string>fr</string>
+		<string>es</string>
+		<string>de</string>
+	</array>
+	<key>fileType</key>
+	<string>SpriteBuilderTranslations</string>
+	<key>fileVersion</key>
+	<integer>1</integer>
+	<key>translations</key>
+	<array>
+		<dict>
+			<key>key</key>
+			<string>welcome</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Willkommen auf Gotta Code Em All!	</string>
+				<key>en</key>
+				<string>Welcome to Gotta Code Em All!</string>
+				<key>es</key>
+				<string>Bienvenido a Gotta Code Em All!</string>
+				<key>fr</key>
+				<string>Bienvenue à Gotta Code Em All!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noMonster</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Oh no, you don't have a monster yet!</string>
+				<key>en</key>
+				<string>Oh no, you don't have a monster yet!</string>
+				<key>es</key>
+				<string>Oh no, you don't have a monster yet!</string>
+				<key>fr</key>
+				<string>Oh no, you don't have a monster yet!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>continue</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Tap to continue...</string>
+				<key>en</key>
+				<string>Tap to continue...</string>
+				<key>es</key>
+				<string>Tap to continue...</string>
+				<key>fr</key>
+				<string>Tap to continue...</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>choose</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Choose a move</string>
+				<key>en</key>
+				<string>Choose a move</string>
+				<key>es</key>
+				<string>Choose a move</string>
+				<key>fr</key>
+				<string>Choose a move</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noMoves</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>doesn’t know any moves!</string>
+				<key>en</key>
+				<string>doesn’t know any moves!</string>
+				<key>es</key>
+				<string>doesn’t know any moves!</string>
+				<key>fr</key>
+				<string>doesn’t know any moves!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>tackle</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>used takcle!</string>
+				<key>en</key>
+				<string>used takcle!</string>
+				<key>es</key>
+				<string>used takcle!</string>
+				<key>fr</key>
+				<string>used takcle!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>swipe</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>used swipe!</string>
+				<key>en</key>
+				<string>used swipe!</string>
+				<key>es</key>
+				<string>used swipe!</string>
+				<key>fr</key>
+				<string>used swipe!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>elemental</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>used elemental!</string>
+				<key>en</key>
+				<string>used elemental!</string>
+				<key>es</key>
+				<string>used elemental!</string>
+				<key>fr</key>
+				<string>used elemental!</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
