@@ -59,7 +59,7 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"BattleGUI"];
+    return [CCBReader loadAsScene:@"Battle"];
 }
 
 @end

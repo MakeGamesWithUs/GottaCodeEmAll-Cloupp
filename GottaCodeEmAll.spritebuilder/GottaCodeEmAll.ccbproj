@@ -93,21 +93,6 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
-		<key>GUI/buttonElement1.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
-		<key>GUI/buttonSwipe1.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
-		<key>GUI/buttonTackle1.png</key>
-		<dict>
-			<key>scaleFrom</key>
-			<integer>2</integer>
-		</dict>
 		<key>GUI/elementFire.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -118,6 +103,8 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>GUI/elementNormal1.png</key>
+		<dict/>
 		<key>GUI/elementWater.png</key>
 		<dict>
 			<key>scaleFrom</key>

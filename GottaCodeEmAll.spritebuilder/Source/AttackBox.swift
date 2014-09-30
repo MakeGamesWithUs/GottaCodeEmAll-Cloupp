@@ -8,7 +8,7 @@
 
 import Foundation
 
-class AttackButton: CCNodeColor {
+class AttackButton: CCButton {
   
   var attackType: MonsterAttackType = MonsterAttackType.None
   
@@ -16,7 +16,7 @@ class AttackButton: CCNodeColor {
     self.userInteractionEnabled = true
   }
   
-  override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+  func buttonTouched() {
     println("Touched \(attackType.description())")
 //    var player = GameState.sharedInstance.player?
 //    switch attackType {
