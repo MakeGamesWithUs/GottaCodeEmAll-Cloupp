@@ -41,8 +41,15 @@
                 [[CCDirector sharedDirector] resume];
             }
             else if ([obj objectForKey:@"down"] != nil) {
-                [[CCDirector sharedDirector].responderManager mouseDown:[NSEvent mouseEventWithType:NSLeftMouseDown location:CGPointMake(196, 307) modifierFlags:256 timestamp:0 windowNumber:0 context:nil eventNumber:nil clickCount:0 pressure:0]];
-            };
+                NSDictionary *props = (NSDictionary *)[obj objectForKey:@"down"];
+                
+                [[CCDirector sharedDirector].responderManager mouseDown:[NSEvent mouseEventWithType:NSLeftMouseDown location:CGPointMake([[props valueForKey:@"x"] integerValue], [[props valueForKey:@"y"] integerValue]) modifierFlags:256 timestamp:0 windowNumber:0 context:nil eventNumber:nil clickCount:0 pressure:0]];
+            }
+            else if ([obj objectForKey:@"up"]) {
+                NSDictionary *props = (NSDictionary *)[obj objectForKey:@"down"];
+                
+                [[CCDirector sharedDirector].responderManager mouseDown:[NSEvent mouseEventWithType:NSLeftMouseUp location:CGPointMake([[props valueForKey:@"x"] integerValue], [[props valueForKey:@"y"] integerValue]) modifierFlags:256 timestamp:0 windowNumber:0 context:nil eventNumber:nil clickCount:0 pressure:0]];
+            }
         });
     };
 }
@@ -101,4 +108,3 @@
 }
 
 @end
-
