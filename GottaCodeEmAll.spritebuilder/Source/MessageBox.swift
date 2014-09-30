@@ -21,10 +21,12 @@ class MessageBox: CCNode {
     self.userInteractionEnabled = true
   }
   
+#if os(iOS)
   override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
     self.animationManager.runAnimationsForSequenceNamed("EaseOut")
     self.userInteractionEnabled = false
   }
+#endif
   
   func updateMessage() {
     

@@ -44,6 +44,32 @@
 		BCF642E219C78B5F0084D32F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
 		BCF642E419C78B6B0084D32F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E319C78B6B0084D32F /* Battle.swift */; };
 		BCF642E819C78B910084D32F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E719C78B910084D32F /* Player.swift */; };
+		BEC40D9C19DA638900ACDA8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9B19DA638900ACDA8F /* AppDelegate.m */; };
+		BEC40D9E19DA638900ACDA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9D19DA638900ACDA8F /* main.m */; };
+		BEC40DA019DA638900ACDA8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC40D9F19DA638900ACDA8F /* Images.xcassets */; };
+		BEC40DA319DA638900ACDA8F /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = BEC40DA119DA638900ACDA8F /* MainMenu.xib */; };
+		BEC40DAF19DA638A00ACDA8F /* GottaCodeEmAllOSXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40DAE19DA638A00ACDA8F /* GottaCodeEmAllOSXTests.m */; };
+		BEC40DC219DA640A00ACDA8F /* libcocos2d.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DBD19DA63A500ACDA8F /* libcocos2d.a */; };
+		BEC40DC419DA640F00ACDA8F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DC319DA640F00ACDA8F /* Foundation.framework */; };
+		BEC40DC619DA641800ACDA8F /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DC519DA641800ACDA8F /* AudioToolbox.framework */; };
+		BEC40DC819DA642100ACDA8F /* OpenAL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DC719DA642100ACDA8F /* OpenAL.framework */; };
+		BEC40DCA19DA642800ACDA8F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DC919DA642800ACDA8F /* AVFoundation.framework */; };
+		BEC40DCC19DA643000ACDA8F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DCB19DA643000ACDA8F /* QuartzCore.framework */; };
+		BEC40DCE19DA643500ACDA8F /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DCD19DA643500ACDA8F /* OpenGL.framework */; };
+		BEC40DD019DA643B00ACDA8F /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DCF19DA643B00ACDA8F /* AppKit.framework */; };
+		BEC40DD219DA644400ACDA8F /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DD119DA644400ACDA8F /* GameKit.framework */; };
+		BEC40DD419DA644A00ACDA8F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = BEC40DD319DA644A00ACDA8F /* libz.dylib */; };
+		BEC40DD719DA66FC00ACDA8F /* MSCaptureGLView.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40DD619DA66FC00ACDA8F /* MSCaptureGLView.m */; };
+		BEC40DD819DA679900ACDA8F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E319C78B6B0084D32F /* Battle.swift */; };
+		BEC40DD919DA679900ACDA8F /* AttackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackBox.swift */; };
+		BEC40DDA19DA679900ACDA8F /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2AD19CCAF6E00309135 /* MessageBox.swift */; };
+		BEC40DDB19DA679900ACDA8F /* HealthBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2B019CCAF8700309135 /* HealthBox.swift */; };
+		BEC40DDC19DA679900ACDA8F /* MonsterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* MonsterAttack.swift */; };
+		BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
+		BEC40DDE19DA679900ACDA8F /* EnemyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyMonster.swift */; };
+		BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
+		BEC40DE019DA679900ACDA8F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E719C78B910084D32F /* Player.swift */; };
+		BEC40DE119DA679F00ACDA8F /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +85,34 @@
 			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
+			remoteInfo = cocos2d;
+		};
+		BEC40DA919DA638900ACDA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B77F1B2617B978D7009739AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BEC40D9519DA638900ACDA8F;
+			remoteInfo = GottaCodeEmAllOSX;
+		};
+		BEC40DBC19DA63A500ACDA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E01E663D121CA00A001A484F;
+			remoteInfo = cocos2d;
+		};
+		BEC40DBE19DA63A500ACDA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D37EE9FC187D4E7700CB5EF2;
+			remoteInfo = ObjectiveChipmunk;
+		};
+		BEC40DC019DA63B300ACDA8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = E01E663C121CA00A001A484F;
 			remoteInfo = cocos2d;
 		};
 /* End PBXContainerItemProxy section */
@@ -106,6 +160,28 @@
 		BCF642E119C78B5F0084D32F /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Source/Monster.swift; sourceTree = "<group>"; };
 		BCF642E319C78B6B0084D32F /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Source/Battle.swift; sourceTree = "<group>"; };
 		BCF642E719C78B910084D32F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Source/Player.swift; sourceTree = "<group>"; };
+		BEC40D9619DA638900ACDA8F /* GottaCodeEmAllOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GottaCodeEmAllOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC40D9919DA638900ACDA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC40D9A19DA638900ACDA8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BEC40D9B19DA638900ACDA8F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BEC40D9D19DA638900ACDA8F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BEC40D9F19DA638900ACDA8F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BEC40DA219DA638900ACDA8F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		BEC40DA819DA638900ACDA8F /* GottaCodeEmAllOSXTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GottaCodeEmAllOSXTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC40DAD19DA638A00ACDA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEC40DAE19DA638A00ACDA8F /* GottaCodeEmAllOSXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GottaCodeEmAllOSXTests.m; sourceTree = "<group>"; };
+		BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-osx.xcodeproj"; path = "Source/libs/cocos2d-iphone/cocos2d-osx.xcodeproj"; sourceTree = "<group>"; };
+		BEC40DC319DA640F00ACDA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DC519DA641800ACDA8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DC719DA642100ACDA8F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DC919DA642800ACDA8F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DCB19DA643000ACDA8F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DCD19DA643500ACDA8F /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DCF19DA643B00ACDA8F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DD119DA644400ACDA8F /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		BEC40DD319DA644A00ACDA8F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/usr/lib/libz.dylib; sourceTree = DEVELOPER_DIR; };
+		BEC40DD519DA66FC00ACDA8F /* MSCaptureGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSCaptureGLView.h; sourceTree = "<group>"; };
+		BEC40DD619DA66FC00ACDA8F /* MSCaptureGLView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSCaptureGLView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,12 +203,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEC40D9319DA638900ACDA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC40DD419DA644A00ACDA8F /* libz.dylib in Frameworks */,
+				BEC40DD219DA644400ACDA8F /* GameKit.framework in Frameworks */,
+				BEC40DD019DA643B00ACDA8F /* AppKit.framework in Frameworks */,
+				BEC40DCE19DA643500ACDA8F /* OpenGL.framework in Frameworks */,
+				BEC40DCC19DA643000ACDA8F /* QuartzCore.framework in Frameworks */,
+				BEC40DCA19DA642800ACDA8F /* AVFoundation.framework in Frameworks */,
+				BEC40DC819DA642100ACDA8F /* OpenAL.framework in Frameworks */,
+				BEC40DC619DA641800ACDA8F /* AudioToolbox.framework in Frameworks */,
+				BEC40DC419DA640F00ACDA8F /* Foundation.framework in Frameworks */,
+				BEC40DC219DA640A00ACDA8F /* libcocos2d.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC40DA519DA638900ACDA8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
+				BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */,
 				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
 			);
 			name = libs;
@@ -193,6 +294,8 @@
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
 				B77F1CCF17B978D8009739AE /* Supporting Files */,
+				BEC40D9719DA638900ACDA8F /* GottaCodeEmAllOSX */,
+				BEC40DAB19DA638900ACDA8F /* GottaCodeEmAllOSXTests */,
 				B77F1B3017B978D7009739AE /* Frameworks */,
 				B77F1B2F17B978D7009739AE /* Products */,
 			);
@@ -202,6 +305,8 @@
 			isa = PBXGroup;
 			children = (
 				B77F1B2E17B978D7009739AE /* GottaCodeEmAll.app */,
+				BEC40D9619DA638900ACDA8F /* GottaCodeEmAllOSX.app */,
+				BEC40DA819DA638900ACDA8F /* GottaCodeEmAllOSXTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -209,6 +314,15 @@
 		B77F1B3017B978D7009739AE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BEC40DD319DA644A00ACDA8F /* libz.dylib */,
+				BEC40DD119DA644400ACDA8F /* GameKit.framework */,
+				BEC40DCF19DA643B00ACDA8F /* AppKit.framework */,
+				BEC40DCD19DA643500ACDA8F /* OpenGL.framework */,
+				BEC40DCB19DA643000ACDA8F /* QuartzCore.framework */,
+				BEC40DC919DA642800ACDA8F /* AVFoundation.framework */,
+				BEC40DC719DA642100ACDA8F /* OpenAL.framework */,
+				BEC40DC519DA641800ACDA8F /* AudioToolbox.framework */,
+				BEC40DC319DA640F00ACDA8F /* Foundation.framework */,
 				8392007918EE8E3300B6C429 /* GLKit.framework */,
 				B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */,
 				B77F1B3117B978D7009739AE /* QuartzCore.framework */,
@@ -243,6 +357,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		BEC40D9719DA638900ACDA8F /* GottaCodeEmAllOSX */ = {
+			isa = PBXGroup;
+			children = (
+				BEC40D9A19DA638900ACDA8F /* AppDelegate.h */,
+				BEC40D9B19DA638900ACDA8F /* AppDelegate.m */,
+				BEC40D9F19DA638900ACDA8F /* Images.xcassets */,
+				BEC40DA119DA638900ACDA8F /* MainMenu.xib */,
+				BEC40D9819DA638900ACDA8F /* Supporting Files */,
+				BEC40DD519DA66FC00ACDA8F /* MSCaptureGLView.h */,
+				BEC40DD619DA66FC00ACDA8F /* MSCaptureGLView.m */,
+			);
+			path = GottaCodeEmAllOSX;
+			sourceTree = "<group>";
+		};
+		BEC40D9819DA638900ACDA8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEC40D9919DA638900ACDA8F /* Info.plist */,
+				BEC40D9D19DA638900ACDA8F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEC40DAB19DA638900ACDA8F /* GottaCodeEmAllOSXTests */ = {
+			isa = PBXGroup;
+			children = (
+				BEC40DAE19DA638A00ACDA8F /* GottaCodeEmAllOSXTests.m */,
+				BEC40DAC19DA638A00ACDA8F /* Supporting Files */,
+			);
+			path = GottaCodeEmAllOSXTests;
+			sourceTree = "<group>";
+		};
+		BEC40DAC19DA638A00ACDA8F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BEC40DAD19DA638A00ACDA8F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEC40DB819DA63A400ACDA8F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BEC40DBD19DA63A500ACDA8F /* libcocos2d.a */,
+				BEC40DBF19DA63A500ACDA8F /* libObjectiveChipmunk.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -265,6 +428,42 @@
 			productReference = B77F1B2E17B978D7009739AE /* GottaCodeEmAll.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BEC40D9519DA638900ACDA8F /* GottaCodeEmAllOSX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC40DB519DA638A00ACDA8F /* Build configuration list for PBXNativeTarget "GottaCodeEmAllOSX" */;
+			buildPhases = (
+				BEC40D9219DA638900ACDA8F /* Sources */,
+				BEC40D9319DA638900ACDA8F /* Frameworks */,
+				BEC40D9419DA638900ACDA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC40DC119DA63B300ACDA8F /* PBXTargetDependency */,
+			);
+			name = GottaCodeEmAllOSX;
+			productName = GottaCodeEmAllOSX;
+			productReference = BEC40D9619DA638900ACDA8F /* GottaCodeEmAllOSX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BEC40DA719DA638900ACDA8F /* GottaCodeEmAllOSXTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BEC40DB619DA638A00ACDA8F /* Build configuration list for PBXNativeTarget "GottaCodeEmAllOSXTests" */;
+			buildPhases = (
+				BEC40DA419DA638900ACDA8F /* Sources */,
+				BEC40DA519DA638900ACDA8F /* Frameworks */,
+				BEC40DA619DA638900ACDA8F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BEC40DAA19DA638900ACDA8F /* PBXTargetDependency */,
+			);
+			name = GottaCodeEmAllOSXTests;
+			productName = GottaCodeEmAllOSXTests;
+			productReference = BEC40DA819DA638900ACDA8F /* GottaCodeEmAllOSXTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -282,6 +481,13 @@
 							};
 						};
 					};
+					BEC40D9519DA638900ACDA8F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BEC40DA719DA638900ACDA8F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BEC40D9519DA638900ACDA8F;
+					};
 				};
 			};
 			buildConfigurationList = B77F1B2917B978D7009739AE /* Build configuration list for PBXProject "GottaCodeEmAll" */;
@@ -290,6 +496,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = B77F1B2517B978D7009739AE;
 			productRefGroup = B77F1B2F17B978D7009739AE /* Products */;
@@ -299,10 +506,16 @@
 					ProductGroup = B7378941180761A80076A88C /* Products */;
 					ProjectRef = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 				},
+				{
+					ProductGroup = BEC40DB819DA63A400ACDA8F /* Products */;
+					ProjectRef = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
+				},
 			);
 			projectRoot = "";
 			targets = (
+				BEC40D9519DA638900ACDA8F /* GottaCodeEmAllOSX */,
 				B77F1B2D17B978D7009739AE /* GottaCodeEmAll */,
+				BEC40DA719DA638900ACDA8F /* GottaCodeEmAllOSXTests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,6 +526,20 @@
 			fileType = archive.ar;
 			path = libcocos2d.a;
 			remoteRef = B737894A180761A90076A88C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BEC40DBD19DA63A500ACDA8F /* libcocos2d.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libcocos2d.a;
+			remoteRef = BEC40DBC19DA63A500ACDA8F /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BEC40DBF19DA63A500ACDA8F /* libObjectiveChipmunk.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libObjectiveChipmunk.a;
+			remoteRef = BEC40DBE19DA63A500ACDA8F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -337,6 +564,23 @@
 				B71F5918188484E7003F4D28 /* iPhone@2x.png in Resources */,
 				B7378977180762440076A88C /* Default.png in Resources */,
 				B71F5911188484E7003F4D28 /* iPad-old.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC40D9419DA638900ACDA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC40DE119DA679F00ACDA8F /* Published-iOS in Resources */,
+				BEC40DA019DA638900ACDA8F /* Images.xcassets in Resources */,
+				BEC40DA319DA638900ACDA8F /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC40DA619DA638900ACDA8F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +622,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BEC40D9219DA638900ACDA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC40D9E19DA638900ACDA8F /* main.m in Sources */,
+				BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */,
+				BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */,
+				BEC40DD919DA679900ACDA8F /* AttackBox.swift in Sources */,
+				BEC40DE019DA679900ACDA8F /* Player.swift in Sources */,
+				BEC40DD719DA66FC00ACDA8F /* MSCaptureGLView.m in Sources */,
+				BEC40DDA19DA679900ACDA8F /* MessageBox.swift in Sources */,
+				BEC40DDB19DA679900ACDA8F /* HealthBox.swift in Sources */,
+				BEC40D9C19DA638900ACDA8F /* AppDelegate.m in Sources */,
+				BEC40DDE19DA679900ACDA8F /* EnemyMonster.swift in Sources */,
+				BEC40DDC19DA679900ACDA8F /* MonsterAttack.swift in Sources */,
+				BEC40DD819DA679900ACDA8F /* Battle.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BEC40DA419DA638900ACDA8F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BEC40DAF19DA638A00ACDA8F /* GottaCodeEmAllOSXTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -386,7 +657,28 @@
 			name = cocos2d;
 			targetProxy = B7378988180764180076A88C /* PBXContainerItemProxy */;
 		};
+		BEC40DAA19DA638900ACDA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BEC40D9519DA638900ACDA8F /* GottaCodeEmAllOSX */;
+			targetProxy = BEC40DA919DA638900ACDA8F /* PBXContainerItemProxy */;
+		};
+		BEC40DC119DA63B300ACDA8F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = cocos2d;
+			targetProxy = BEC40DC019DA63B300ACDA8F /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BEC40DA119DA638900ACDA8F /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BEC40DA219DA638900ACDA8F /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		B77F1CDC17B978D8009739AE /* Debug */ = {
@@ -503,6 +795,206 @@
 			};
 			name = Release;
 		};
+		BEC40DB019DA638A00ACDA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"Source/libs/cocos2d-iphone/external/kazmath/include\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = GottaCodeEmAllOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "GottaCodeEmAll-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		BEC40DB119DA638A00ACDA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = Source/Prefix.pch;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Applications/Xcode-Beta.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include",
+					"\"Source/libs/cocos2d-iphone/external/kazmath/include\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d\"/**",
+					"\"Source/libs/cocos2d-iphone/cocos2d-ui\"/**",
+					"\"Source/libs/cocos2d-iphone/external/ObjectAL\"/**",
+				);
+				INFOPLIST_FILE = GottaCodeEmAllOSX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-lz",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "GottaCodeEmAll-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		BEC40DB219DA638A00ACDA8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = GottaCodeEmAllOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GottaCodeEmAllOSX.app/Contents/MacOS/GottaCodeEmAllOSX";
+			};
+			name = Debug;
+		};
+		BEC40DB319DA638A00ACDA8F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = GottaCodeEmAllOSXTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GottaCodeEmAllOSX.app/Contents/MacOS/GottaCodeEmAllOSX";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -520,6 +1012,24 @@
 			buildConfigurations = (
 				B77F1CDF17B978D8009739AE /* Debug */,
 				B77F1CE017B978D8009739AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC40DB519DA638A00ACDA8F /* Build configuration list for PBXNativeTarget "GottaCodeEmAllOSX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC40DB019DA638A00ACDA8F /* Debug */,
+				BEC40DB119DA638A00ACDA8F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BEC40DB619DA638A00ACDA8F /* Build configuration list for PBXNativeTarget "GottaCodeEmAllOSXTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BEC40DB219DA638A00ACDA8F /* Debug */,
+				BEC40DB319DA638A00ACDA8F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
