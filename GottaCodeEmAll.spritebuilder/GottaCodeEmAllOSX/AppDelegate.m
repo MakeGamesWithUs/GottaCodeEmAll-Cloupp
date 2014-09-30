@@ -17,12 +17,12 @@
 @implementation AppDelegate
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Setup file utils and search paths
+      // Setup file utils and search paths
     [self setupFileUtils];
     
     // Setup and load your sprite frames
     [self setupSpriteFrames];
-    
+  
     // Setup Cocos2D and run first scene
     [self setupCocos2d];
 }
@@ -57,7 +57,7 @@
 {
     [[CCSpriteFrameCache sharedSpriteFrameCache] loadSpriteFrameLookupDictionaryFromFile:@"spriteFrameFileList.plist"];
 }
-
+ 
 - (void) setupCocos2d
 {
     // Setup the CCDirector for Mac
@@ -87,7 +87,7 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"MainScene"];
+    return [CCBReader loadAsScene:@"Battle"];
 }
 
 @end

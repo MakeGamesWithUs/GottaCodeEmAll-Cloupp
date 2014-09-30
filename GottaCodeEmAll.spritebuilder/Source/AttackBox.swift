@@ -16,7 +16,6 @@ class AttackButton: CCButton {
     self.userInteractionEnabled = true
   }
   
-#if os(iOS)
   func buttonTouched() {
     println("Touched \(attackType.description())")
 //    var player = GameState.sharedInstance.player?
@@ -42,7 +41,6 @@ class AttackButton: CCButton {
 //        println("\(attackType.description()) touched! This should not have happened...")
 //    }
   }
-#endif
   
 }
 
