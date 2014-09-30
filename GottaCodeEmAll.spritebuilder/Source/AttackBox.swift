@@ -16,6 +16,7 @@ class AttackButton: CCNodeColor {
     self.userInteractionEnabled = true
   }
   
+#if os(iOS)
   override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
     println("Touched \(attackType.description())")
 //    var player = GameState.sharedInstance.player?
@@ -41,6 +42,7 @@ class AttackButton: CCNodeColor {
 //        println("\(attackType.description()) touched! This should not have happened...")
 //    }
   }
+#endif
   
 }
 
