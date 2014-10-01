@@ -69,7 +69,7 @@
     
     dispatch_async(queue, ^{
         @try {
-#ifndef DEBUG
+//#ifndef DEBUG
             unsigned char* planes[1];
             planes[0] = [buffer mutableBytes];
             
@@ -99,7 +99,7 @@
 
             [stdout writeData:[NSData dataWithBytes:&size length:sizeof(size)]];
             [stdout writeData:imageData];
-#endif
+//#endif
         }
         @catch (NSException *exception) {
         }
