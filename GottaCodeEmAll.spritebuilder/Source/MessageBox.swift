@@ -9,27 +9,55 @@
 import Foundation
 
 class LocalizedMessage: CCLabelTTF {
+  var nextMessage = ""
+  var localizer: CCBLocalizationManager!
   
+  override init() {
+    super.init()
+    localizer = CCBLocalizationManager.sharedManager() as CCBLocalizationManager
+  }
 }
 
 class MessageBox: CCNode {
   
-  var message: LocalizedMessage?
-  var tapToContinue: LocalizedMessage?
+  var message: LocalizedMessage!
+  var tapToContinue: LocalizedMessage!
   
-  func touchActive() {
-    self.userInteractionEnabled = true
+  func handleTouch() {
+    println("Touched message box!")
+    if message.nextMessage == "" {
+      goToAttackChoice()
+    } else if message.nextMessage != message.string {
+      self.animationManager.runAnimationsForSequenceNamed("UpdateMessage")
+    }
   }
   
-#if os(iOS)
-  override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+  func goToAttackChoice() {
     self.animationManager.runAnimationsForSequenceNamed("EaseOut")
+    GameState.sharedInstance.battle.attackBox.animationManager.runAnimationsForSequenceNamed("EaseIn")
     self.userInteractionEnabled = false
   }
-#endif
+  
+  func setNextMessage(key: String) {
+    message.nextMessage = message.localizer.localizedStringForKey(key)
+  }
   
   func updateMessage() {
     
+  }
+  
+  #if os(iOS)
+  override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+    handleTouch()
+  }
+  #elseif os(OSX)
+  override func mouseDown(event: NSEvent) {
+    handleTouch()
+  }
+  #endif
+  
+  func touchActive() {
+    self.userInteractionEnabled = true
   }
   
 }

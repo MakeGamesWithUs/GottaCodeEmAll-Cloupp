@@ -72,13 +72,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>Choose a move</string>
+				<string>Choose a move:</string>
 				<key>en</key>
-				<string>Choose a move</string>
+				<string>Choose a move:</string>
 				<key>es</key>
-				<string>Choose a move</string>
+				<string>Choose a move:</string>
 				<key>fr</key>
-				<string>Choose a move</string>
+				<string>Choose a move:</string>
 			</dict>
 		</dict>
 		<dict>
@@ -147,6 +147,40 @@
 				<string>used elemental!</string>
 				<key>fr</key>
 				<string>used elemental!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noElemental</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>doesn't know elemental!</string>
+				<key>en</key>
+				<string>doesn't know elemental!</string>
+				<key>es</key>
+				<string>doesn't know elemental!</string>
+				<key>fr</key>
+				<string>doesn't know elemental!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noSwipe</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>doesn't know Swipe!</string>
+				<key>en</key>
+				<string>doesn't know Swipe!</string>
+				<key>es</key>
+				<string>doesn't know Swipe!</string>
+				<key>fr</key>
+				<string>doesn't know Swipe!</string>
 			</dict>
 		</dict>
 	</array>

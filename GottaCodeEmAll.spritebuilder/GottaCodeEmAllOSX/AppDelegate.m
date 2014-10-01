@@ -80,7 +80,9 @@
     [self.window setRestorable:NO];
     
     // Run the first scene
+#ifndef DEBUG
     [director pause];
+#endif
     [director runWithScene:[self startScene]];
 }
 

@@ -10,10 +10,18 @@ import Foundation
 
 class HealthBox: CCNode {
   
-  var health: String?
+  var nameLabel: CCLabelTTF!
+  var levelLabel: CCLabelTTF!
+  var hpLabel: CCLabelTTF!
+  var hpBar: CCSprite!
+  
+  override init() {
+    super.init()
+    self.cascadeOpacityEnabled = true
+  }
   
   func updateHealth(newHealth: Int) {
-    health = String(newHealth)
+    hpLabel.string = String(newHealth)
     
     // update health bar
   }

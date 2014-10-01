@@ -65,9 +65,5 @@ class Monster: CCNode {
   func takeDamage(damage: Int) {
     health -= damage
   }
-  
-  func readyToBattle() {
-    GameState.sharedInstance.player = self as? MyMonster
-  }
-  
+
 }

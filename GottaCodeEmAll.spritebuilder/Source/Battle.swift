@@ -26,8 +26,8 @@ class GameState {
   }
   
   var battle: Battle!
-  var enemy: EnemyMonster?
-  var player: MyMonster?
+  var enemy: EnemyMonster!
+  var player: MyMonster!
   
 }
 
@@ -42,27 +42,43 @@ class Battle: CCScene {
   var attackBox: AttackBox!
   var playerHealth: HealthBox!
   var enemyHealth: HealthBox!
+  var player: MyMonster!
+  var enemy: EnemyMonster!
   
   override init() {
     super.init()
     GameState.sharedInstance.battle = self
-    self.checkCodeForCurrentStep()
+    checkCodeForCurrentStep()
   }
   
   func didLoadFromCCB() {
+    GameState.sharedInstance.player = player
+    GameState.sharedInstance.enemy = enemy
     
+    enemyHealth.opacity = 0.0
+    playerHealth.opacity = 0.0
   }
   
   func checkCodeForCurrentStep() {
     switch currentStep {
       case CodeStep.InitMonster:
-        break
+        if !player.respondsToSelector(Selector("addToBattle")) {
+          messageBox.setNextMessage("noMonster")
+        } else {
+          // handle no monstertype
+        }
       case CodeStep.TeachTackle:
-        break
+        if !player.respondsToSelector(Selector("tackleAttack")) {
+          messageBox.setNextMessage("noMoves")
+        }
       case CodeStep.TeachElemental:
-        break
+        if !player.respondsToSelector(Selector("elementalAttack")) {
+          messageBox.setNextMessage("noElemental")
+      }
       case CodeStep.TeachSwipes:
-        break
+        if !player.respondsToSelector(Selector("swipeAttack")) {
+          messageBox.setNextMessage("noSwipe")
+      }
     }
   }
   
@@ -73,16 +89,16 @@ class Battle: CCScene {
   func processAttacks() {
     state = BattleState.Attacking
     var player = GameState.sharedInstance.player
-    var playerAttack = player!.nextAttack
+    var playerAttack = player.nextAttack
     switch playerAttack.attack {
       case MonsterAttackType.Tackle:
-        player?.performTackle()
+        player.performTackle()
       case MonsterAttackType.Elemental:
-        player?.performElemental()
+        player.performElemental()
       case MonsterAttackType.Swipe:
-        player?.performSwipe()
+        player.performSwipe()
       case MonsterAttackType.None:
-        GameState.sharedInstance.enemy?.performTackle()
+        GameState.sharedInstance.enemy.performTackle()
     }
   }
   

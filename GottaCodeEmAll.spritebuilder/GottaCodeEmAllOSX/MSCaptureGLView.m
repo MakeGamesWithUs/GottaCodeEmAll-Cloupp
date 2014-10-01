@@ -69,6 +69,7 @@
     
     dispatch_async(queue, ^{
         @try {
+#ifndef DEBUG
             unsigned char* planes[1];
             planes[0] = [buffer mutableBytes];
             
@@ -95,8 +96,10 @@
             imageData = [imageRep representationUsingType:NSJPEGFileType properties:imageProps];
             
             unsigned long size = [imageData length];
+
             [stdout writeData:[NSData dataWithBytes:&size length:sizeof(size)]];
             [stdout writeData:imageData];
+#endif
         }
         @catch (NSException *exception) {
         }
