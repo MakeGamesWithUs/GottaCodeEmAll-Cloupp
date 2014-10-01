@@ -79,7 +79,7 @@ class Battle: CCScene {
         if !player.respondsToSelector(Selector("addToBattle")) {
           messageBox.setNextMessage("noMonster")
         } else if player.type == MonsterType.None {
-          // handle no monstertype
+          messageBox.setNextMessage("noMonsterType")
         } else {
           enemyHealth.opacity = 1.0
           playerHealth.opacity = 1.0

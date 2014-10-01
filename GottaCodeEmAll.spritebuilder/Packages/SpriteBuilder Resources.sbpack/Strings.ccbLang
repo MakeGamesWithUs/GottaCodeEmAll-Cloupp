@@ -40,7 +40,7 @@
 				<key>de</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>en</key>
-				<string>Oh no, you don't have a monster yet! Make sure to add addToBattle.</string>
+				<string>Oh no, you don't have a monster yet! Make sure your code has an addToBattle function.</string>
 				<key>es</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>fr</key>
@@ -181,6 +181,23 @@
 				<string>doesn't know Swipe!</string>
 				<key>fr</key>
 				<string>doesn't know Swipe!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noMonsterType</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
+				<key>en</key>
+				<string>Looks like you have an addToBattle function but you haven't set your monster's type! Try again.</string>
+				<key>es</key>
+				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
+				<key>fr</key>
+				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
 			</dict>
 		</dict>
 	</array>
