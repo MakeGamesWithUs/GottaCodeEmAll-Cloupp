@@ -5,26 +5,26 @@ class MyMonster: Monster {
   
   func addToBattle() {
     type = MonsterType.Leaf
-    monsterName = "Crabby"
+    nickname = "Crabby"
   }
   
   
   
   func tackleAttack() {
-    attack(MonsterAttackType.Tackle)
+    self.performAttack()
   }
   
   func elementalAttack() {
     if opponent.type == MonsterType.Leaf {
-      attack(MonsterAttackType.Elemental)
+      self.performAttack(attackType: MonsterAttackType.Elemental)
     } else {
-      attack(MonsterAttackType.Tackle)
+      self.performAttack()
     }
   }
   
   func swipeAttack(numberOfSwipes: Int) {
     for _ in 1...numberOfSwipes {
-      attack(MonsterAttackType.Swipe)
+      self.performAttack(attackType: MonsterAttackType.Swipe)
     }
   }
   

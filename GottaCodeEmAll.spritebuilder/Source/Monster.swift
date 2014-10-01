@@ -18,6 +18,7 @@ class Monster: CCNode {
   var level = 5
   var health = 25
   let totalHealth = 25
+  var nickname = ""
   
   let opponent: Monster!
   let nextAttack = MonsterAttack()
@@ -26,7 +27,7 @@ class Monster: CCNode {
     super.init()
   }
   
-  func attack(attackType: MonsterAttackType) {
+  func performAttack(attackType: MonsterAttackType = MonsterAttackType.Tackle) {
     switch attackType {
       case MonsterAttackType.Tackle:
         nextAttack.tackle()
