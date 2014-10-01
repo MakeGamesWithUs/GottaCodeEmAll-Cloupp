@@ -1,18 +1,30 @@
 
 class MyMonster: Monster {
   
-  // your code goes under here
+  // addToBattle goes below this
   
   func addToBattle() {
-//    type = MonsterType.Leaf
-//    nickname = "Crabby"
+    type = MonsterType.Water
+    nickname = "Morty"
   }
-
-  func tackleAttack() {
+  
+  // addToBattle goes above this
+  
+  
+  
+  // tackleMove goes below this
+  
+  func tackleMove() {
     self.performTackle()
   }
   
-  func elementalAttack() {
+  // tackleMove goes above this
+  
+  
+  
+  // elementalMove goes below this
+  
+  func elementalMove() {
     if opponent.weakAgainst == self.type {
       self.performElemental()
     } else {
@@ -20,12 +32,18 @@ class MyMonster: Monster {
     }
   }
   
-  func swipeAttack(numberOfSwipes: Int) {
+  // elementalMove goes above this
+  
+  
+  
+  // swipeMove goes below this
+  
+  func swipeMove(numberOfSwipes: Int) {
     for _ in 1...numberOfSwipes {
       self.performSwipe()
     }
   }
   
-  // your code goes above here
+  // swipeMove goes above this
   
 }

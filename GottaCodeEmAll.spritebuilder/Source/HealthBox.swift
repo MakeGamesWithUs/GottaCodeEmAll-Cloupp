@@ -14,6 +14,9 @@ class HealthBox: CCNode {
   var levelLabel: CCLabelTTF!
   var hpLabel: CCLabelTTF!
   var hpBar: CCSprite!
+  var elementFire: CCSprite!
+  var elementWater: CCSprite!
+  var elementLeaf: CCSprite!
   
   override init() {
     super.init()
@@ -24,6 +27,27 @@ class HealthBox: CCNode {
     hpLabel.string = String(newHealth)
     
     // update health bar
+  }
+  
+  func setupFire() {
+    nameLabel.string = "Phoenix"
+    elementFire.visible = true
+    elementLeaf.visible = false
+    elementWater.visible = false
+  }
+  
+  func setupWater() {
+    nameLabel.string = "Crabby"
+    elementFire.visible = false
+    elementLeaf.visible = false
+    elementWater.visible = true
+  }
+  
+  func setupLeaf() {
+    nameLabel.string = "Leafly"
+    elementFire.visible = false
+    elementLeaf.visible = true
+    elementWater.visible = false
   }
   
 }

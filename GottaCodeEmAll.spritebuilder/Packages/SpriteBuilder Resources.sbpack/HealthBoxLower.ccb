@@ -65,7 +65,7 @@
 								<key>displayName</key>
 								<string>elementLeaf</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>elementLeaf</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
@@ -141,6 +141,8 @@
 										</array>
 									</dict>
 								</array>
+								<key>selected</key>
+								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -154,7 +156,7 @@
 								<key>displayName</key>
 								<string>elementWater</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>elementWater</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
@@ -243,7 +245,7 @@
 								<key>displayName</key>
 								<string>elementFire</string>
 								<key>memberVarAssignmentName</key>
-								<string></string>
+								<string>elementFire</string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>

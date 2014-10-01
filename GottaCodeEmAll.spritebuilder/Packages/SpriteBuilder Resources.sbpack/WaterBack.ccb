@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>8</integer>
+	<integer>6</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -284,7 +284,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.0</real>
+								<real>1</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -296,12 +296,10 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.0</real>
+									<real>1</real>
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -374,8 +372,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>seqExpanded</key>
-				<true/>
 			</dict>
 			<dict>
 				<key>UUID</key>
@@ -2685,8 +2681,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>24.275480270385742</real>
-													<real>12.561924934387207</real>
+													<real>22.80000114440918</real>
+													<real>14.399999618530273</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -2724,7 +2720,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>6.4579129219055176</real>
+												<real>19.600000381469727</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2751,8 +2747,6 @@
 												</array>
 											</dict>
 										</array>
-										<key>seqExpanded</key>
-										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -2819,7 +2813,7 @@
 										<key>type</key>
 										<string>Degrees</string>
 										<key>value</key>
-										<real>5.646367073059082</real>
+										<real>-11.800000190734863</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -2846,8 +2840,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -2914,7 +2906,7 @@
 								<key>type</key>
 								<string>Degrees</string>
 								<key>value</key>
-								<real>-11.891277313232422</real>
+								<real>-3.0999999046325684</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -2941,8 +2933,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -4379,8 +4369,8 @@
 												<string>Position</string>
 												<key>value</key>
 												<array>
-													<real>19.838516235351562</real>
-													<real>10.319606781005859</real>
+													<real>16.799999237060547</real>
+													<real>12.000001907348633</real>
 													<integer>0</integer>
 													<integer>0</integer>
 													<integer>0</integer>
@@ -4418,7 +4408,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>8.9586124420166016</real>
+												<real>-7.237828254699707</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -4445,8 +4435,6 @@
 												</array>
 											</dict>
 										</array>
-										<key>seqExpanded</key>
-										<true/>
 									</dict>
 								</array>
 								<key>customClass</key>
@@ -4513,7 +4501,7 @@
 										<key>type</key>
 										<string>Degrees</string>
 										<key>value</key>
-										<real>-13.499946594238281</real>
+										<real>0.5</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -4540,8 +4528,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
@@ -4608,7 +4594,7 @@
 								<key>type</key>
 								<string>Degrees</string>
 								<key>value</key>
-								<real>13.227077484130859</real>
+								<real>7.4000000953674316</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -4635,8 +4621,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -5513,14 +5497,20 @@
 								<string></string>
 								<key>displayName</key>
 								<string>lidAngryRight</string>
-								<key>hidden</key>
-								<true/>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
 								<array>
+									<dict>
+										<key>name</key>
+										<string>visible</string>
+										<key>type</key>
+										<string>Check</string>
+										<key>value</key>
+										<false/>
+									</dict>
 									<dict>
 										<key>name</key>
 										<string>name</string>
@@ -5592,8 +5582,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -5606,14 +5594,20 @@
 								<string></string>
 								<key>displayName</key>
 								<string>lidHurtRight</string>
-								<key>hidden</key>
-								<true/>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
 								<integer>1</integer>
 								<key>properties</key>
 								<array>
+									<dict>
+										<key>name</key>
+										<string>visible</string>
+										<key>type</key>
+										<string>Check</string>
+										<key>value</key>
+										<false/>
+									</dict>
 									<dict>
 										<key>name</key>
 										<string>name</string>
@@ -5685,7 +5679,7 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
+								<key>selected</key>
 								<true/>
 							</dict>
 						</array>
@@ -5719,8 +5713,8 @@
 								<string>Position</string>
 								<key>value</key>
 								<array>
-									<real>100</real>
-									<real>109.88330841064453</real>
+									<real>96.199996948242188</real>
+									<real>106.90000152587891</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -5758,7 +5752,7 @@
 								<key>type</key>
 								<string>Degrees</string>
 								<key>value</key>
-								<real>-2.5251755714416504</real>
+								<real>3.5999999046325684</real>
 							</dict>
 							<dict>
 								<key>baseValue</key>
@@ -5790,8 +5784,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -6353,7 +6345,7 @@
 								<key>value</key>
 								<array>
 									<real>58.333335876464844</real>
-									<real>135.83332824707031</real>
+									<real>135.80000305175781</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -6423,8 +6415,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -6881,8 +6871,6 @@
 								<string></string>
 								<key>displayName</key>
 								<string>lidAngryLeft</string>
-								<key>hidden</key>
-								<true/>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
@@ -6960,8 +6948,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -7104,8 +7090,6 @@
 								<string></string>
 								<key>displayName</key>
 								<string>lidHurtLeft</string>
-								<key>hidden</key>
-								<true/>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
@@ -7193,22 +7177,26 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
 						<string>eyeLeft</string>
-						<key>hidden</key>
-						<true/>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
 						<array>
+							<dict>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
 							<dict>
 								<key>name</key>
 								<string>name</string>
@@ -7230,7 +7218,7 @@
 								<key>value</key>
 								<array>
 									<real>30.44444465637207</real>
-									<real>101.86666870117188</real>
+									<real>104.40000152587891</real>
 									<integer>0</integer>
 									<integer>0</integer>
 									<integer>0</integer>
@@ -7268,7 +7256,7 @@
 								<key>type</key>
 								<string>Degrees</string>
 								<key>value</key>
-								<real>0.0</real>
+								<real>2.7000000476837158</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -7295,8 +7283,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 					<dict>
 						<key>UUID</key>
@@ -7522,8 +7508,6 @@
 								<string></string>
 								<key>displayName</key>
 								<string>mouthAngry</string>
-								<key>hidden</key>
-								<true/>
 								<key>memberVarAssignmentName</key>
 								<string></string>
 								<key>memberVarAssignmentType</key>
@@ -7601,8 +7585,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -7692,8 +7674,6 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 							<dict>
 								<key>UUID</key>
@@ -7785,22 +7765,26 @@
 										</array>
 									</dict>
 								</array>
-								<key>seqExpanded</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
 						<string></string>
 						<key>displayName</key>
 						<string>Mouth</string>
-						<key>hidden</key>
-						<true/>
 						<key>memberVarAssignmentName</key>
 						<string></string>
 						<key>memberVarAssignmentType</key>
 						<integer>1</integer>
 						<key>properties</key>
 						<array>
+							<dict>
+								<key>name</key>
+								<string>visible</string>
+								<key>type</key>
+								<string>Check</string>
+								<key>value</key>
+								<false/>
+							</dict>
 							<dict>
 								<key>name</key>
 								<string>name</string>
@@ -7866,8 +7850,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>seqExpanded</key>
-						<true/>
 					</dict>
 				</array>
 				<key>customClass</key>
@@ -7950,8 +7932,6 @@
 						</array>
 					</dict>
 				</array>
-				<key>seqExpanded</key>
-				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -8079,7 +8059,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2.3666665554046631</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -8102,20 +8082,53 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>1.2000000476837158</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>damageOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>1.8999999761581421</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>nextAttack</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>11</integer>
 			</dict>
 			<key>chainedSequenceId</key>
-			<integer>-1</integer>
+			<integer>4</integer>
 			<key>length</key>
-			<real>1.8999999761581421</real>
+			<real>1.9333333969116211</real>
 			<key>name</key>
 			<string>Swipe</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>1.8999999761581421</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -8138,7 +8151,40 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>1.0333333015441895</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>damageOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>2.2666666507720947</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>nextAttack</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>11</integer>
 			</dict>
@@ -8151,7 +8197,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>2.2666666507720947</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -8174,7 +8220,40 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>1</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>damageOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>2.1333334445953369</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>nextAttack</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>11</integer>
 			</dict>

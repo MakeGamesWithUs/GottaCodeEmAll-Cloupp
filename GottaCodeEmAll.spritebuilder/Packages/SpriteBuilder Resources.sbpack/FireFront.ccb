@@ -16,7 +16,7 @@
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>4</integer>
+	<integer>2</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -574,7 +574,7 @@
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>0.0</real>
+										<real>1</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -586,7 +586,7 @@
 											<real>1</real>
 											<real>1</real>
 											<real>1</real>
-											<real>0.0</real>
+											<real>1</real>
 										</array>
 									</dict>
 								</array>
@@ -7217,6 +7217,14 @@
 														<array>
 															<dict>
 																<key>name</key>
+																<string>visible</string>
+																<key>type</key>
+																<string>Check</string>
+																<key>value</key>
+																<false/>
+															</dict>
+															<dict>
+																<key>name</key>
 																<string>name</string>
 																<key>type</key>
 																<string>StringSimple</string>
@@ -7306,6 +7314,14 @@
 														<array>
 															<dict>
 																<key>name</key>
+																<string>visible</string>
+																<key>type</key>
+																<string>Check</string>
+																<key>value</key>
+																<false/>
+															</dict>
+															<dict>
+																<key>name</key>
 																<string>name</string>
 																<key>type</key>
 																<string>StringSimple</string>
@@ -7375,14 +7391,14 @@
 																</array>
 															</dict>
 														</array>
+														<key>selected</key>
+														<true/>
 													</dict>
 												</array>
 												<key>customClass</key>
 												<string></string>
 												<key>displayName</key>
 												<string>Hurt</string>
-												<key>hidden</key>
-												<true/>
 												<key>memberVarAssignmentName</key>
 												<string></string>
 												<key>memberVarAssignmentType</key>
@@ -7866,7 +7882,7 @@
 												<key>type</key>
 												<string>Check</string>
 												<key>value</key>
-												<false/>
+												<true/>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -9630,7 +9646,40 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.93333333730697632</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>damageOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>2.2666666507720947</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>nextAttack</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>12</integer>
 			</dict>
@@ -9643,7 +9692,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.033333335071802139</real>
+			<real>0.0</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

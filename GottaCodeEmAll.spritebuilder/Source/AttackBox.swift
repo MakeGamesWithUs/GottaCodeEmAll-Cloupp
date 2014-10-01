@@ -28,20 +28,20 @@ class AttackBox: CCNode {
   
   func touchedTackle() {
     println("Touched Tackle")
-    GameState.sharedInstance.player.tackleAttack()
+    GameState.sharedInstance.player.tackleMove()
   }
   
   func touchedElement() {
     println("Touched Element")
     var player = GameState.sharedInstance.player
-    player.elementalAttack()
+    player.elementalMove()
   }
   
   func touchedSwipe() {
     println("Touched Swipe")
     var player = GameState.sharedInstance.player
     var numberOfSwipes: Int = Int(arc4random_uniform(5)) + 1
-    player.swipeAttack(numberOfSwipes)
+    player.swipeMove(numberOfSwipes)
   }
   
 }

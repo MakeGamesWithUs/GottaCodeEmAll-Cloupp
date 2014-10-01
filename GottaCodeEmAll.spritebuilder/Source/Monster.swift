@@ -14,58 +14,120 @@ enum MonsterType {
 
 class Monster: CCNode {
   
-  var type = MonsterType.None
-  var level = 5
-  var health = 25
-  let totalHealth = 25
-  var nickname = ""
+  var type: MonsterType = MonsterType.None {
+    didSet {
+      switch type {
+        case MonsterType.None:
+          break
+        case MonsterType.Fire:
+          sprite = CCBReader.load("FireBack")
+          self.addChild(sprite)
+          weakAgainst = MonsterType.Water
+          GameState.sharedInstance.battle.playerHealth.setupFire()
+        case MonsterType.Water:
+          sprite = CCBReader.load("WaterBack")
+          self.addChild(sprite)
+          weakAgainst = MonsterType.Leaf
+          GameState.sharedInstance.battle.playerHealth.setupWater()
+        case MonsterType.Leaf:
+          sprite = CCBReader.load("LeafBack")
+          self.addChild(sprite)
+          weakAgainst = MonsterType.Fire
+          GameState.sharedInstance.battle.playerHealth.setupLeaf()
+      }
+      GameState.sharedInstance.battle.setupEnemy(type)
+    }
+  }
+  var level = 5.0
+  var health = 25.0
+  let totalHealth = 25.0
+  var nickname: String = "" {
+    didSet {
+      if nickname != "" {
+        GameState.sharedInstance.battle.playerHealth.nameLabel.string = nickname
+      }
+    }
+  }
   
-  let opponent: Monster!
+  // TODO: refactor to use this more often
+  var opponent: Monster!
   let nextAttack = MonsterAttack()
   var weakAgainst = MonsterType.None
+  var damageToDo = 0.0
+  var sprite: CCNode!
   
   override init() {
     super.init()
   }
   
-  func performAttack(attackType: MonsterAttackType = MonsterAttackType.Tackle) {
-    switch attackType {
-      case MonsterAttackType.Tackle:
-        nextAttack.tackle()
-      case MonsterAttackType.Elemental:
-        nextAttack.elemental()
-      case MonsterAttackType.Swipe:
-        nextAttack.swipe()
-      default:
-        break
-    }
-  }
-  
   func performTackle() {
-    var tackleDamage = level * 2
-    damageOpponent(tackleDamage)
+    nextAttack.tackle()
   }
   
   func performElemental() {
-    var elementalDamage = level * 5
-    damageOpponent(elementalDamage)
+    nextAttack.elemental()
   }
   
   func performSwipe() {
-    var swipeDamage = level
-    damageOpponent(swipeDamage)
+    nextAttack.swipe()
   }
   
-  func damageOpponent(damage: Int) {
+  func executeTackle() {
+    self.animationManager.runAnimationsForSequenceNamed("Tackle")
+    damageToDo = level * 2
+  }
+  
+  func executeElemental() {
+    self.animationManager.runAnimationsForSequenceNamed("Elemental")
+    damageToDo = level * 5
+  }
+  
+  func executeSwipe() {
+    self.animationManager.runAnimationsForSequenceNamed("Swipe")
+    damageToDo = level
+  }
+  
+  func damageOpponent() {
     if self !== GameState.sharedInstance.enemy! {
-      GameState.sharedInstance.enemy!.takeDamage(damage)
+      GameState.sharedInstance.enemy.takeDamage(damageToDo)
     } else {
-      GameState.sharedInstance.player!.takeDamage(damage)
+      GameState.sharedInstance.player.takeDamage(damageToDo)
     }
   }
   
-  func takeDamage(damage: Int) {
-    health -= damage
+  func takeDamage(damage: Double) {
+    health = health - damage
+    var healthBar: CCNode
+    
+    if self !== GameState.sharedInstance.enemy! {
+      healthBar = GameState.sharedInstance.battle.enemyHealth.hpBar
+    } else {
+      healthBar = GameState.sharedInstance.battle.playerHealth.hpBar
+    }
+    
+    if health <= 0 {
+      // trigger win
+      var scaleAction = CCActionScaleTo.actionWithDuration(0.5, scale:0.0) as CCActionFiniteTime
+      var endAction: CCActionFiniteTime
+      
+      var callBlock: () -> Void
+      
+      if self !== GameState.sharedInstance.enemy! {
+        callBlock = { GameState.sharedInstance.battle.playerWins(false) }
+      } else {
+        callBlock = { GameState.sharedInstance.battle.playerWins(true) }
+      }
+      
+      endAction = CCActionCallBlock.actionWithBlock(callBlock) as CCActionInstant
+      var hpShrinkSequence = CCActionSequence.actionOne(scaleAction, two: endAction) as CCAction
+      healthBar.runAction(hpShrinkSequence)
+    } else {
+      var hpScale = Float(health / totalHealth)
+      var hpShrink = CCActionScaleTo.actionWithDuration(0.5, scale:hpScale) as CCAction
+      healthBar.runAction(hpShrink)
+    }
   }
+  
+  
 
 }
