@@ -11,20 +11,20 @@ class MyMonster: Monster {
   
   
   func tackleAttack() {
-    self.performAttack()
+    self.performTackle()
   }
   
   func elementalAttack() {
-    if opponent.type == MonsterType.Leaf {
-      self.performAttack(attackType: MonsterAttackType.Elemental)
+    if opponent.weakAgainst == self.type {
+      self.performElemental()
     } else {
-      self.performAttack()
+      self.performTackle()
     }
   }
   
   func swipeAttack(numberOfSwipes: Int) {
     for _ in 1...numberOfSwipes {
-      self.performAttack(attackType: MonsterAttackType.Swipe)
+      self.performSwipe()
     }
   }
   

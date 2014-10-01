@@ -6,6 +6,6 @@ Swipe is a move that randomly attacks between three and five times. It can be ex
 
 	func swipeAttack(numberOfSwipes: Int) {
 		for _ in 1...numberOfSwipes {
-			attack(MonsterAttackType.Swipe)
+			self.performSwipe()
 		}
 	}
