@@ -308,7 +308,7 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string>LocalizedMessage</string>
+						<string></string>
 						<key>displayName</key>
 						<string>tap to continue</string>
 						<key>memberVarAssignmentName</key>
@@ -529,8 +529,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -771,8 +769,8 @@
 								<string>Size</string>
 								<key>value</key>
 								<array>
-									<real>0.0</real>
-									<real>0.0</real>
+									<real>284</real>
+									<real>74</real>
 									<integer>0</integer>
 									<integer>0</integer>
 								</array>
@@ -869,6 +867,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>

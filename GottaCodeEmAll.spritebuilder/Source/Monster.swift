@@ -22,6 +22,7 @@ class Monster: CCNode {
   
   let opponent: Monster!
   let nextAttack = MonsterAttack()
+  var weakAgainst = MonsterType.None
   
   override init() {
     super.init()

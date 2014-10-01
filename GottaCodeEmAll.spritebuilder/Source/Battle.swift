@@ -14,6 +14,19 @@ enum BattleState {
 
 enum CodeStep {
   case InitMonster, TeachTackle, TeachElemental, TeachSwipes
+  
+  func description() -> String {
+    switch self {
+    case .InitMonster:
+      return "InitMonster"
+    case .TeachTackle:
+      return "TeachTackle"
+    case .TeachElemental:
+      return "TeachElemental"
+    case .TeachSwipes:
+      return "TeachSwipes"
+    }
+  }
 }
 
 class GameState {
@@ -48,7 +61,6 @@ class Battle: CCScene {
   override init() {
     super.init()
     GameState.sharedInstance.battle = self
-    checkCodeForCurrentStep()
   }
   
   func didLoadFromCCB() {
@@ -57,6 +69,8 @@ class Battle: CCScene {
     
     enemyHealth.opacity = 0.0
     playerHealth.opacity = 0.0
+    
+    checkCodeForCurrentStep()
   }
   
   func checkCodeForCurrentStep() {
@@ -64,9 +78,13 @@ class Battle: CCScene {
       case CodeStep.InitMonster:
         if !player.respondsToSelector(Selector("addToBattle")) {
           messageBox.setNextMessage("noMonster")
-        } else {
+        } else if player.type == MonsterType.None {
           // handle no monstertype
+        } else {
+          enemyHealth.opacity = 1.0
+          playerHealth.opacity = 1.0
         }
+        break
       case CodeStep.TeachTackle:
         if !player.respondsToSelector(Selector("tackleAttack")) {
           messageBox.setNextMessage("noMoves")
@@ -74,11 +92,13 @@ class Battle: CCScene {
       case CodeStep.TeachElemental:
         if !player.respondsToSelector(Selector("elementalAttack")) {
           messageBox.setNextMessage("noElemental")
-      }
+        }
       case CodeStep.TeachSwipes:
         if !player.respondsToSelector(Selector("swipeAttack")) {
           messageBox.setNextMessage("noSwipe")
-      }
+        }
+      default:
+        break
     }
   }
   

@@ -10,25 +10,20 @@ import Foundation
 
 class LocalizedMessage: CCLabelTTF {
   var nextMessage = ""
-  var localizer: CCBLocalizationManager!
-  
-  override init() {
-    super.init()
-    localizer = CCBLocalizationManager.sharedManager() as CCBLocalizationManager
-  }
+  var localizer = CCBLocalizationManager.sharedManager() as CCBLocalizationManager
 }
 
 class MessageBox: CCNode {
   
   var message: LocalizedMessage!
-  var tapToContinue: LocalizedMessage!
+  var tapToContinue: CCLabelTTF!
   
   func handleTouch() {
     println("Touched message box!")
     if message.nextMessage == "" {
       goToAttackChoice()
     } else if message.nextMessage != message.string {
-      self.animationManager.runAnimationsForSequenceNamed("UpdateMessage")
+      self.animationManager.runAnimationsForSequenceNamed("UpdateMessageFinal")
     }
   }
   
@@ -40,10 +35,11 @@ class MessageBox: CCNode {
   
   func setNextMessage(key: String) {
     message.nextMessage = message.localizer.localizedStringForKey(key)
+//    println(message.nextMessage)
   }
   
   func updateMessage() {
-    
+    message.string = message.nextMessage
   }
   
   #if os(iOS)

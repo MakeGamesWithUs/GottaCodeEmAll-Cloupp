@@ -40,7 +40,7 @@
 				<key>de</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>en</key>
-				<string>Oh no, you don't have a monster yet!</string>
+				<string>Oh no, you don't have a monster yet! Make sure to add addToBattle.</string>
 				<key>es</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>fr</key>

@@ -3,12 +3,10 @@ class MyMonster: Monster {
   
   // your code goes under here
   
-  func addToBattle() {
-    type = MonsterType.Leaf
-    nickname = "Crabby"
-  }
-  
-  
+//  func addToBattle() {
+//    type = MonsterType.Leaf
+//    nickname = "Crabby"
+//  }
   
   func tackleAttack() {
     self.performTackle()
