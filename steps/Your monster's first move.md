@@ -1,6 +1,6 @@
 Teaching to tackle
 ==================
-It's pretty great to have a monster but now we need to teach it some moves! Let's start off with, Tackle, a simple move. Add the following code between ```// tackleMove goes below this``` and ```// tackleMove goes above this```:
+It's pretty great to have our monster all set up but now we need to teach it some moves! Let's start off with, Tackle, a simple move. Add the following code between ```// tackleMove goes below this``` and ```// tackleMove goes above this```:
 
 	override func tackleMove() {
     	self.performTackle()

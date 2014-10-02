@@ -1,6 +1,6 @@
 Let's get elemental!
 ====================
-Now that you've won your first battle, let's teach your monster it's elemental move. The elemental move will help your monster take advantage of strengths it has over other types of monsters. We have to be careful though, if our monster tries to use it's elemental attack against a monster that is not weak to it then the move will not do anything! We will solve this by coding it so your monster will just tackle if the opponent is not weak to it's elemental.
+Now that you've won your first battle, let's teach your monster it's elemental move. The elemental move will help your monster take advantage of strengths it has over monsters with different elements. We have to be careful though, if our monster tries to use it's elemental attack against a monster that is not weak to it then the move will not do anything! We will solve this by coding it so your monster will just tackle if the opponent is not weak to it's elemental.
 
 Add the following code between ```// elementalMove goes below this``` and ```// elementalMove goes above this```:
 

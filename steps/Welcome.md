@@ -4,4 +4,4 @@ This tutorial is going to teach you the basics of programming. You will be using
 
 How does this tutorial work?
 ============================
-We've set up a basic turn-based game. You'll start off by creating a monster to defend yourself against other monsters. At the beginning, your monster won't know any moves -- it's your job to teach it using code! Follow the steps closely and your monster's training will be complete.
+We've set up a basic turn-based game. You'll start off by creating a monster to defend yourself against other monsters. At the beginning, your monster won't know any moves -- it's your job to teach it using code! Follow the steps closely and your monster's training will be complete in no time!
