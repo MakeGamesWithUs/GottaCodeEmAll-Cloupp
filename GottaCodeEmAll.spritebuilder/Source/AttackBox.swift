@@ -35,7 +35,7 @@ class AttackBox: CCNode {
   func touchedSwipe() {
     println("Touched Swipe")
     var player = GameState.sharedInstance.player
-    var numberOfSwipes: Int = Int(arc4random_uniform(5)) + 1
+    var numberOfSwipes: Int = 3//Int(arc4random_uniform(3)) + 3
     player.swipeMove(numberOfSwipes)
     GameState.sharedInstance.battle.processAttacks()
     self.fadeOut()

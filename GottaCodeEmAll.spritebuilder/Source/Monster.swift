@@ -39,9 +39,19 @@ class Monster: CCNode {
       GameState.sharedInstance.battle.setupEnemy(type)
     }
   }
-  var level = 5.0
+  var level: Double = 5.0 {
+    didSet {
+      health = level * 5.0
+      totalHealth = health
+      if isEnemy {
+        GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(level))"
+      } else {
+        GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(level))"
+      }
+    }
+  }
   var health = 25.0
-  let totalHealth = 25.0
+  var totalHealth = 25.0
   var nickname: String = "" {
     didSet {
       if nickname != "" {
@@ -61,6 +71,7 @@ class Monster: CCNode {
   
   override init() {
     super.init()
+    self.cascadeOpacityEnabled = true
   }
   
   func performTackle() {
@@ -85,7 +96,7 @@ class Monster: CCNode {
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Tackle")
-    damageToDo = level * 2
+    damageToDo = level * 1.5
     nextMove.resetAttack()
   }
   
@@ -125,8 +136,10 @@ class Monster: CCNode {
   }
   
   func attacksDone() {
-    GameState.sharedInstance.battle.messageBox.fadeOut()
-    GameState.sharedInstance.battle.attackBox.fadeIn()
+    if !GameState.sharedInstance.gameOver {
+      GameState.sharedInstance.battle.messageBox.fadeOut()
+      GameState.sharedInstance.battle.attackBox.fadeIn()
+    }
   }
   
   func takeDamage(damage: Double) {

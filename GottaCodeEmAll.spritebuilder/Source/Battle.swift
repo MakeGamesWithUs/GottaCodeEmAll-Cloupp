@@ -85,8 +85,12 @@ class Battle: CCScene {
     GameState.sharedInstance.gameOver = true
     if playerWon {
       messageBox.setNextMessage("playerWon")
+      enemy.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
+      enemyHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
     } else {
       messageBox.setNextMessage("playerLost")
+      player.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
+      playerHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
@@ -115,12 +119,15 @@ class Battle: CCScene {
         }
       case CodeStep.TeachElemental:
         setupBattlefield()
+        enemy.level = 10
         if !player.respondsToSelector(Selector("elementalMove")) {
           messageBox.setNextMessage("noElemental")
         }
       case CodeStep.TeachSwipes:
         setupBattlefield()
-        if !player.respondsToSelector(Selector("swipeMove")) {
+        player.level = 6
+        enemy.level = 9
+        if !player.respondsToSelector(Selector("swipeMove:")) {
           messageBox.setNextMessage("noSwipe")
         }
       default:
@@ -151,7 +158,28 @@ class Battle: CCScene {
   }
   
   func setupEnemy(playerType: MonsterType) {
-    switch playerType {
+    if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes {
+      switch playerType {
+      case MonsterType.None:
+        break
+      case MonsterType.Leaf:
+        enemy.sprite = CCBReader.load("FireFront", owner:enemy)
+        enemy.addChild(enemy.sprite)
+        enemy.weakAgainst = MonsterType.Water
+        enemyHealth.setupFire()
+      case MonsterType.Fire:
+        enemy.sprite = CCBReader.load("WaterFront", owner:enemy)
+        enemy.addChild(enemy.sprite)
+        enemy.weakAgainst = MonsterType.Leaf
+        enemyHealth.setupWater()
+      case MonsterType.Water:
+        enemy.sprite = CCBReader.load("LeafFront", owner:enemy)
+        enemy.addChild(enemy.sprite)
+        enemy.weakAgainst = MonsterType.Fire
+        enemyHealth.setupLeaf()
+      }
+    } else {
+      switch playerType {
       case MonsterType.None:
         break
       case MonsterType.Water:
@@ -169,6 +197,7 @@ class Battle: CCScene {
         enemy.addChild(enemy.sprite)
         enemy.weakAgainst = MonsterType.Fire
         enemyHealth.setupLeaf()
+      }
     }
   }
   

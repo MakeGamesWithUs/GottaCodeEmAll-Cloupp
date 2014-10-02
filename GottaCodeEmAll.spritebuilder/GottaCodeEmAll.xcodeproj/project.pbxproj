@@ -43,7 +43,6 @@
 		BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
 		BCF642E219C78B5F0084D32F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
 		BCF642E419C78B6B0084D32F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E319C78B6B0084D32F /* Battle.swift */; };
-		BCF642E819C78B910084D32F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E719C78B910084D32F /* Player.swift */; };
 		BEC40D9C19DA638900ACDA8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9B19DA638900ACDA8F /* AppDelegate.m */; };
 		BEC40D9E19DA638900ACDA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9D19DA638900ACDA8F /* main.m */; };
 		BEC40DA019DA638900ACDA8F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BEC40D9F19DA638900ACDA8F /* Images.xcassets */; };
@@ -68,7 +67,6 @@
 		BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
 		BEC40DDE19DA679900ACDA8F /* EnemyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyMonster.swift */; };
 		BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
-		BEC40DE019DA679900ACDA8F /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E719C78B910084D32F /* Player.swift */; };
 		BEC40DE119DA679F00ACDA8F /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 /* End PBXBuildFile section */
 
@@ -159,7 +157,6 @@
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCF642E119C78B5F0084D32F /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Source/Monster.swift; sourceTree = "<group>"; };
 		BCF642E319C78B6B0084D32F /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Source/Battle.swift; sourceTree = "<group>"; };
-		BCF642E719C78B910084D32F /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Player.swift; path = Source/Player.swift; sourceTree = "<group>"; };
 		BEC40D9619DA638900ACDA8F /* GottaCodeEmAllOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GottaCodeEmAllOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC40D9919DA638900ACDA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BEC40D9A19DA638900ACDA8F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -250,7 +247,6 @@
 				BCF642E119C78B5F0084D32F /* Monster.swift */,
 				BC11E69619CCE50C00F14992 /* EnemyMonster.swift */,
 				BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */,
-				BCF642E719C78B910084D32F /* Player.swift */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */,
@@ -611,7 +607,6 @@
 				BCF642E219C78B5F0084D32F /* Monster.swift in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				BCF642E419C78B6B0084D32F /* Battle.swift in Sources */,
-				BCF642E819C78B910084D32F /* Player.swift in Sources */,
 				BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */,
@@ -630,7 +625,6 @@
 				BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */,
 				BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */,
 				BEC40DD919DA679900ACDA8F /* AttackBox.swift in Sources */,
-				BEC40DE019DA679900ACDA8F /* Player.swift in Sources */,
 				BEC40DD719DA66FC00ACDA8F /* MSCaptureGLView.m in Sources */,
 				BEC40DDA19DA679900ACDA8F /* MessageBox.swift in Sources */,
 				BEC40DDB19DA679900ACDA8F /* HealthBox.swift in Sources */,
