@@ -48,7 +48,7 @@
             else if ([obj objectForKey:@"up"]) {
                 NSDictionary *props = (NSDictionary *)[obj objectForKey:@"up"];
                 
-                [[CCDirector sharedDirector].responderManager mouseDown:[NSEvent mouseEventWithType:NSLeftMouseUp location:CGPointMake([[props valueForKey:@"x"] floatValue] * size.width, size.height - [[props valueForKey:@"y"] floatValue] * size.height) modifierFlags:256 timestamp:0 windowNumber:0 context:nil eventNumber:nil clickCount:0 pressure:0]];
+                [[CCDirector sharedDirector].responderManager mouseUp:[NSEvent mouseEventWithType:NSLeftMouseUp location:CGPointMake([[props valueForKey:@"x"] floatValue] * size.width, size.height - [[props valueForKey:@"y"] floatValue] * size.height) modifierFlags:256 timestamp:0 windowNumber:0 context:nil eventNumber:nil clickCount:0 pressure:0]];
             }
         });
     };
