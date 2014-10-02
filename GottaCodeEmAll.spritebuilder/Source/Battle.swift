@@ -51,7 +51,7 @@ class Battle: CCScene {
 
   let playerAttack = MonsterAttack()
   
-  var currentStep: CodeStep = CodeStep.InitMonster
+  var currentStep: CodeStep = CodeStep.TeachTackle
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
@@ -116,12 +116,16 @@ class Battle: CCScene {
         setupBattlefield()
         if !player.respondsToSelector(Selector("tackleMove")) {
           messageBox.setNextMessage("noMoves")
+        } else {
+          attackBox.tackleStep()
         }
       case CodeStep.TeachElemental:
         setupBattlefield()
         enemy.level = 10
         if !player.respondsToSelector(Selector("elementalMove")) {
           messageBox.setNextMessage("noElemental")
+        } else {
+          attackBox.elementalStep()
         }
       case CodeStep.TeachSwipes:
         setupBattlefield()

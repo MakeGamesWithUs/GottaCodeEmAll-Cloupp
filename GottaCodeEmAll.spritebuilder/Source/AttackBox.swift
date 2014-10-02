@@ -42,6 +42,19 @@ class AttackBox: CCNode {
     GameState.sharedInstance.battle.messageBox.fadeIn()
   }
   
+  func tackleStep() {
+    elementalButton.state = CCControlState.Disabled
+    elementalButton.cascadeOpacityEnabled = true
+    elementalButton.opacity = 0.25
+    elementalStep()
+  }
+  
+  func elementalStep() {
+    swipeButton.state = CCControlState.Disabled
+    swipeButton.cascadeOpacityEnabled = true
+    swipeButton.opacity = 0.25
+  }
+  
   func fadeOut() {
     self.animationManager.runAnimationsForSequenceNamed("EaseOut")
     tackleButton.userInteractionEnabled = false
