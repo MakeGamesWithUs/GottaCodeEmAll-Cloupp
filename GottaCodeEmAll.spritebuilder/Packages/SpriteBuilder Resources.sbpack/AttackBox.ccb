@@ -359,7 +359,7 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string>AttackButton</string>
+						<string></string>
 						<key>displayName</key>
 						<string>tackle</string>
 						<key>memberVarAssignmentName</key>
@@ -676,8 +676,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>
@@ -689,7 +687,7 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string>AttackButton</string>
+						<string></string>
 						<key>displayName</key>
 						<string>elemental</string>
 						<key>memberVarAssignmentName</key>
@@ -1017,7 +1015,7 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string>AttackButton</string>
+						<string></string>
 						<key>displayName</key>
 						<string>swipe</string>
 						<key>memberVarAssignmentName</key>
@@ -1334,6 +1332,8 @@
 								</array>
 							</dict>
 						</array>
+						<key>selected</key>
+						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>

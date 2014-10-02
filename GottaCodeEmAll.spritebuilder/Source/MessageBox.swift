@@ -35,7 +35,6 @@ class MessageBox: CCNode {
   
   func setNextMessage(key: String) {
     message.nextMessage = message.localizer.localizedStringForKey(key)
-//    println(message.nextMessage)
   }
   
   func updateMessage() {
@@ -54,6 +53,14 @@ class MessageBox: CCNode {
   
   func touchActive() {
     self.userInteractionEnabled = true
+  }
+  
+  func fadeOut() {
+    self.animationManager.runAnimationsForSequenceNamed("EaseOut")
+  }
+  
+  func fadeIn() {
+    self.animationManager.runAnimationsForSequenceNamed("EaseInNoTouch")
   }
   
 }

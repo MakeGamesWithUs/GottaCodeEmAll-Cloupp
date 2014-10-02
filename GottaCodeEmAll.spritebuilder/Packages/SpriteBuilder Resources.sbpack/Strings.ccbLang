@@ -268,6 +268,40 @@
 				<string>When you're done customizing, go to the next step to teach your monster some moves!</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>playerWon</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Congrats! You won this battle! Go on to the next step.</string>
+				<key>en</key>
+				<string>Congrats! You won this battle! Go on to the next step.</string>
+				<key>es</key>
+				<string>Congrats! You won this battle! Go on to the next step.</string>
+				<key>fr</key>
+				<string>Congrats! You won this battle! Go on to the next step.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>playerLost</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Oh no! You lost! Try using your new move...</string>
+				<key>en</key>
+				<string>Oh no! You lost! Try using your new move...</string>
+				<key>es</key>
+				<string>Oh no! You lost! Try using your new move...</string>
+				<key>fr</key>
+				<string>Oh no! You lost! Try using your new move...</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>

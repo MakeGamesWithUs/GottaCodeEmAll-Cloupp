@@ -12,7 +12,7 @@ class EnemyMonster: Monster {
   
   override init() {
     super.init()
-    nextAttack.tackle()
+    nextMove.tackle()
   }
   
 }

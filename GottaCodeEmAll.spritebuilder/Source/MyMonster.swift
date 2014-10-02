@@ -3,7 +3,7 @@ class MyMonster: Monster {
   
   // addToBattle goes below this
   
-  func addToBattle() {
+  override func addToBattle() {
     type = MonsterType.Water
     nickname = "Morty"
   }
@@ -14,7 +14,7 @@ class MyMonster: Monster {
   
   // tackleMove goes below this
   
-  func tackleMove() {
+  override func tackleMove() {
     self.performTackle()
   }
   
@@ -24,7 +24,7 @@ class MyMonster: Monster {
   
   // elementalMove goes below this
   
-  func elementalMove() {
+  override func elementalMove() {
     if opponent.weakAgainst == self.type {
       self.performElemental()
     } else {
@@ -38,7 +38,7 @@ class MyMonster: Monster {
   
   // swipeMove goes below this
   
-  func swipeMove(numberOfSwipes: Int) {
+  override func swipeMove(numberOfSwipes: Int) {
     for _ in 1...numberOfSwipes {
       self.performSwipe()
     }

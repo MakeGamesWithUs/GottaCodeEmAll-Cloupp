@@ -65,11 +65,11 @@
     [director setResizeMode:kCCDirectorResize_NoScale];
     [director setProjection:CCDirectorProjection2D];
     
-#ifdef DEBUG
-    // Enable FPS and SPF
-    [director setDisplayStats:YES];
-#endif
-    
+//#ifdef DEBUG
+//    // Enable FPS and SPF
+//    [director setDisplayStats:YES];
+//#endif
+  
     // Connect the OpenGL view with the director
     [director setView:self.glView];
     [self.glView setFrameSize:NSMakeSize(self.window.frame.size.width,self.window.frame.size.height)];
