@@ -9,34 +9,34 @@
 import Foundation
 import Cocoa
 
-enum MonsterType {
+enum MonsterElement {
   case Water, Fire, Leaf, None
 }
 
 class Monster: CCNode {
   
-  var type: MonsterType = MonsterType.None {
+  var element: MonsterElement = MonsterElement.None {
     didSet {
-      switch type {
-        case MonsterType.None:
+      switch element {
+        case MonsterElement.None:
           break
-        case MonsterType.Fire:
+        case MonsterElement.Fire:
           sprite = CCBReader.load("FireBack", owner:self)
           self.addChild(sprite)
-          weakAgainst = MonsterType.Water
+          weakAgainst = MonsterElement.Water
           GameState.sharedInstance.battle.playerHealth.setupFire()
-        case MonsterType.Water:
+        case MonsterElement.Water:
           sprite = CCBReader.load("WaterBack", owner:self)
           self.addChild(sprite)
-          weakAgainst = MonsterType.Leaf
+          weakAgainst = MonsterElement.Leaf
           GameState.sharedInstance.battle.playerHealth.setupWater()
-        case MonsterType.Leaf:
+        case MonsterElement.Leaf:
           sprite = CCBReader.load("LeafBack", owner:self)
           self.addChild(sprite)
-          weakAgainst = MonsterType.Fire
+          weakAgainst = MonsterElement.Fire
           GameState.sharedInstance.battle.playerHealth.setupLeaf()
       }
-      GameState.sharedInstance.battle.setupEnemy(type)
+      GameState.sharedInstance.battle.setupEnemy(element)
     }
   }
   var level: Double = 5.0 {
@@ -63,7 +63,7 @@ class Monster: CCNode {
   // TODO: refactor to use this more often
   var opponent: Monster!
   let nextMove = MonsterAttack()
-  var weakAgainst = MonsterType.None
+  var weakAgainst = MonsterElement.None
   var damageToDo = 0.0
   var sprite: CCNode!
   var isEnemy = false

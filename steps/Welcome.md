@@ -1,6 +1,6 @@
 Welcome to Gotta Code 'Em All!
 ==============================
-This tutorial is going to teach you the basics of programming. You will be using the Swift programming language, but the concepts you learn will apply to all programming languages. You will use variables to store things and methods to define pieces of code. You will also use if-then-else statements to decide which piece of code to run and for-loops to run a piece of code multiple times.
+This tutorial is going to teach you the basics of programming. You will be using the Swift programming language, but the concepts you learn will apply to all programming languages. You will use variables to store things and functions to define pieces of code. You will also use if-then-else statements to decide which piece of code to run and for-loops to run a piece of code multiple times.
 
 How does this tutorial work?
 ============================

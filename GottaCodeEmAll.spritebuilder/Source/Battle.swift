@@ -102,7 +102,7 @@ class Battle: CCScene {
           messageBox.setNextMessage("noMonster")
         } else {
           player.addToBattle()
-          if player.type == MonsterType.None {
+          if player.element == MonsterElement.None {
             messageBox.setNextMessage("noMonsterType")
           } else {
             setupBattlefield()
@@ -157,45 +157,45 @@ class Battle: CCScene {
     }
   }
   
-  func setupEnemy(playerType: MonsterType) {
+  func setupEnemy(playerType: MonsterElement) {
     if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes {
       switch playerType {
-      case MonsterType.None:
+      case MonsterElement.None:
         break
-      case MonsterType.Leaf:
+      case MonsterElement.Leaf:
         enemy.sprite = CCBReader.load("FireFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Water
+        enemy.weakAgainst = MonsterElement.Water
         enemyHealth.setupFire()
-      case MonsterType.Fire:
+      case MonsterElement.Fire:
         enemy.sprite = CCBReader.load("WaterFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Leaf
+        enemy.weakAgainst = MonsterElement.Leaf
         enemyHealth.setupWater()
-      case MonsterType.Water:
+      case MonsterElement.Water:
         enemy.sprite = CCBReader.load("LeafFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Fire
+        enemy.weakAgainst = MonsterElement.Fire
         enemyHealth.setupLeaf()
       }
     } else {
       switch playerType {
-      case MonsterType.None:
+      case MonsterElement.None:
         break
-      case MonsterType.Water:
+      case MonsterElement.Water:
         enemy.sprite = CCBReader.load("FireFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Water
+        enemy.weakAgainst = MonsterElement.Water
         enemyHealth.setupFire()
-      case MonsterType.Leaf:
+      case MonsterElement.Leaf:
         enemy.sprite = CCBReader.load("WaterFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Leaf
+        enemy.weakAgainst = MonsterElement.Leaf
         enemyHealth.setupWater()
-      case MonsterType.Fire:
+      case MonsterElement.Fire:
         enemy.sprite = CCBReader.load("LeafFront", owner:enemy)
         enemy.addChild(enemy.sprite)
-        enemy.weakAgainst = MonsterType.Fire
+        enemy.weakAgainst = MonsterElement.Fire
         enemyHealth.setupLeaf()
       }
     }
