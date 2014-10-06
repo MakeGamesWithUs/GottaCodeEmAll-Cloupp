@@ -7,10 +7,10 @@ changeStep = (files, to) ->
   files[path] = files[path].replace /(var\scurrentStep:\sCodeStep\s=\sCodeStep.)([\S]*)/igm, "$1#{to}"
 
 exports.Tutorial = () ->
-  step "Welcome", (files) -> changeStep files, "InitMonster"
-  step "Creating your monster", (files) -> changeStep files, "InitMonster"
-  step "Customizing your monster", (files) -> changeStep files, "Customize"
+  step "Welcome",                   (files) -> changeStep files, "InitMonster"
+  step "Creating your monster",     (files) -> changeStep files, "InitMonster"
+  step "Customizing your monster",  (files) -> changeStep files, "Customize"
   step "Your monster's first move", (files) -> changeStep files, "TeachTackle"
-  step "It's super effective!", (files) -> changeStep files, "TeachElemental"
-  step "Swipe over and over", (files) -> changeStep files, "TeachSwipes"
-  step "Wrapping up", (files) -> changeStep files, "TeachSwipes"
+  step "It's super effective!",     (files) -> changeStep files, "TeachElemental"
+  step "Swipe over and over",       (files) -> changeStep files, "TeachSwipes"
+  step "Wrapping up",               (files) -> changeStep files, "TeachSwipes"
