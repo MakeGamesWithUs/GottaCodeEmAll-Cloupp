@@ -12,5 +12,5 @@ exports.Tutorial = () ->
   step "Customizing your monster", (files) -> changeStep files, "Customize"
   step "Your monster's first move", (files) -> changeStep files, "TeachTackle"
   step "It's super effective!", (files) -> changeStep files, "TeachElemental"
-  step "Swipe over and over", (files) -> changeStep files, "TeachSwipe"
-  step "Wrapping up", (files) -> changeStep files, "TeachSwipe"
+  step "Swipe over and over", (files) -> changeStep files, "TeachSwipes"
+  step "Wrapping up", (files) -> changeStep files, "TeachSwipes"
