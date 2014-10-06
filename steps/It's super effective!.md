@@ -6,7 +6,7 @@ Add the following code between ```// elementalMove goes below this``` and ```// 
 
 	override func elementalMove() 	{
     	if opponent.weakAgainst == self.element {
-    		self.performElemental())
+    		self.performElemental()
     	} else {
       		self.performTackle()
     	}
