@@ -4,7 +4,7 @@ exports.Files       = [ "GottaCodeEmAll.spritebuilder/Source/Battle.swift" ]
 
 changeStep = (files, to) ->
   path        = "GottaCodeEmAll.spritebuilder/Source/Battle.swift"
-  files[path] = files[path].replace /(var\scurrentStep:\sCodeStep\s=\sCodeStep.)(InitMonster)/igm, "$1#{to}"
+  files[path] = files[path].replace /(var\scurrentStep:\sCodeStep\s=\sCodeStep.)([\S]*)/igm, "$1#{to}"
 
 exports.Tutorial = () ->
   step "Welcome", (files) -> changeStep files, "InitMonster"
