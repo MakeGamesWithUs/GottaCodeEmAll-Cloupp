@@ -4,10 +4,14 @@ Now that you've won your first battle, let's teach your monster it's elemental m
 
 Add the following code between ```// elementalMove goes below this``` and ```// elementalMove goes above this```:
 
-	override func elementalMove() 	{
-    	if opponent.weakAgainst == self.element {
+	override func elementalMove()
+	{
+    	if opponent.weakAgainst == self.element
+    	{
     		self.performElemental()
-    	} else {
+    	}
+    	else
+    	{
       		self.performTackle()
     	}
 	}
@@ -18,9 +22,12 @@ If-then-else statements
 =======================
 If-then-else statements allow our code to react to things. In this case, we only want to use our elemental move if our opponent is weak to it. If we accidentally used it on an opponent that was not weak to it, our monster's attack will miss and nothing will happen. An if-then-else statement looks like:
 
-	if statement {
+	if statement
+	{
 		// code to execute if true
-	} else {
+	}
+	else
+	{
 		// code to execute if false
 	}
 

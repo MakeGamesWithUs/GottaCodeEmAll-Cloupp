@@ -154,6 +154,8 @@
 		BC11E69819CCED6C00F14992 /* AttackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttackBox.swift; path = Source/AttackBox.swift; sourceTree = "<group>"; };
 		BC49B68319CA0E9B00324923 /* MonsterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonsterAttack.swift; path = Source/MonsterAttack.swift; sourceTree = "<group>"; };
 		BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMonster.swift; path = Source/MyMonster.swift; sourceTree = "<group>"; };
+		BC5B537E19E4ADBD00E16F89 /* cocos2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2d.h; path = "Source/libs/cocos2d-iphone/cocos2d/cocos2d.h"; sourceTree = "<group>"; };
+		BCEE6A7B19E4AE26004B9A0D /* cocos2d-ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cocos2d-ui.h"; path = "Source/libs/cocos2d-iphone/cocos2d-ui/cocos2d-ui.h"; sourceTree = "<group>"; };
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCF642E119C78B5F0084D32F /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Source/Monster.swift; sourceTree = "<group>"; };
 		BCF642E319C78B6B0084D32F /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Source/Battle.swift; sourceTree = "<group>"; };
@@ -250,6 +252,8 @@
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */,
+				BC5B537E19E4ADBD00E16F89 /* cocos2d.h */,
+				BCEE6A7B19E4AE26004B9A0D /* cocos2d-ui.h */,
 			);
 			name = Source;
 			sourceTree = "<group>";

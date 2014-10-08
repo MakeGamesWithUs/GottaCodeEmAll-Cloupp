@@ -4,7 +4,8 @@ Before we get started, let's quickly look over the code that has been provided. 
 
 The first thing to notice is the main code block:
 	
-	class MyMonster: Monster {
+	class MyMonster: Monster
+	{
 	
 	}
 	
@@ -16,8 +17,9 @@ Let's create a monster!
 =======================
 If you run your code now, you'll notice that you don't have a monster -- let's fix that! Add the following lines between ```// addToBattle goes below this``` and ```// addToBattle goes above this```:
 
-    override func addToBattle() {
-      element = MonsterElement.Leaf
+    override func addToBattle()
+    {
+        element = MonsterElement.Leaf
     }
 
 Now run your code! What changed?

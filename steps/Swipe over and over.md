@@ -4,8 +4,10 @@ Two battles down and one to go! This time your monster will be facing another mo
 
 Swipe is a move that randomly attacks between three and five times. It can be extremely powerful and will help you win this last battle. Let's add in the code and then talk about what it is doing. Add the following code ```// swipeMove goes below this``` and ```// swipeMove goes above this```:
 
-	override func swipeMove(numberOfSwipes: Int) {
-		for swipe in 1...numberOfSwipes {
+	override func swipeMove(numberOfSwipes: Int)
+	{
+		for swipe in 1...numberOfSwipes
+		{
 			self.performSwipe()
 		}
 	}
@@ -14,7 +16,8 @@ Functions with parameters
 =======================
 As usual, we are declaring a function but this time our function takes in a parameter! This means that when the game calls ```swipeMove```, it will also have to include the number of times your monster should perform swipe. This syntax for this is:
 
-	func functionName(parameterName: parameterType) {
+	func functionName(parameterName: parameterType)
+	{
 		// function code goes here
 	}
 
@@ -24,7 +27,8 @@ For-loops
 =========
 The second thing we see in this is a for-loop. For-loops allow us to run code multiple times, even if we do not know how many times we will want to run it when we are writing the code. This is good since our monster will be performing swipe a random number of times! The syntax for a for-loop is:
 
-	for counter in startingNumber...endingNumber {
+	for counter in startingNumber...endingNumber
+	{
 		// for-loop code goes here
 	}
 

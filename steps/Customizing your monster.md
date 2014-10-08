@@ -6,7 +6,8 @@ Introducing functions
 =====================
 You may not have realized it yet, but you also just finished declaring your first function. In Swift, functions are declared like this:
 
-	func functionName() {
+	func functionName()
+	{
 	
 	}
 
@@ -16,11 +17,11 @@ Why do I need functions?
 ========================
 We know that variables store information to use later, but what does a function do? A function stores code that can be run from other parts of the program. Code that it is going to be used more than once or in different parts of a program probably belongs in a function. We set our ```element``` variable in a function because the game tries to call the ```addToBattle``` function when it starts to set up your monster.
 
-When you setup a Leaf-element monster you entered a battle against a Fire-element monster. What happens if you change that line to ```element = MonsterElement.Fire``` or ```element = MonsterElement.Water```? Changing what we store in the ```element``` variable changes both what our monster looks like and what our opponent looks like. This happens because the game code reads the ```element``` variable to help it decide how to set up the battle!
+When you setup a Leaf-element monster you entered a battle against a Fire-element monster. What happens if you change that line to ```element = MonsterElement.Fire``` or ```element = MonsterElement.Water```? Changing what we store in the ```element``` variable changes both what our monster looks like and what our opponent looks like. This happens because the game code reads the ```element``` variable to help it decide how to set up the battle! Try it out and choose what monster you want to use.
 
 Naming your monster
 ===================
-While your monster already has a name, we can replace it with a nickname by setting another variable. If we wanted to nickname our monster Morty, we would add the following line right after the ```element = MonsterElement.Fire``` line:
+While your monster already has a name, we can replace it with a nickname by setting another variable. If we wanted to nickname our monster Morty, we would add the following line right after the ```element = MonsterElement``` line:
 
 	nickname = "Morty"
 
