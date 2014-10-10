@@ -91,7 +91,7 @@
 				<key>de</key>
 				<string>doesn’t know any moves!</string>
 				<key>en</key>
-				<string>Your monster doesn’t know any moves! Make sure to teach it tackle.</string>
+				<string> doesn’t know any moves! Make sure to teach it tackle.</string>
 				<key>es</key>
 				<string>doesn’t know any moves!</string>
 				<key>fr</key>
@@ -108,7 +108,7 @@
 				<key>de</key>
 				<string>doesn't know elemental!</string>
 				<key>en</key>
-				<string>Your monster doesn't know elemental! Make sure to add elementalMove.</string>
+				<string> doesn't know elemental! Make sure to add elementalMove.</string>
 				<key>es</key>
 				<string>doesn't know elemental!</string>
 				<key>fr</key>
@@ -125,7 +125,7 @@
 				<key>de</key>
 				<string>doesn't know Swipe!</string>
 				<key>en</key>
-				<string>Your monster doesn't know Swipe! Make sure to add swipeMove.</string>
+				<string> doesn't know Swipe! Make sure to add swipeMove.</string>
 				<key>es</key>
 				<string>doesn't know Swipe!</string>
 				<key>fr</key>
@@ -159,7 +159,7 @@
 				<key>de</key>
 				<string>used takcle!</string>
 				<key>en</key>
-				<string>Your monster used takcle!</string>
+				<string> used takcle!</string>
 				<key>es</key>
 				<string>used takcle!</string>
 				<key>fr</key>
@@ -176,7 +176,7 @@
 				<key>de</key>
 				<string>used swipe!</string>
 				<key>en</key>
-				<string>Your monster used swipe!</string>
+				<string> used swipe!</string>
 				<key>es</key>
 				<string>used swipe!</string>
 				<key>fr</key>
@@ -193,7 +193,7 @@
 				<key>de</key>
 				<string>Your monster used elemental! It's super effective!</string>
 				<key>en</key>
-				<string>Your monster used elemental! It's super effective!</string>
+				<string> used elemental! It's super effective!</string>
 				<key>es</key>
 				<string>Your monster used elemental! It's super effective!</string>
 				<key>fr</key>
@@ -210,28 +210,11 @@
 				<key>de</key>
 				<string>Your monster tried to use elemental. It's attack failed.</string>
 				<key>en</key>
-				<string>Your monster tried to use elemental. It failed to move!</string>
+				<string> tried to use elemental. It failed to move!</string>
 				<key>es</key>
 				<string>Your monster tried to use elemental. It's attack failed.</string>
 				<key>fr</key>
 				<string>Your monster tried to use elemental. It's attack failed.</string>
-			</dict>
-		</dict>
-		<dict>
-			<key>comment</key>
-			<string></string>
-			<key>key</key>
-			<string>enemyTackle</string>
-			<key>translations</key>
-			<dict>
-				<key>de</key>
-				<string>The opponent used tackle!</string>
-				<key>en</key>
-				<string>The opponent used tackle!</string>
-				<key>es</key>
-				<string>The opponent used tackle!</string>
-				<key>fr</key>
-				<string>The opponent used tackle!</string>
 			</dict>
 		</dict>
 		<dict>

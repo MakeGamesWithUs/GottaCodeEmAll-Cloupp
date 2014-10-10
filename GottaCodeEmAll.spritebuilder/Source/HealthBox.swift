@@ -44,7 +44,7 @@ class HealthBox: CCNode {
   }
   
   func setupLeaf() {
-    nameLabel.string = "Leafly"
+    nameLabel.string = "Leafy"
     elementFire.visible = false
     elementLeaf.visible = true
     elementWater.visible = false

@@ -33,8 +33,8 @@ class MessageBox: CCNode {
     self.userInteractionEnabled = false
   }
   
-  func setNextMessage(key: String) {
-    message.nextMessage = message.localizer.localizedStringForKey(key)
+  func setNextMessage(key: String, name: String = "") {
+    message.nextMessage = name + message.localizer.localizedStringForKey(key)
   }
   
   func updateMessage() {

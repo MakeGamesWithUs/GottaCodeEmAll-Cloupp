@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Cocoa
+//import Cocoa
 
 enum MonsterElement {
   case Water, Fire, Leaf, None
@@ -89,12 +89,13 @@ class Monster: CCNode {
   
   func executeTackle() {
     var messageBox = GameState.sharedInstance.battle.messageBox
+    var nameString: String!
     if isEnemy {
-      messageBox.setNextMessage("enemyTackle")
-      
+      nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
     } else {
-      messageBox.setNextMessage("tackle")
+      nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     }
+    messageBox.setNextMessage("tackle", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Tackle")
     damageToDo = level * 1.5
@@ -103,7 +104,13 @@ class Monster: CCNode {
   
   func executeElemental() {
     var messageBox = GameState.sharedInstance.battle.messageBox
-    messageBox.setNextMessage("elemental")
+    var nameString: String!
+    if isEnemy {
+      nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
+    } else {
+      nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+    }
+    messageBox.setNextMessage("elemental", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
     damageToDo = level * 5
@@ -112,7 +119,13 @@ class Monster: CCNode {
   
   func executeSwipe() {
     var messageBox = GameState.sharedInstance.battle.messageBox
-    messageBox.setNextMessage("swipe")
+    var nameString: String!
+    if isEnemy {
+      nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
+    } else {
+      nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+    }
+    messageBox.setNextMessage("swipe", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Swipe")
     damageToDo = level

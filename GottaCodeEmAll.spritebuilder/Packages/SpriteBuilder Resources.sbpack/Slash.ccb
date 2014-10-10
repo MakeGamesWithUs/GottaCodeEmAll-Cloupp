@@ -658,7 +658,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>0.43749994039535522</real>
+								<real>0.96875</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -670,7 +670,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>0.43749994039535522</real>
+									<real>0.96875</real>
 								</array>
 							</dict>
 						</array>
@@ -741,7 +741,7 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1</real>
+							<real>-1</real>
 							<real>1</real>
 							<false/>
 							<integer>0</integer>
@@ -802,7 +802,7 @@
 				<string>Point</string>
 				<key>value</key>
 				<array>
-					<real>1</real>
+					<real>-1</real>
 					<real>-1</real>
 				</array>
 			</dict>
@@ -877,7 +877,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>1.3333333730697632</real>
+			<real>0.76666665077209473</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
