@@ -160,14 +160,12 @@ class Monster: CCNode {
     var healthBar = healthBox.hpBar
     
     if health <= 0 {
-//      var hpShrink = CCActionScaleTo.actionWithDuration(0.5, scale:hpScale) as CCAction
-//      healthBar.runAction(hpShrink)
-      healthBar.scaleX = 0.0
+      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:0.0, scaleY:1.0) as CCAction
+      healthBar.runAction(hpShrink)
     } else {
       var hpScale = Float(health / totalHealth)
-//      var hpShrink = CCActionScaleTo.actionWithDuration(0.5, scale:hpScale) as CCAction
-//      healthBar.runAction(hpShrink)
-      healthBar.scaleX = hpScale
+      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:hpScale, scaleY:1.0) as CCAction
+      healthBar.runAction(hpShrink)
     }
   }
   
