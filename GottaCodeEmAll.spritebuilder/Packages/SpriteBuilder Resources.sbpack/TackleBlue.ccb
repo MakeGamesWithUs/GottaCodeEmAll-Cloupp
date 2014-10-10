@@ -282,7 +282,7 @@
 						<key>value</key>
 						<array>
 							<real>0.5</real>
-							<real>0.5</real>
+							<real>0.070000000298023224</real>
 						</array>
 					</dict>
 					<dict>
@@ -328,6 +328,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>selected</key>
+				<true/>
 				<key>seqExpanded</key>
 				<true/>
 			</dict>
@@ -444,7 +446,24 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.66666668653488159</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>removeFromParent</string>
+							<integer>1</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>12</integer>
 			</dict>
@@ -453,7 +472,7 @@
 			<key>length</key>
 			<real>0.66666668653488159</real>
 			<key>name</key>
-			<string>Tackle Blue 1</string>
+			<string>Tackle</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>

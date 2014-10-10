@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>Slash/slash1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{60, 138}, {36, 67}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 67}}</string>
+			<key>sourceSize</key>
+			<string>{36, 67}</string>
+		</dict>
+		<key>Slash/slash2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 138}, {57, 96}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {57, 96}}</string>
+			<key>sourceSize</key>
+			<string>{57, 96}</string>
+		</dict>
+		<key>Slash/slash3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{114, 1}, {88, 121}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {88, 121}}</string>
+			<key>sourceSize</key>
+			<string>{88, 121}</string>
+		</dict>
+		<key>Slash/slash4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {111, 135}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {111, 135}}</string>
+			<key>sourceSize</key>
+			<string>{111, 135}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{256, 256}</string>
+		<key>textureFileName</key>
+		<string>Slash.png</string>
+	</dict>
+</dict>
+</plist>

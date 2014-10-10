@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>GUI/backgroundBars1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {510, 472}}</string>
+			<key>offset</key>
+			<string>{0, 1}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 3}, {510, 472}}</string>
+			<key>sourceSize</key>
+			<string>{510, 480}</string>
+		</dict>
+		<key>GUI/backgroundBlue1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{513, 323}, {320, 480}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {320, 480}}</string>
+			<key>sourceSize</key>
+			<string>{320, 480}</string>
+		</dict>
+		<key>GUI/backgroundOrange1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{513, 1}, {320, 480}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {320, 480}}</string>
+			<key>sourceSize</key>
+			<string>{320, 480}</string>
+		</dict>
+		<key>GUI/buttonBase1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 645}, {320, 92}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {320, 92}}</string>
+			<key>sourceSize</key>
+			<string>{320, 92}</string>
+		</dict>
+		<key>GUI/elementFire.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{995, 1}, {20, 20}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {20, 20}}</string>
+			<key>sourceSize</key>
+			<string>{20, 20}</string>
+		</dict>
+		<key>GUI/elementLeaf.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{995, 45}, {20, 20}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {20, 20}}</string>
+			<key>sourceSize</key>
+			<string>{20, 20}</string>
+		</dict>
+		<key>GUI/elementNormal1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{425, 552}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/elementPressed1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{76, 475}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/elementWater.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{995, 23}, {20, 20}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {20, 20}}</string>
+			<key>sourceSize</key>
+			<string>{20, 20}</string>
+		</dict>
+		<key>GUI/experienceBar1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{995, 67}, {105, 16}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {105, 16}}</string>
+			<key>sourceSize</key>
+			<string>{105, 16}</string>
+		</dict>
+		<key>GUI/hpBar1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1013, 67}, {141, 7}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {141, 7}}</string>
+			<key>sourceSize</key>
+			<string>{141, 7}</string>
+		</dict>
+		<key>GUI/hpFrame1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{995, 174}, {158, 11}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {158, 11}}</string>
+			<key>sourceSize</key>
+			<string>{158, 11}</string>
+		</dict>
+		<key>GUI/infoBase1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{226, 552}, {197, 72}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 72}}</string>
+			<key>sourceSize</key>
+			<string>{197, 72}</string>
+		</dict>
+		<key>GUI/platformBig1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{188, 475}, {281, 75}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {281, 75}}</string>
+			<key>sourceSize</key>
+			<string>{281, 75}</string>
+		</dict>
+		<key>GUI/platformSmall1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 967}, {181, 48}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {181, 48}}</string>
+			<key>sourceSize</key>
+			<string>{181, 48}</string>
+		</dict>
+		<key>GUI/swipeNormal1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{76, 552}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/swipePressed1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 475}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/tackleNormal1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 552}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/tacklePressed1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{151, 552}, {73, 74}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {73, 74}}</string>
+			<key>sourceSize</key>
+			<string>{73, 74}</string>
+		</dict>
+		<key>GUI/textBase1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{95, 645}, {319, 91}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {319, 91}}</string>
+			<key>sourceSize</key>
+			<string>{319, 91}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>textureFileName</key>
+		<string>GUI.png</string>
+	</dict>
+</dict>
+</plist>

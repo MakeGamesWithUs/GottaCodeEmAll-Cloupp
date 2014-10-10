@@ -43,7 +43,7 @@
 	<key>publishEnablediPhone</key>
 	<true/>
 	<key>publishEnvironment</key>
-	<integer>0</integer>
+	<integer>1</integer>
 	<key>publishResolution_android_phone</key>
 	<true/>
 	<key>publishResolution_android_phonehd</key>
@@ -77,6 +77,36 @@
 		<dict>
 			<key>previewFolderHidden</key>
 			<false/>
+		</dict>
+		<key>Bird Assets</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Bird Back</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Crab</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Crab Back</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Fire Elemental</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>GUI</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
 		</dict>
 		<key>GUI/backgroundBars1.png</key>
 		<dict>
@@ -145,8 +175,38 @@
 			<key>scaleFrom</key>
 			<integer>2</integer>
 		</dict>
+		<key>Glows</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Leaf Back</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Leaf Elemental</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Leaf Front</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Slash</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>Sprites</key>
 		<dict/>
+		<key>TackleBlue</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
 		<key>TackleBlue/tackleBlue1.png</key>
 		<dict>
 			<key>scaleFrom</key>
@@ -196,6 +256,16 @@
 		<dict>
 			<key>scaleFrom</key>
 			<integer>1</integer>
+		</dict>
+		<key>Thorn</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
+		</dict>
+		<key>Water Elemental</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
 		</dict>
 		<key>ccbResources</key>
 		<dict>
@@ -278,6 +348,11 @@
 			<integer>2</integer>
 			<key>tabletScale</key>
 			<integer>1</integer>
+		</dict>
+		<key>tackleGreen</key>
+		<dict>
+			<key>isSmartSpriteSheet</key>
+			<true/>
 		</dict>
 		<key>tackleGreen/tackleGreen1.png</key>
 		<dict>

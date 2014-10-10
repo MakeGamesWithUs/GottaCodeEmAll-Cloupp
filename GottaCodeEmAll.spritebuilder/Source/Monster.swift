@@ -68,6 +68,7 @@ class Monster: CCNode {
   var sprite: CCNode!
   var isEnemy = false
   var healthBox: HealthBox!
+  var attackAnimationNode: CCNode!
   
   override init() {
     super.init()
@@ -130,15 +131,27 @@ class Monster: CCNode {
   }
   
   func nextAttack() {
-    if !GameState.sharedInstance.gameOver {
+    if opponent.health > 0 {
       GameState.sharedInstance.battle.processAttacks()
+    } else {
+      if !isEnemy {
+        GameState.sharedInstance.battle.playerWins(true)
+      } else {
+        GameState.sharedInstance.battle.playerWins(false)
+      }
     }
   }
   
   func attacksDone() {
-    if !GameState.sharedInstance.gameOver {
+    if opponent.health > 0 {
       GameState.sharedInstance.battle.messageBox.fadeOut()
       GameState.sharedInstance.battle.attackBox.fadeIn()
+    } else {
+      if !isEnemy {
+        GameState.sharedInstance.battle.playerWins(true)
+      } else {
+        GameState.sharedInstance.battle.playerWins(false)
+      }
     }
   }
   
@@ -147,33 +160,50 @@ class Monster: CCNode {
     var healthBar = healthBox.hpBar
     
     if health <= 0 {
-      // trigger win
-//      var scaleAction = CCActionScaleTo.actionWithDuration(0.5, scale:0.0) as CCActionFiniteTime
-//      var endAction: CCActionFiniteTime
-//      
-//      var callBlock: () -> Void
-//      
-//      if isEnemy {
-//        callBlock = { GameState.sharedInstance.battle.playerWins(true) }
-//      } else {
-//        callBlock = { GameState.sharedInstance.battle.playerWins(false) }
-//      }
-//
-//      endAction = CCActionCallBlock.actionWithBlock(callBlock) as CCActionInstant
-//      var hpShrinkSequence = CCActionSequence.actionOne(scaleAction, two: endAction) as CCAction
-//      healthBar.runAction(hpShrinkSequence)
+//      var hpShrink = CCActionScaleTo.actionWithDuration(0.5, scale:hpScale) as CCAction
+//      healthBar.runAction(hpShrink)
       healthBar.scaleX = 0.0
-      if isEnemy {
-        GameState.sharedInstance.battle.playerWins(true)
-      } else {
-        GameState.sharedInstance.battle.playerWins(false)
-      }
     } else {
       var hpScale = Float(health / totalHealth)
 //      var hpShrink = CCActionScaleTo.actionWithDuration(0.5, scale:hpScale) as CCAction
 //      healthBar.runAction(hpShrink)
       healthBar.scaleX = hpScale
     }
+  }
+  
+  func addElementalToOpponent() {
+    var anim: CCNode!
+    switch element {
+      case MonsterElement.Fire:
+        anim = CCBReader.load("FireElemental")
+      case MonsterElement.Water:
+        anim = CCBReader.load("WaterElemental")
+      case MonsterElement.Leaf:
+        anim = CCBReader.load("LeafElemental")
+      case MonsterElement.None:
+        anim = CCBReader.load("FireElemental")
+    }
+    opponent.attackAnimationNode.addChild(anim)
+  }
+  
+  func addTackleToOpponent() {
+    var anim: CCNode!
+    switch element {
+    case MonsterElement.Fire:
+      anim = CCBReader.load("TackleRed")
+    case MonsterElement.Water:
+      anim = CCBReader.load("TackleBlue")
+    case MonsterElement.Leaf:
+      anim = CCBReader.load("TackleGreen")
+    case MonsterElement.None:
+      anim = CCBReader.load("TackleRed")
+    }
+    opponent.attackAnimationNode.addChild(anim)
+  }
+  
+  func addSwipeToOpponent() {
+    var anim: CCNode = CCBReader.load("Slash")
+    opponent.attackAnimationNode.addChild(anim)
   }
   
   func addToBattle() {

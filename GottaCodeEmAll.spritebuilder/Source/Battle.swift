@@ -51,7 +51,7 @@ class Battle: CCScene {
 
   let playerAttack = MonsterAttack()
   
-  var currentStep: CodeStep = CodeStep.InitMonster
+  var currentStep: CodeStep = CodeStep.TeachSwipes
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
@@ -162,7 +162,7 @@ class Battle: CCScene {
   }
   
   func setupEnemy(playerType: MonsterElement) {
-    if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes {
+    if GameState.sharedInstance.battle.currentStep == CodeStep.TeachElemental {
       switch playerType {
       case MonsterElement.None:
         break

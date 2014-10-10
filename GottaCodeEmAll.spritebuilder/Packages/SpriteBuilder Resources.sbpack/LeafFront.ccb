@@ -10,13 +10,13 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>31</integer>
+	<integer>35</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>4</integer>
+	<integer>1</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -1935,7 +1935,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>-19.201950073242188</real>
+												<real>0.0</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2275,7 +2275,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>16.639556884765625</real>
+												<real>3</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -3342,7 +3342,7 @@
 																<key>type</key>
 																<string>Check</string>
 																<key>value</key>
-																<true/>
+																<false/>
 															</dict>
 															<dict>
 																<key>name</key>
@@ -3923,7 +3923,7 @@
 																<key>type</key>
 																<string>Check</string>
 																<key>value</key>
-																<true/>
+																<false/>
 															</dict>
 															<dict>
 																<key>name</key>
@@ -4417,13 +4417,13 @@
 										<array>
 											<dict>
 												<key>baseValue</key>
-												<integer>1</integer>
+												<false/>
 												<key>name</key>
 												<string>visible</string>
 												<key>type</key>
 												<string>Check</string>
 												<key>value</key>
-												<true/>
+												<false/>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -4691,7 +4691,7 @@
 												<key>type</key>
 												<string>Check</string>
 												<key>value</key>
-												<false/>
+												<true/>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -5039,8 +5039,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>-79.442840576171875</real>
-							<real>-31.283716201782227</real>
+							<real>-8.3333330154418945</real>
+							<real>0.0</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -5082,8 +5082,8 @@
 						<string>ScaleLock</string>
 						<key>value</key>
 						<array>
-							<real>1.1499999761581421</real>
-							<real>1.1499999761581421</real>
+							<real>1</real>
+							<real>1</real>
 							<true/>
 							<integer>0</integer>
 						</array>
@@ -5096,9 +5096,89 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>-7.5787019729614258</real>
+						<real>0.0</real>
 					</dict>
 				</array>
+			</dict>
+			<dict>
+				<key>UUID</key>
+				<integer>31</integer>
+				<key>baseClass</key>
+				<string>CCNode</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>attackAnimationNode</string>
+				<key>memberVarAssignmentName</key>
+				<string>attackAnimationNode</string>
+				<key>memberVarAssignmentType</key>
+				<integer>2</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>-21</real>
+							<real>-196</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>contentSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -5298,7 +5378,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.0</real>
+			<real>2.3333332538604736</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -5322,6 +5402,22 @@
 			<dict>
 				<key>keyframes</key>
 				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.86666667461395264</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>addTackleToOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
 					<dict>
 						<key>easing</key>
 						<dict>
@@ -5367,7 +5463,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>0.89999997615814209</real>
+			<real>2.3333332538604736</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>

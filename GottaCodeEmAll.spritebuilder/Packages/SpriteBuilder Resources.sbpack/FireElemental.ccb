@@ -99,6 +99,36 @@
 													<key>value</key>
 													<real>1</real>
 												</dict>
+												<dict>
+													<key>easing</key>
+													<dict>
+														<key>type</key>
+														<integer>1</integer>
+													</dict>
+													<key>name</key>
+													<string>opacity</string>
+													<key>time</key>
+													<real>2.9000000953674316</real>
+													<key>type</key>
+													<integer>10</integer>
+													<key>value</key>
+													<real>1</real>
+												</dict>
+												<dict>
+													<key>easing</key>
+													<dict>
+														<key>type</key>
+														<integer>1</integer>
+													</dict>
+													<key>name</key>
+													<string>opacity</string>
+													<key>time</key>
+													<real>3.2000000476837158</real>
+													<key>type</key>
+													<integer>10</integer>
+													<key>value</key>
+													<real>0.0</real>
+												</dict>
 											</array>
 											<key>name</key>
 											<string>opacity</string>
@@ -259,7 +289,7 @@
 										<key>type</key>
 										<string>Float</string>
 										<key>value</key>
-										<real>1</real>
+										<real>0.0</real>
 									</dict>
 									<dict>
 										<key>name</key>
@@ -271,7 +301,7 @@
 											<real>1</real>
 											<real>1</real>
 											<real>1</real>
-											<real>1</real>
+											<real>0.0</real>
 										</array>
 									</dict>
 								</array>
@@ -495,7 +525,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA1.png</string>
+																<string>Fire Elemental/emberA1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -513,7 +543,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA2.png</string>
+																<string>Fire Elemental/emberA2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -531,7 +561,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA3.png</string>
+																<string>Fire Elemental/emberA3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -549,7 +579,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA4.png</string>
+																<string>Fire Elemental/emberA4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -567,7 +597,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA5.png</string>
+																<string>Fire Elemental/emberA5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -585,7 +615,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA6.png</string>
+																<string>Fire Elemental/emberA6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -603,7 +633,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA7.png</string>
+																<string>Fire Elemental/emberA7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -621,7 +651,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA8.png</string>
+																<string>Fire Elemental/emberA8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -639,7 +669,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA9.png</string>
+																<string>Fire Elemental/emberA9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -710,7 +740,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA1.png</string>
+																<string>Fire Elemental/emberA1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -728,7 +758,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA2.png</string>
+																<string>Fire Elemental/emberA2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -746,7 +776,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA3.png</string>
+																<string>Fire Elemental/emberA3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -764,7 +794,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA4.png</string>
+																<string>Fire Elemental/emberA4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -782,7 +812,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA5.png</string>
+																<string>Fire Elemental/emberA5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -800,7 +830,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA6.png</string>
+																<string>Fire Elemental/emberA6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -818,7 +848,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA7.png</string>
+																<string>Fire Elemental/emberA7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -836,7 +866,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA8.png</string>
+																<string>Fire Elemental/emberA8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -854,7 +884,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberA/emberA9.png</string>
+																<string>Fire Elemental/emberA9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -929,7 +959,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/EmberA/emberA1.png</string>
+													<string>Fire Elemental/emberA1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -939,7 +969,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/EmberA/emberA1.png</string>
+													<string>Fire Elemental/emberA1.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1184,7 +1214,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB1.png</string>
+																<string>Fire Elemental/emberB1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1202,7 +1232,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB2.png</string>
+																<string>Fire Elemental/emberB2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1220,7 +1250,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB3.png</string>
+																<string>Fire Elemental/emberB3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1238,7 +1268,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB4.png</string>
+																<string>Fire Elemental/emberB4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1256,7 +1286,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB5.png</string>
+																<string>Fire Elemental/emberB5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1274,7 +1304,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB6.png</string>
+																<string>Fire Elemental/emberB6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1292,7 +1322,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB7.png</string>
+																<string>Fire Elemental/emberB7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1310,7 +1340,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB8.png</string>
+																<string>Fire Elemental/emberB8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1328,7 +1358,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB9.png</string>
+																<string>Fire Elemental/emberB9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1399,7 +1429,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB1.png</string>
+																<string>Fire Elemental/emberB1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1417,7 +1447,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB2.png</string>
+																<string>Fire Elemental/emberB2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1435,7 +1465,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB3.png</string>
+																<string>Fire Elemental/emberB3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1453,7 +1483,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB4.png</string>
+																<string>Fire Elemental/emberB4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1471,7 +1501,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB5.png</string>
+																<string>Fire Elemental/emberB5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1489,7 +1519,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB6.png</string>
+																<string>Fire Elemental/emberB6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1507,7 +1537,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB7.png</string>
+																<string>Fire Elemental/emberB7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1525,7 +1555,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB8.png</string>
+																<string>Fire Elemental/emberB8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1543,7 +1573,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberB/emberB9.png</string>
+																<string>Fire Elemental/emberB9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1618,7 +1648,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/EmberB/emberB1.png</string>
+													<string>Fire Elemental/emberB1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -1628,7 +1658,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/EmberB/emberB1.png</string>
+													<string>Fire Elemental/emberB1.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1639,7 +1669,7 @@
 												<key>type</key>
 												<string>Float</string>
 												<key>value</key>
-												<real>0.27272707223892212</real>
+												<real>0.0</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -1651,7 +1681,7 @@
 													<real>1</real>
 													<real>1</real>
 													<real>1</real>
-													<real>0.27272707223892212</real>
+													<real>0.0</real>
 												</array>
 											</dict>
 										</array>
@@ -1873,7 +1903,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC1.png</string>
+																<string>Fire Elemental/emberC1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1891,7 +1921,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC2.png</string>
+																<string>Fire Elemental/emberC2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1909,7 +1939,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC3.png</string>
+																<string>Fire Elemental/emberC3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1927,7 +1957,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC4.png</string>
+																<string>Fire Elemental/emberC4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1945,7 +1975,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC5.png</string>
+																<string>Fire Elemental/emberC5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1963,7 +1993,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC6.png</string>
+																<string>Fire Elemental/emberC6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1981,7 +2011,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC7.png</string>
+																<string>Fire Elemental/emberC7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1999,7 +2029,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC8.png</string>
+																<string>Fire Elemental/emberC8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2017,7 +2047,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC9.png</string>
+																<string>Fire Elemental/emberC9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2088,7 +2118,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC1.png</string>
+																<string>Fire Elemental/emberC1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2106,7 +2136,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC2.png</string>
+																<string>Fire Elemental/emberC2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2124,7 +2154,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC3.png</string>
+																<string>Fire Elemental/emberC3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2142,7 +2172,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC4.png</string>
+																<string>Fire Elemental/emberC4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2160,7 +2190,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC5.png</string>
+																<string>Fire Elemental/emberC5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2178,7 +2208,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC6.png</string>
+																<string>Fire Elemental/emberC6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2196,7 +2226,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC7.png</string>
+																<string>Fire Elemental/emberC7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2214,7 +2244,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC8.png</string>
+																<string>Fire Elemental/emberC8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2232,7 +2262,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/EmberC/emberC9.png</string>
+																<string>Fire Elemental/emberC9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2307,7 +2337,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/EmberC/emberC1.png</string>
+													<string>Fire Elemental/emberC1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -2317,7 +2347,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/EmberC/emberC1.png</string>
+													<string>Fire Elemental/emberC1.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -2328,7 +2358,7 @@
 												<key>type</key>
 												<string>Float</string>
 												<key>value</key>
-												<real>1</real>
+												<real>0.0</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2340,7 +2370,7 @@
 													<real>1</real>
 													<real>1</real>
 													<real>1</real>
-													<real>1</real>
+													<real>0.0</real>
 												</array>
 											</dict>
 										</array>
@@ -2545,8 +2575,8 @@
 						<string>Size</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>50</real>
+							<real>50</real>
 							<integer>0</integer>
 							<integer>0</integer>
 						</array>
@@ -2559,7 +2589,7 @@
 						<key>value</key>
 						<array>
 							<real>0.0</real>
-							<real>0.0</real>
+							<real>-1</real>
 						</array>
 					</dict>
 					<dict>
@@ -2576,6 +2606,8 @@
 						</array>
 					</dict>
 				</array>
+				<key>seqExpanded</key>
+				<true/>
 			</dict>
 		</array>
 		<key>customClass</key>
@@ -2690,24 +2722,41 @@
 			<key>callbackChannel</key>
 			<dict>
 				<key>keyframes</key>
-				<array/>
+				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>3.2000000476837158</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>removeFromParent</string>
+							<integer>1</integer>
+						</array>
+					</dict>
+				</array>
 				<key>type</key>
 				<integer>12</integer>
 			</dict>
 			<key>chainedSequenceId</key>
 			<integer>-1</integer>
 			<key>length</key>
-			<real>10</real>
+			<real>3.2000000476837158</real>
 			<key>name</key>
 			<string>Fire Elemental 1</string>
 			<key>offset</key>
-			<real>1.2479166984558105</real>
+			<real>0.0</real>
 			<key>position</key>
-			<real>2.4666666984558105</real>
+			<real>3.2000000476837158</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>512</real>
+			<real>210.52528381347656</real>
 			<key>sequenceId</key>
 			<integer>0</integer>
 			<key>soundChannel</key>

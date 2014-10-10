@@ -10,13 +10,13 @@
 		<false/>
 	</dict>
 	<key>UUID</key>
-	<integer>15</integer>
+	<integer>17</integer>
 	<key>centeredOrigin</key>
 	<false/>
 	<key>currentResolution</key>
 	<integer>0</integer>
 	<key>currentSequenceId</key>
-	<integer>1</integer>
+	<integer>2</integer>
 	<key>docDimensionsType</key>
 	<integer>1</integer>
 	<key>fileType</key>
@@ -39,6 +39,86 @@
 		<string>CCNode</string>
 		<key>children</key>
 		<array>
+			<dict>
+				<key>UUID</key>
+				<integer>15</integer>
+				<key>baseClass</key>
+				<string>CCNode</string>
+				<key>children</key>
+				<array/>
+				<key>customClass</key>
+				<string></string>
+				<key>displayName</key>
+				<string>attackAnimationNode</string>
+				<key>memberVarAssignmentName</key>
+				<string>attackAnimationNode</string>
+				<key>memberVarAssignmentType</key>
+				<integer>2</integer>
+				<key>properties</key>
+				<array>
+					<dict>
+						<key>name</key>
+						<string>name</string>
+						<key>type</key>
+						<string>StringSimple</string>
+						<key>value</key>
+						<string></string>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>position</string>
+						<key>type</key>
+						<string>Position</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>-194</real>
+							<integer>0</integer>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>contentSize</string>
+						<key>type</key>
+						<string>Size</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+							<integer>0</integer>
+							<integer>0</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>anchorPoint</string>
+						<key>type</key>
+						<string>Point</string>
+						<key>value</key>
+						<array>
+							<real>0.0</real>
+							<real>0.0</real>
+						</array>
+					</dict>
+					<dict>
+						<key>name</key>
+						<string>scale</string>
+						<key>type</key>
+						<string>ScaleLock</string>
+						<key>value</key>
+						<array>
+							<real>1</real>
+							<real>1</real>
+							<false/>
+							<integer>0</integer>
+						</array>
+					</dict>
+				</array>
+				<key>selected</key>
+				<true/>
+			</dict>
 			<dict>
 				<key>UUID</key>
 				<integer>13</integer>
@@ -219,7 +299,7 @@
 								<key>type</key>
 								<string>Check</string>
 								<key>value</key>
-								<false/>
+								<true/>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -286,7 +366,7 @@
 								<key>type</key>
 								<string>Float</string>
 								<key>value</key>
-								<real>1</real>
+								<real>0.94999998807907104</real>
 							</dict>
 							<dict>
 								<key>name</key>
@@ -298,7 +378,7 @@
 									<real>1</real>
 									<real>1</real>
 									<real>1</real>
-									<real>1</real>
+									<real>0.94999998807907104</real>
 								</array>
 							</dict>
 						</array>
@@ -2350,7 +2430,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>0.0</real>
+												<real>5.5010781288146973</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -2776,7 +2856,7 @@
 												<key>type</key>
 												<string>Degrees</string>
 												<key>value</key>
-												<real>0.0</real>
+												<real>-5.0770931243896484</real>
 											</dict>
 											<dict>
 												<key>name</key>
@@ -3508,8 +3588,8 @@
 						<string>Position</string>
 						<key>value</key>
 						<array>
-							<real>0.0</real>
-							<real>0.0</real>
+							<real>13</real>
+							<real>-2</real>
 							<integer>0</integer>
 							<integer>0</integer>
 							<integer>0</integer>
@@ -3565,7 +3645,7 @@
 						<key>type</key>
 						<string>Degrees</string>
 						<key>value</key>
-						<real>0.0</real>
+						<real>4.0046219825744629</real>
 					</dict>
 				</array>
 				<key>seqExpanded</key>
@@ -3728,6 +3808,22 @@
 							<integer>0</integer>
 						</dict>
 						<key>time</key>
+						<real>1.2666666507720947</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>addSwipeToOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
 						<real>1.2999999523162842</real>
 						<key>type</key>
 						<integer>12</integer>
@@ -3766,7 +3862,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2</real>
+			<real>1.2666666507720947</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
@@ -3797,6 +3893,22 @@
 							<integer>0</integer>
 						</dict>
 						<key>time</key>
+						<real>0.20000000298023224</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>addElementalToOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
 						<real>1</real>
 						<key>type</key>
 						<integer>12</integer>
@@ -3813,7 +3925,7 @@
 							<integer>0</integer>
 						</dict>
 						<key>time</key>
-						<real>2</real>
+						<real>3.2666666507720947</real>
 						<key>type</key>
 						<integer>12</integer>
 						<key>value</key>
@@ -3829,17 +3941,17 @@
 			<key>chainedSequenceId</key>
 			<integer>0</integer>
 			<key>length</key>
-			<real>2.0333333015441895</real>
+			<real>3.2666666507720947</real>
 			<key>name</key>
 			<string>Elemental</string>
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2</real>
+			<real>1</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
-			<real>375.18820190429688</real>
+			<real>273.74859619140625</real>
 			<key>sequenceId</key>
 			<integer>2</integer>
 			<key>soundChannel</key>
@@ -3859,6 +3971,22 @@
 			<dict>
 				<key>keyframes</key>
 				<array>
+					<dict>
+						<key>easing</key>
+						<dict>
+							<key>type</key>
+							<integer>0</integer>
+						</dict>
+						<key>time</key>
+						<real>0.89999997615814209</real>
+						<key>type</key>
+						<integer>12</integer>
+						<key>value</key>
+						<array>
+							<string>addTackleToOpponent</string>
+							<integer>2</integer>
+						</array>
+					</dict>
 					<dict>
 						<key>easing</key>
 						<dict>
@@ -3904,7 +4032,7 @@
 			<key>offset</key>
 			<real>0.0</real>
 			<key>position</key>
-			<real>2</real>
+			<real>0.89999997615814209</real>
 			<key>resolution</key>
 			<real>30</real>
 			<key>scale</key>
