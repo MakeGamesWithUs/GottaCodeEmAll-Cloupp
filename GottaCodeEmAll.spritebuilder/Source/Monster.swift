@@ -7,7 +7,7 @@
 //
 
 import Foundation
-//import Cocoa
+import Cocoa
 
 enum MonsterElement {
   case Water, Fire, Leaf, None
@@ -110,11 +110,19 @@ class Monster: CCNode {
     } else {
       nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     }
-    messageBox.setNextMessage("elemental", name:nameString)
-    messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
-    sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
-    damageToDo = level * 5
-    nextMove.resetAttack()
+    if opponent.weakAgainst == element {
+      messageBox.setNextMessage("elemental", name:nameString)
+      messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
+      sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
+      damageToDo = level * 5
+      nextMove.resetAttack()
+    } else {
+      messageBox.setNextMessage("missed", name:nameString)
+      messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
+      sprite.animationManager.runAnimationsForSequenceNamed("Missed")
+      damageToDo = 0
+      nextMove.resetAttack()
+    }
   }
   
   func executeSwipe() {

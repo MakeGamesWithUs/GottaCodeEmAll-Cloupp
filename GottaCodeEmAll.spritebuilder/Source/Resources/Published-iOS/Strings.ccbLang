@@ -285,6 +285,23 @@
 				<string>Oh no! You lost! Try using your new move...</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>missed</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
+				<key>en</key>
+				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
+				<key>es</key>
+				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
+				<key>fr</key>
+				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
