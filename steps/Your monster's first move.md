@@ -5,7 +5,7 @@ It's pretty great to have our monster all set up but now we need to teach it som
 	func tackleMove()
 	{
     	self.performTackle()
-		}
+	}
 
 Some of this code should look familiar. We are declaring a new function called ```tackleMove```. We know this because of the ```func``` keyword. Inside that function we are doing something new -- calling a function.
 
