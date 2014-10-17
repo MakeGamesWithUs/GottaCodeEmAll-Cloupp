@@ -3,12 +3,12 @@ Getting started
 Before we get started, let's quickly look over the code that has been provided. We'll come back to this at the end and explain it in greater detail so do not worry too much about what it means.
 
 The first thing to notice is the main code block:
-	
+
 	class MyMonster: Monster
 	{
-	
+
 	}
-	
+
 All of the code we write today will go in between those two curly braces (```{``` and ```}```).
 
 In between those curly braces you'll notice a there are already a bunch of lines starting with ```//``` like ```// addToBattle goes below this``` and ```// addToBattle goes above this```. These are called comments. Any line that starts with ```//``` is ignored by the computer. This allows you to make notes to yourself and other programmers who read your code. Let's get started!
@@ -17,7 +17,7 @@ Let's create a monster!
 =======================
 If you run your code now, you'll notice that you don't have a monster -- let's fix that! Add the following lines between ```// addToBattle goes below this``` and ```// addToBattle goes above this```:
 
-    override func addToBattle()
+    func addToBattle()
     {
         element = MonsterElement.Leaf
     }
