@@ -51,7 +51,7 @@ class Battle: CCScene {
 
   let playerAttack = MonsterAttack()
   
-  var currentStep: CodeStep = CodeStep.TeachSwipes
+  var currentStep: CodeStep = CodeStep.InitMonster
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
