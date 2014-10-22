@@ -4,7 +4,7 @@ Two battles down and one to go! This time your monster will be facing another mo
 
 Swipe is a move that randomly attacks between three and five times. It can be extremely powerful and will help you win this last battle. Let's add in the code and then talk about what it is doing. Add the following code ```// swipeMove goes below this``` and ```// swipeMove goes above this```:
 
-	override func swipeMove(numberOfSwipes: Int)
+	func swipeMove(numberOfSwipes: Int)
 	{
 		for swipe in 1...numberOfSwipes
 		{

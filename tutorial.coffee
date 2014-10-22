@@ -15,3 +15,7 @@ exports.Tutorial = () ->
   step "It's super effective!",     changeStep "TeachElemental"
   step "Swipe over and over",       changeStep "TeachSwipes"
   step "Wrapping up",               changeStep "TeachSwipes"
+
+exports.Preprocess = (files) ->
+  path        = "GottaCodeEmAll.spritebuilder/Source/MyMonster.swift"
+  files[path] = files[path].replace /func([\s\S]+?{)/igm, "override func$1"

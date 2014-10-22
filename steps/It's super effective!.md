@@ -4,7 +4,7 @@ Now that you've won your first battle, let's teach your monster it's elemental m
 
 Add the following code between ```// elementalMove goes below this``` and ```// elementalMove goes above this```:
 
-	override func elementalMove()
+	func elementalMove()
 	{
     	if opponent.weakAgainst == self.element
     	{
