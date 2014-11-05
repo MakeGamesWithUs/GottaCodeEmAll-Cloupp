@@ -15,7 +15,7 @@ exports.Tutorial = () ->
   step "Your monster's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
   step "Swipe over and over",       changeStep "TeachSwipes"
-  step "Quick Recap",               changeStep "TeachSwipes"
+  step "Quick recap",               changeStep "TeachSwipes"
   step "Sing Move",                 changeStep "TeachSing"
   step "Final Recap",               changeStep "TeachSing"
 
