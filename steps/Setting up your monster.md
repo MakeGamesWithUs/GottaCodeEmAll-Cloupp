@@ -44,7 +44,7 @@ How to make a function run
 
 Code inside a function will not get run by the computer unless a function is "called." That is how we tell the computer that it needs to pay attention to the code written in a function. To call a function, you need the function's name, followed by parentheses: ```functionName()```.
 
-When you ran the code after changing your monster's nickname, you saw that change reflected in the simulator -- that is because the ```intialize``` function is special, and it automatically gets called. 
+When you ran the code after changing your monster's nickname, you saw that change reflected in the simulator -- that is because the ```initialize``` function is special, and it automatically gets called. 
 
 When we tried changing the information in ```setupMonsterStats``` without calling the function first, we didn't see any changes in the simulator. 
 

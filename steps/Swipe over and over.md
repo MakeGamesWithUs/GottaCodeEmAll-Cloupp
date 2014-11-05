@@ -2,9 +2,9 @@
 ================
 Two battles down and one to go! This time your monster will be facing a monster that has an elemental advantage over it. You will not be able to rely on your elemental move to win. 
 
-We need to teach your monster how to use its Swipe move multiple times in a row. We are going to change its Swipe move to make it more powerful.
+Your monster will be using the Swipe move. We need to teach your monster how to use its Swipe move multiple times in a row.
 
-We will teach your monster to randomly attack between three and five times. It will be extremely powerful and will help you win this battle. Let's add in the code and then talk about what it is doing. Edit the ```swipeButtonPressed``` function in the following way:
+We will teach your monster to randomly attack between three and five times. It will be extremely powerful and will help you win this battle. Let's add in the code and then talk about what it is doing. Add the following function:
 
 	func swipeButtonPressed(numberOfSwipes: Int)
 	{
@@ -16,7 +16,7 @@ We will teach your monster to randomly attack between three and five times. It w
 
 Functions with parameters
 =======================
-We are changing our ```swipeButtonPressed``` function to take in a parameter! This means that when the game calls ```swipeButtonPressed```, it will also have to include the number of times your monster should perform swipe. The syntax for this is:
+Our ```swipeButtonPressed``` function will take in a parameter! This means that when the game calls ```swipeButtonPressed```, it will also have to include the number of times your monster should perform swipe. The syntax for this is:
 
 	func functionName(parameterName: parameterType)
 	{

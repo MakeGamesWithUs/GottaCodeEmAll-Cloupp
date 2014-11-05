@@ -57,7 +57,7 @@
 				<key>de</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>en</key>
-				<string>Oh no, you don't have a monster yet! Make sure your code has an addToBattle function.</string>
+				<string>Oh no, you don't have a monster yet! Make sure your code has an intialize function.</string>
 				<key>es</key>
 				<string>Oh no, you don't have a monster yet!</string>
 				<key>fr</key>
@@ -74,7 +74,7 @@
 				<key>de</key>
 				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
 				<key>en</key>
-				<string>Looks like you have an addToBattle function but you haven't set your monster's type! Try again.</string>
+				<string>Looks like you have an initialize function but you haven't set your monster's type! Try again.</string>
 				<key>es</key>
 				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
 				<key>fr</key>
@@ -157,13 +157,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>used takcle!</string>
+				<string> used tackle!</string>
 				<key>en</key>
-				<string> used takcle!</string>
+				<string> used tackle!</string>
 				<key>es</key>
-				<string>used takcle!</string>
+				<string> used tackle!</string>
 				<key>fr</key>
-				<string>used takcle!</string>
+				<string> used tackle!</string>
 			</dict>
 		</dict>
 		<dict>

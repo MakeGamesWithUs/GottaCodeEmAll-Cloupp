@@ -19,7 +19,7 @@ There are lines starting with ```//``` -- like ```// tackleButtonPressed goes be
 
 Name your monster!
 =======================
-Inside ```initizalize```, we are storing a ```String``` in the ```nickname``` variable. ```String``` is just a fancy way of saying *a sequence of letters*. A ```String``` is always surrounded by a pair of quotation marks. It can be as short as ```"a"``` or as long as the complete works of Shakespeare. 
+Inside ```initialize```, we are storing a ```String``` in the ```nickname``` variable. ```String``` is just a fancy way of saying *a sequence of letters*. A ```String``` is always surrounded by a pair of quotation marks. It can be as short as ```"a"``` or as long as the complete works of Shakespeare. 
 
 Change ```Morty``` to a new nickname for your monster and run the code to make sure it worked.
 
