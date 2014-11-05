@@ -1504,7 +1504,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>GUI/swipeNormal1.png</string>
+									<string>GUI/singNormal1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1515,7 +1515,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>GUI/swipePressed1.png</string>
+									<string>GUI/singPressed1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1702,8 +1702,6 @@
 								</array>
 							</dict>
 						</array>
-						<key>selected</key>
-						<true/>
 						<key>seqExpanded</key>
 						<true/>
 					</dict>

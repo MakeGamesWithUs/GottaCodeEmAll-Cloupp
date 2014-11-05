@@ -10,14 +10,14 @@ changeStep = (to) ->
 exports.Tutorial = () ->
   step "Welcome",                   changeStep "InitMonster"
   step "Creating your monster",     changeStep "InitMonster"
-  step "Setting up your monster",     changeStep "InitMonster"
+  step "Setting up your monster",   changeStep "InitMonster"
   step "Customizing your monster",  changeStep "Customize"
   step "Your monster's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
   step "Swipe over and over",       changeStep "TeachSwipes"
   step "Quick Recap",               changeStep "TeachSwipes"
-  step "Sing Move",               changeStep "TeachSwipes"
-  step "Final Recap",               changeStep "TeachSwipes"
+  step "Sing Move",                 changeStep “TeachSing”
+  step "Final Recap",               changeStep "TeachSing"
 
 
 exports.Preprocess = (files) ->
