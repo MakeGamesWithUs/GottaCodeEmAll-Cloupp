@@ -1,7 +1,7 @@
 class MyMonster: Monster
 {
   
-  override func initialize()
+  func initialize()
   {
     nickname = "Morty"
   }

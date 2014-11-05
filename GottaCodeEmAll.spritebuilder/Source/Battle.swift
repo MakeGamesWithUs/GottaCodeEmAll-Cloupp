@@ -143,7 +143,7 @@ class Battle: CCScene {
         }
       case CodeStep.TeachSing:
         setupBattlefield()
-        enemy.level = player.level
+        enemy.level = player.level + 1
         if !player.respondsToSelector(Selector("singButtonPressed:")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noSing", name:nameLabel)

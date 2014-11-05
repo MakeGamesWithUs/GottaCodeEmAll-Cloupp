@@ -296,6 +296,10 @@ class Monster: CCNode {
   func initialize() {
     
   }
+
+  func setupMonsterStats() {
+
+  }
   
   func tackleButtonPressed() {
     
