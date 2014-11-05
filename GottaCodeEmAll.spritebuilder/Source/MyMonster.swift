@@ -1,20 +1,6 @@
 class MyMonster: Monster
 {
     
-    func initialize()
-    {
-        // The code in this function runs first
-        
-        nickname = "Morty"
-    }
-    
-    func setupMonsterStats()
-    {
-        element = "None"
-        level = 1
-    }
-    
-    
     // tackleButtonPressed goes below this
     
     
