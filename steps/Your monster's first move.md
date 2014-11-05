@@ -7,6 +7,7 @@ There are different forms of functions that you will encounter in programming. W
 1. Functions that automatically get called when something happens, that you have to fill in
 2. Functions that have already been filled in for you, and you have to call when something happens
 
+
 Functions of the first kind are **Handlers**. An app has a number of unique **Handlers**, each made to "handle" a specific situation. A ***Touch* Handler** handles your touches. When you touch the screen, it calls the **Touch Handler** function, and runs whatever code is in that function.
 
 *These are functions that you don't need to call yourself. They will automatically get called for you when the situation arises, you just need to fill in the function's body.*
@@ -43,14 +44,10 @@ You need to call the ```performTackle``` function inside your **Tackle Button Ha
 	performTackle()	
 	
 This is what your ```tackleButtonPressed``` function should look like:
-
-	// tackleButtonPressed goes below this
 	
 	func tackleButtonPressed()
 	{
     	performTackle()	
     }
-    
-    // tackleButtonPressed goes above this
 
 Now that your monster knows when to Tackle, run the code and see if you can win the first battle!

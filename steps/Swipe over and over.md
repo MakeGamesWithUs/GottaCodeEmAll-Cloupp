@@ -10,7 +10,7 @@ We will teach your monster to randomly attack between three and five times. It w
 	{
 		for counter in 1...numberOfSwipes
 		{
-			performSwipes()
+			performSwipe()
 		}
 	}
 

@@ -111,6 +111,7 @@ class Battle: CCScene {
             messageBox.setNextMessage("customize")
           }
         }
+        enemy.level = player.level
       case CodeStep.Customize:
         setupBattlefield()
         if player.monsterElement == MonsterElement.None {
@@ -118,6 +119,7 @@ class Battle: CCScene {
         } else {
           messageBox.setNextMessage("teachMoves")
         }
+        enemy.level = player.level
       case CodeStep.TeachTackle:
         setupBattlefield()
         if !player.respondsToSelector(Selector("tackleButtonPressed")) {
@@ -138,7 +140,7 @@ class Battle: CCScene {
         }
       case CodeStep.TeachSwipes:
         setupBattlefield()
-        enemy.level = player.level * 1.5
+        enemy.level = Int(Double(player.level) * 1.5)
         if !player.respondsToSelector(Selector("swipeButtonPressed:")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noSwipe", name:nameLabel)
@@ -148,13 +150,14 @@ class Battle: CCScene {
       case CodeStep.TeachSing:
         setupBattlefield()
         enemy.level = player.level + 1
-        if !player.respondsToSelector(Selector("singButtonPressed:")) {
+        if !player.respondsToSelector(Selector("singButtonPressed")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noSing", name:nameLabel)
         }
       default:
         break
     }
+    player.enemyLevel = enemy.level
   }
   
   func setupBattlefield() {

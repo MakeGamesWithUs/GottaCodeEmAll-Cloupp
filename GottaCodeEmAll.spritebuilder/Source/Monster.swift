@@ -22,18 +22,21 @@ class Monster: CCNode {
       element = element.lowercaseString
       switch element {
         case "fire":
+          self.removeAllChildren()
           sprite = CCBReader.load("FireBack", owner:self)
           self.addChild(sprite)
           monsterElement = MonsterElement.Fire
           weakAgainst = MonsterElement.Water
           GameState.sharedInstance.battle.playerHealth.setupFire()
         case "water":
+          self.removeAllChildren()
           sprite = CCBReader.load("WaterBack", owner:self)
           self.addChild(sprite)
           monsterElement = MonsterElement.Water
           weakAgainst = MonsterElement.Leaf
           GameState.sharedInstance.battle.playerHealth.setupWater()
         case "leaf":
+          self.removeAllChildren()
           sprite = CCBReader.load("LeafBack", owner:self)
           self.addChild(sprite)
           monsterElement = MonsterElement.Leaf
@@ -48,22 +51,26 @@ class Monster: CCNode {
       }
     }
   }
-  var level: Double = 1.0 {
+  var level: Int = 1 {
     didSet {
       if isEnemy {
         GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(level))"
       } else {
-        if level < 1.0 {
-          level = 1.0
-        } else if level > 99.0 {
-          level = 99.0
+        if level < 1 {
+          level = 1
+        } else if level > 99 {
+          level = 99
         }
         GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(level))"
       }
-      health = level * 5.0
+      health = Double(level) * 5.0
       totalHealth = health
     }
   }
+  
+  var enemyLevel = 1
+  var levelDifference = 0
+  
   var health = 25.0
   var totalHealth = 25.0
   var nickname: String = "" {
@@ -121,7 +128,7 @@ class Monster: CCNode {
     messageBox.setNextMessage("tackle", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Tackle")
-    damageToDo = level * 1.5
+    damageToDo = Double(level) * 1.5
     nextMove.resetAttack()
   }
   
@@ -138,7 +145,7 @@ class Monster: CCNode {
       messageBox.setNextMessage("elemental", name:nameString)
       messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
       sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
-      damageToDo = level * 5
+      damageToDo = Double(level) * 5
       nextMove.resetAttack()
     } else {
       messageBox.setNextMessage("missed", name:nameString)
@@ -160,7 +167,7 @@ class Monster: CCNode {
     messageBox.setNextMessage("swipe", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Swipe")
-    damageToDo = level
+    damageToDo = Double(level)
     nextMove.numberOfTimes--
     if nextMove.numberOfTimes == 0 {
       nextMove.resetAttack()
@@ -179,7 +186,7 @@ class Monster: CCNode {
       messageBox.setNextMessage("sing", name:nameString)
       messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
       sprite.animationManager.runAnimationsForSequenceNamed("Sing")
-      damageToDo = level * 2
+      damageToDo = Double(level) * 2
       nextMove.numberOfTimes--
       if nextMove.numberOfTimes == 0 {
         nextMove.resetAttack()
@@ -204,7 +211,6 @@ class Monster: CCNode {
     messageBox.setNextMessage("powerUp", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("PowerUp")
-    damageToDo = level * 1.5
     nextMove.resetAttack()
   }
   

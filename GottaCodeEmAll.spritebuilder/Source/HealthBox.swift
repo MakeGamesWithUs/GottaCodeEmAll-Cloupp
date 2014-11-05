@@ -30,21 +30,27 @@ class HealthBox: CCNode {
   }
   
   func setupFire() {
-    nameLabel.string = "Phoenix"
+    if nameLabel.string == "Missingno." {
+      nameLabel.string = "Phoenix"
+    }
     elementFire.visible = true
     elementLeaf.visible = false
     elementWater.visible = false
   }
   
   func setupWater() {
-    nameLabel.string = "Crabby"
+    if nameLabel.string == "Missingno." {
+      nameLabel.string = "Crabby"
+    }
     elementFire.visible = false
     elementLeaf.visible = false
     elementWater.visible = true
   }
   
   func setupLeaf() {
-    nameLabel.string = "Leafy"
+    if nameLabel.string == "Missingno." {
+      nameLabel.string = "Leafy"
+    }
     elementFire.visible = false
     elementLeaf.visible = true
     elementWater.visible = false
