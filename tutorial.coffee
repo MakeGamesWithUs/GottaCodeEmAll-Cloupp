@@ -22,4 +22,4 @@ exports.Tutorial = () ->
 
 exports.Preprocess = (files) ->
   path        = "GottaCodeEmAll.spritebuilder/Source/MyMonster.swift"
-  files[path] = files[path].replace /func([\s\S]+?{)/igm, "override func$1"
+  files[path] = files[path].replace /func(\s+\w+ButtonPressed[\s\S]+?{)/igm, "override func$1"
