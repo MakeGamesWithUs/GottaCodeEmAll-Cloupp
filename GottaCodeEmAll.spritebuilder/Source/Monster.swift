@@ -43,7 +43,9 @@ class Monster: CCNode {
           monsterElement = MonsterElement.None
           element = "none"
       }
-      GameState.sharedInstance.battle.setupEnemy(monsterElement)
+      if monsterElement != MonsterElement.None {
+        GameState.sharedInstance.battle.setupEnemy(monsterElement)
+      }
     }
   }
   var level: Double = 1.0 {
@@ -293,14 +295,6 @@ class Monster: CCNode {
     opponent.attackAnimationNode.addChild(anim)
   }
   
-  func initialize() {
-    
-  }
-
-  func setupMonsterStats() {
-
-  }
-  
   func tackleButtonPressed() {
     
   }
@@ -310,10 +304,6 @@ class Monster: CCNode {
   }
   
   func elementalButtonPressed() {
-    
-  }
-  
-  func powerUpButtonPressed() {
     
   }
   

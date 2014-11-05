@@ -113,7 +113,11 @@ class Battle: CCScene {
         }
       case CodeStep.Customize:
         setupBattlefield()
-        messageBox.setNextMessage("teachMoves")
+        if player.monsterElement == MonsterElement.None {
+          messageBox.setNextMessage("noMonsterType")
+        } else {
+          messageBox.setNextMessage("teachMoves")
+        }
       case CodeStep.TeachTackle:
         setupBattlefield()
         if !player.respondsToSelector(Selector("tackleButtonPressed")) {
