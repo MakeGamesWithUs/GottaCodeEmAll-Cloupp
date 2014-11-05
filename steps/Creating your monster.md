@@ -7,7 +7,6 @@ There are already two blocks of code. Let's take a look at the first one:
 	func initialize()
 	{
 		// The code in this function runs first
-		
 		nickname = "Morty"
 	}
 	

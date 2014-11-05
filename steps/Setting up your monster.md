@@ -22,7 +22,8 @@ Let's take a look at the code in the ```setupMonsterStats()``` function.
 
 It is formatted just like the ```initialize``` function. It begins with the keyword ```func``` and is followed by the function name, ```setupMonsterStats``` and a set of parenthesis ```()```:
 
-    func setupMonsterStats() {
+    func setupMonsterStats()
+    {
         element = "None"
         level = 1
     }
