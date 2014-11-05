@@ -1,7 +1,7 @@
 Calling Functions
 =====================
 
-You can call functions inside of other functions. In the initalize function, we can call the ```setupMonsterStats``` function. 
+You can call functions inside of other functions. In the initialize function, we can call the ```setupMonsterStats``` function. 
 
 Below the line where we assign the ```nickname``` variable in the ```initialize``` function, add the line:
 
@@ -9,7 +9,7 @@ Below the line where we assign the ```nickname``` variable in the ```initialize`
 	
 Now run your code! What changed?
 	
-When we run the program, the initalize function automatically gets run. When the initalize function calls ```setupMonsterStats()```, all the code in that function also gets run. You added the code defining ```level``` and ```element``` to the code that the computer will run. That is why when you run the program, you can now see a **Leaf, Fire, or Water element** monster -- not just a formless one!
+When we run the program, the initialize function automatically gets run. When the initialize function calls ```setupMonsterStats()```, all the code in that function also gets run. You added the code defining ```level``` and ```element``` to the code that the computer will run. That is why when you run the program, you can now see a **Leaf, Fire, or Water element** monster -- not just a formless one!
 
 
 Changing the element
