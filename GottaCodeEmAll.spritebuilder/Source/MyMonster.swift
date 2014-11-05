@@ -31,6 +31,14 @@ class MyMonster: Monster
     
     
     
+    // swipeButtonPressed goes below this
+    
+    
+    
+    // swipeButtonPressed goes above this
+    
+    
+    
     // singButtonPressed goes below this
     
     
