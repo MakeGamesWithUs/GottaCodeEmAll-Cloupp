@@ -10,11 +10,15 @@ changeStep = (to) ->
 exports.Tutorial = () ->
   step "Welcome",                   changeStep "InitMonster"
   step "Creating your monster",     changeStep "InitMonster"
+  step "Setting up your monster",     changeStep "InitMonster"
   step "Customizing your monster",  changeStep "Customize"
   step "Your monster's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
-  step "Tackle over and over",       changeStep "TeachSwipes"
-  step "Wrapping up",               changeStep "TeachSwipes"
+  step "Swipe over and over",       changeStep "TeachSwipes"
+  step "Quick Recap",               changeStep "TeachSwipes"
+  step "Sing Move",               changeStep "TeachSwipes"
+  step "Final Recap",               changeStep "TeachSwipes"
+
 
 exports.Preprocess = (files) ->
   path        = "GottaCodeEmAll.spritebuilder/Source/MyMonster.swift"

@@ -1,11 +1,11 @@
 Leveling-Up!
 =====
 
-We want the monster's level to increase by 1. That means we need to *add 1* to the monster's level. We can do this with the line:
+We want the monster's level to increase by 5. That means we need to *add 5* to the monster's level. We can do this with the line:
 
-	level = level + 1
+	level = level + 5
 	
-That sets the variable level to the value of the monster's current level, plus 1! Add that line underneath where it says ```//YOUR CODE HERE```. This is what your ```singButtonPressed``` function should look like:
+That sets the variable level to the value of the monster's current level, plus 5! Add that line underneath where it says ```//YOUR CODE HERE```. This is what your ```singButtonPressed``` function should look like:
 
 	function singButtonPressed {
 	 	if level > enemyLevel 
@@ -16,7 +16,7 @@ That sets the variable level to the value of the monster's current level, plus 1
 	 		}
 	 	}
 	 	else {
-	 		level = level + 1
+	 		level = level + 5
 	 	}
 	 }
 	 
@@ -48,4 +48,4 @@ Let's quickly summarize what you have learned today:
 - **For-loops**: repeat the same chunk of code multiple times
 
 
-These fundamentals are found in all programming languages. Your journey as a programmer has only just begun!
+These fundamental concepts are found in all programming languages. You are well on your way to becoming a coding master!

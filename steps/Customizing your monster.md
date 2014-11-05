@@ -1,51 +1,48 @@
-Introducing functions
+Calling Functions
 =====================
-In Swift, functions are declared like this:
 
-	func functionName()
-	{
-		// Function definition goes here
-	}
+You can call functions inside of other functions. In the initalize function, we can call the ```setupMonsterStats``` function. 
 
-Look familiar? That's how the ```initialize``` function is declared.
+Below the line where we assign the ```nickname``` variable in the ```initialize``` function, add the line:
 
-Functions start off with the keyword ```func```. This tells the computer that you want to declare a new function. Then you provide a function name, in this case it was ```initialize```. After the function name comes a pair of parenthesis. Last comes the open and close curly braces. Anything in between those two curly braces is part of the function definition.
+	setupMonsterStats()
+	
+Now run your code! What changed?
+	
+When we run the program, the initalize function automatically gets run. When the initalize function calls ```setupMonsterStats()```, all the code in that function also gets run. You added the code defining ```level``` and ```element``` to the code that the computer will run. That is why when you run the program, you can now see a **Leaf, Fire, or Water element** monster -- not just a formless one!
 
-Why do I need functions?
+
+Changing the element
 ========================
-We know that variables store information to use later, but what about functions? A function stores code that can be run by other parts of the program. Code that it is going to be used more than once or in different parts of a program probably belongs in a function. <!-- We set our ```element``` and ```level``` variables in a function because the game tries to call the ```addToBattle``` function when it starts to set up your monster. -->
+If you set up a Leaf-element monster, you entered a battle against a Fire-element monster. What happens if you change your monster to a different element? For example, if you set up a leaf, try setting ```element = "Fire" ```.
 
+Changing what we store in the ```element``` variable changes both what our monster looks like and what our opponent looks like. This happens because the game code reads the ```element``` variable to help it decide how to set up the battle! Try it out and choose which monster you want to use.
 
-Examining our set up function
-=======================
-Let's take a look at the code in the ```setupMonsterStats()``` function.
+Changing the level
+========
 
-It is formatted just like the ```initialize``` function. It begins with the keyword ```func``` and is followed by the function name, ```setupMonsterStats``` and a set of parenthesis ```()```:
+We also want to make sure we are entering the battle with a monster that is prepared! The monster is too weak to battle at level 1. We need to change the monster's level from 1 to 5. 
 
-    func setupMonsterStats() {
-        element = "None"
-        level = 1
-    }
-We define two different variables in this function: the monster's ```element``` and its ```level```.
+Both ```1``` and ```5``` are **integers**, which means they are whole numbers. Just like a string, an integer is a <!--special--> way for the computer to represent information. 
 
-Changing the stats
-=====================
-Right now, the variable ```element``` is set to ```"None"```. Try changing the monster's element type to ```"Fire"```, ```"Leaf"```, or ```"Water"```. 
+You can change the monster's level from 1 to 5 by changing the line:
 
-Now run the code. Notice any changes?
+	level = 1
+to say:
 
-Even though we changed the ```element``` variable, the code in the ```setupMonsterStats``` function is not actually getting run by the computer, because we never told the computer to look at the code in that function. 
+	level = 5
 
-We could do tons of crazy stuff in that function, but unless we tell the computer to run the code in that function, nothing will change -- so your monster is still formless!
+Now run your code. Your monster should be ready for battle with a worthy opponent!
 
+A little more on integers
+========================
 
-How to make a function run
-===============
+You can also produce **integers** in code with simple arithmetic. The computer understands the plus sign ```+```, the minus sign ```-```, the multiplication sign ```*```, and the division sign ```/```. That means that:
 
-Code inside a function will not get run by the computer unless a function is "called." That is how we tell the computer that it needs to pay attention to the code written in a function. To call a function, you need the function's name, followed by parentheses: ```functionName()```.
-
-When you ran the code after changing your monster's nickname, you saw that change reflected in the simulator -- that is because the ```intialize``` function is special, and it automatically gets called. 
-
-When we tried changing the information in ```setupMonsterStats``` without calling the function first, we didn't see any changes in the simulator. 
-
-Even though the ```setupMonsterStats``` function has always been declared underneath the ```initialize``` function, it is not until we actually call ```setupMonsterStats``` that the code in that function gets read.
+	level = 2 + 3
+	
+means the same thing as:
+	
+	level = 5
+	
+How convenient!

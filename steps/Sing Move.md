@@ -47,7 +47,7 @@ The code that gets run if the answer to "is ```level``` a bigger number than ```
 Variable change with additon
 ========
 
-Earlier, we mentioned that the computer is able to perform algebraic operations like addition and subtraction --  you are going to need to use this to complete the next step. When someone presses the Sing button, we want to make sure their level is higher than the enemy level -- otherwise, we want the monster to level up!
+Earlier, we mentioned that the computer is able to perform algebraic operations like addition and subtraction --  you are going to need to use this to complete the next step. When someone presses the Sing button, we want to make sure their level is higher than the enemy level -- otherwise, we want the monster to gain five levels!
 
 That means that in between the curly brackets after the ```else```, where it says ```//YOUR CODE HERE```, you need to write code that increases the monster's level. Remember, we stored the monster's level as an ```Int``` in the variable ```level```.
 

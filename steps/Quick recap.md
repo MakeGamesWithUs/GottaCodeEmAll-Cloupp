@@ -2,11 +2,11 @@ Quick recap
 =====================
 Variables store information for later. We used variables to store things like our monster's element and its nickname.
 
-Functions are pieces of code that can be called from other parts of the program. We wrote functions that are automatically called when a specific event happens: **Handlers**. In those functions, we called functions that had already been written for us from **Libraries**. We made functions to set up our monster (```setupMonsterStats```) and handle button presses (```tackleButtonPress``` and ```elementalButtonPress```).
+Functions are pieces of code that can be called from other parts of the program. We wrote functions that are automatically called when a specific event happens: **Handlers**. In those functions, we called functions that had already been written for us from **Libraries**. We made functions to set up our monster (```setupMonsterStats```) and handle button presses (```swipeButtonPressed``` and ```elementalButtonPressed```).
 
-If-then-else statements allow our code to react to things. We used one to check if our elemental move would work against our opponent. If it would, we used it but if it wouldn't we used tackle instead.
+If-then-else statements allow our code to react to things. We used one to check if our elemental move would work against our opponent. If it would, we used it but if it wouldn't we used Swipe instead.
 
-For-loops allow code to be repeated. We added a for-loop to use the Tackle a random number of times in a row.
+For-loops allow code to be repeated. We added a for-loop to use the Swipe a random number of times in a row.
 
 Congratulations!
 ================
