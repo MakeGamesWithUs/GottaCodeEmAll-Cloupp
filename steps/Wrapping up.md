@@ -1,21 +1,19 @@
-So, what is a class anyways?
-============================
-We've got one more thing to go over before we finish. The first line of the code we gave you, ```class MyMonster: Monster```, tells the computer we are defining a new class called ```MyMonster```. The ```: Monster``` after that tells the computer ```MyMonster``` inherits from ```Monster```. But what does this all mean?
-
-A class is a special way to break up ideas into code. In this game we have a ```Monster``` class. This class hold all the information necessary for a monster to exist. It organizes a ```Monster```'s variables and functions in a way that is easy to understand and reusable. It's so reusable that when we write ```MyMonster```, we choose to inherit ```Monster```'s code. This means you did not have to write functions to handle being attacked, losing health, and all the other things we handled for you.
-
-If this class business does not make sense to you -- dont worry. It's a concept that makes more sense as you program more. Prace makes perfect.
-
-Last minute refresher
+Quick recap
 =====================
-Variables store information for later. We used variables to store things like our monster's element and it's nickname.
+Variables store information for later. We used variables to store things like our monster's element and its nickname.
 
-Functions are pieces of code that can be called from other parts of the program. Every step we created a new function. We made functions to set up our monster (```addToBattle```) and teach it moves (```tackleMove```, ```elementalMove```, and ```swipeMove```).
+Functions are pieces of code that can be called from other parts of the program. We wrote functions that are automatically called when a specific event happens: **Handlers**. In those functions, we called functions that had already been written for us from **Libraries**. We made functions to set up our monster (```setupMonsterStats```) and handle button presses (```tackleButtonPress``` and ```elementalButtonPress```).
 
 If-then-else statements allow our code to react to things. We used one to check if our elemental move would work against our opponent. If it would, we used it but if it wouldn't we used tackle instead.
 
-For-loops allow code to be repeated even if we do not know how many times we will want to repeat it yet. We used a for-loop while writing ```swipeMove``` since it could hit a randomized amount of times.
+For-loops allow code to be repeated. We added a for-loop to use the Tackle a random number of times in a row.
 
 Congratulations!
 ================
-You've done it! You have coded your own monster and won all three battles. In the first battle you learned how to call a function. In the second battle you learned how to use if-then-else statements. In the third and final battle you used a for-loop. These basic concepts are the core of all programming languages. Congratulations -- you have just begun your journey as a programmer!
+You've done it! You have coded your own monster and won three battles. In the first battle you learned how to call a function from a **Library**. In the second battle you learned how to use if-then-else statements. In the third battle you used a for-loop. These basic concepts are the core of all programming languages. Congratulations -- you have just begun your journey as a programmer!
+
+
+If you still have time...
+================
+
+We have one more battle for you: harder than the rest! You are going to need to use everything you have learned to defeat *this* monster. If you have managed to finish early, continue on to see what we have in store for you...

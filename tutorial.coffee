@@ -13,7 +13,7 @@ exports.Tutorial = () ->
   step "Customizing your monster",  changeStep "Customize"
   step "Your monster's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
-  step "Swipe over and over",       changeStep "TeachSwipes"
+  step "Tackle over and over",       changeStep "TeachSwipes"
   step "Wrapping up",               changeStep "TeachSwipes"
 
 exports.Preprocess = (files) ->
