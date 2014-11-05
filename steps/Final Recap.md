@@ -7,7 +7,7 @@ We want the monster's level to increase by 5. That means we need to *add 5* to t
 	
 That sets the variable level to the value of the monster's current level, plus 5! Add that line underneath where it says ```//YOUR CODE HERE```. This is what your ```singButtonPressed``` function should look like:
 
-	function singButtonPressed {
+	func singButtonPressed() {
 	 	if level > enemyLevel 
 	 	{
 	 		for counter in 1...(level-enemyLevel) 

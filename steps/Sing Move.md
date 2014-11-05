@@ -8,7 +8,7 @@ You are going to use your monster's powerful Sing move to damage your enemy by p
 Add the following code between ```// singButtonPressed goes below this``` and ```// singButtonPressed goes above this```:
 
 
-	function singButtonPressed {
+	func singButtonPressed() {
 	 	if level > enemyLevel 
 	 	{
 	 		for counter in 1...(level-enemyLevel) 
@@ -40,9 +40,9 @@ For-loop with singMove()
 The code that gets run if the answer to "is ```level``` a bigger number than ```enemyLevel```?" is ```YES``` has a for-loop. This for-loop means that ```singMove()``` will get called from the **Attack Library** once for each level that your monster is above the enemy level. If your monster is level 7 and the enemy is level 4, then the code will get run 3 times  (```level - enemyLevel = 7 - 4 = 3```).
 
 	for counter in 1...(level-enemyLevel) 
-	 	{
-	 		singMove()
-	 	}
+	{
+		singMove()
+	}
 	 	
 Variable change with additon
 ========
