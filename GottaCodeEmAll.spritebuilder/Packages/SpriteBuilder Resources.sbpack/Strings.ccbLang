@@ -89,13 +89,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>doesn’t know any moves!</string>
+				<string> doesn’t know any moves! Make sure to teach it tackle.</string>
 				<key>en</key>
 				<string> doesn’t know any moves! Make sure to teach it tackle.</string>
 				<key>es</key>
-				<string>doesn’t know any moves!</string>
+				<string> doesn’t know any moves! Make sure to teach it tackle.</string>
 				<key>fr</key>
-				<string>doesn’t know any moves!</string>
+				<string> doesn’t know any moves! Make sure to teach it tackle.</string>
 			</dict>
 		</dict>
 		<dict>
@@ -106,13 +106,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>doesn't know elemental!</string>
+				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
 				<key>en</key>
-				<string> doesn't know elemental! Make sure to add elementalMove.</string>
+				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
 				<key>es</key>
-				<string>doesn't know elemental!</string>
+				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
 				<key>fr</key>
-				<string>doesn't know elemental!</string>
+				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
 			</dict>
 		</dict>
 		<dict>
@@ -123,13 +123,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>doesn't know Swipe!</string>
+				<string> doesn't know Swipe! Make sure to add swipeButtonPressed.</string>
 				<key>en</key>
-				<string> doesn't know Swipe! Make sure to add swipeMove.</string>
+				<string> doesn't know Swipe! Make sure to add swipeButtonPressed.</string>
 				<key>es</key>
-				<string>doesn't know Swipe!</string>
+				<string> doesn't know Swipe! Make sure to add swipeButtonPressed.</string>
 				<key>fr</key>
-				<string>doesn't know Swipe!</string>
+				<string> doesn't know Swipe! Make sure to add swipeButtonPressed.</string>
 			</dict>
 		</dict>
 		<dict>
@@ -300,6 +300,57 @@
 				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
 				<key>fr</key>
 				<string> tried to used elemtal and missed! Try using Swipe instead!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>sing</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string> used sing!</string>
+				<key>en</key>
+				<string> used sing!</string>
+				<key>es</key>
+				<string> used sing!</string>
+				<key>fr</key>
+				<string> used sing!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>powerUp</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string> increased their level!</string>
+				<key>en</key>
+				<string> increased their level!</string>
+				<key>es</key>
+				<string> increased their level!</string>
+				<key>fr</key>
+				<string> increased their level!</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string></string>
+			<key>key</key>
+			<string>noSing</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
+				<key>en</key>
+				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
+				<key>es</key>
+				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
+				<key>fr</key>
+				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
 			</dict>
 		</dict>
 	</array>

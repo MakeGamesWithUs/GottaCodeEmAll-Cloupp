@@ -9,7 +9,7 @@
 import Foundation
 
 enum MonsterAttackType {
-  case None, Tackle, Elemental, Swipe
+  case None, Tackle, Elemental, Swipe, Sing, PowerUp
   
   func description() -> String {
     switch self {
@@ -21,6 +21,10 @@ enum MonsterAttackType {
         return "Elemental"
       case .Swipe:
         return "Swipe"
+      case .Sing:
+        return "Sing"
+      case .PowerUp:
+        return "PowerUp"
     }
   }
 }
@@ -55,4 +59,18 @@ class MonsterAttack {
     resetAttack()
     attack = MonsterAttackType.Elemental
   }
+  
+  func powerUp() {
+    resetAttack()
+    attack = MonsterAttackType.PowerUp
+  }
+  
+  func sing() {
+    if attack != MonsterAttackType.Sing {
+      resetAttack()
+      attack = MonsterAttackType.Sing
+    }
+    numberOfTimes++
+  }
+  
 }

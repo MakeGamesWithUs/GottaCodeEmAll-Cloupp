@@ -1,36 +1,46 @@
 class MyMonster: Monster
 {
-    
-    
-    // addToBattle goes below this
-    
-    
-    
-    // addToBattle goes above this
-    
-    
-    
-    // tackleMove goes below this
-    
-    
-    
-    // tackleMove goes above this
-    
-    
-    
-    // elementalMove goes below this
-    
-    
-    
-    // elementalMove goes above this
-    
-    
-    
-    // swipeMove goes below this
-    
-    
-    
-    // swipeMove goes above this
-    
-    
+  
+  override func initialize()
+  {
+    nickname = "Morty"
+  }
+  
+  func setupMonsterStats()
+  {
+    element = "None"
+    level = 1
+  }
+  
+  // tackleButtonPressed goes below this
+  
+  
+  
+  // tackleButtonPressed goes above this
+  
+  
+  
+  // elementalButtonPressed goes below this
+  
+  
+  
+  // elementalButtonPressed goes above this
+  
+  
+  
+  // powerupButtonPressed goes below this
+  
+  
+  
+  // powerupButtonPressed goes above this
+  
+  
+  
+  // singButtonPressed goes below this
+  
+  
+  
+  // singButtonPressed goes above this
+  
+  
 }

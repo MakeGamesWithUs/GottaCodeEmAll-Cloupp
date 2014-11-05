@@ -13,33 +13,39 @@ class AttackBox: CCNode {
   var tackleButton: CCButton!
   var elementalButton: CCButton!
   var swipeButton: CCButton!
+  var singButton: CCButton!
 
   func touchedTackle() {
     println("Touched Tackle")
     var player = GameState.sharedInstance.player
-    player.tackleMove()
-    GameState.sharedInstance.battle.processAttacks()
-    self.fadeOut()
-    GameState.sharedInstance.battle.messageBox.fadeIn()
+    player.tackleButtonPressed()
+    self.startAttacks()
   }
 
   func touchedElement() {
     println("Touched Element")
     var player = GameState.sharedInstance.player
-    player.elementalMove()
-    GameState.sharedInstance.battle.processAttacks()
-    self.fadeOut()
-    GameState.sharedInstance.battle.messageBox.fadeIn()
+    player.elementalButtonPressed()
+    self.startAttacks()
   }
 
   func touchedSwipe() {
     println("Touched Swipe")
     var player = GameState.sharedInstance.player
     var numberOfSwipes: Int = Int(arc4random_uniform(3)) + 3
-    player.swipeMove(numberOfSwipes)
-    GameState.sharedInstance.battle.processAttacks()
-    self.fadeOut()
-    GameState.sharedInstance.battle.messageBox.fadeIn()
+    player.swipeButtonPressed(numberOfSwipes)
+    self.startAttacks()
+  }
+  
+  func touchedSing() {
+    println("Touched Sing")
+    var player = GameState.sharedInstance.player
+    var oldLevel = player.level
+    player.singButtonPressed()
+    if oldLevel != player.level {
+      player.performPowerup()
+    }
+    self.startAttacks()
   }
   
   func tackleStep() {
@@ -53,6 +59,19 @@ class AttackBox: CCNode {
     swipeButton.state = CCControlState.Disabled
     swipeButton.cascadeOpacityEnabled = true
     swipeButton.opacity = 0.25
+    swipeStep()
+  }
+  
+  func swipeStep() {
+    singButton.state = CCControlState.Disabled
+    singButton.cascadeOpacityEnabled = true
+    singButton.opacity = 0.25
+  }
+  
+  func startAttacks() {
+    GameState.sharedInstance.battle.processAttacks()
+    self.fadeOut()
+    GameState.sharedInstance.battle.messageBox.fadeIn()
   }
   
   func fadeOut() {

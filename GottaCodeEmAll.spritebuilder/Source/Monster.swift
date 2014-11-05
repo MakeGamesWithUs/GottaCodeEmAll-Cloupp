@@ -7,7 +7,7 @@
 //
 
 import Foundation
-import Cocoa
+//import Cocoa
 
 enum MonsterElement {
   case Water, Fire, Leaf, None
@@ -15,39 +15,51 @@ enum MonsterElement {
 
 class Monster: CCNode {
   
-  var element: MonsterElement = MonsterElement.None {
+  var monsterElement = MonsterElement.None
+  
+  var element: String = "none" {
     didSet {
+      element = element.lowercaseString
       switch element {
-        case MonsterElement.None:
-          break
-        case MonsterElement.Fire:
+        case "fire":
           sprite = CCBReader.load("FireBack", owner:self)
           self.addChild(sprite)
+          monsterElement = MonsterElement.Fire
           weakAgainst = MonsterElement.Water
           GameState.sharedInstance.battle.playerHealth.setupFire()
-        case MonsterElement.Water:
+        case "water":
           sprite = CCBReader.load("WaterBack", owner:self)
           self.addChild(sprite)
+          monsterElement = MonsterElement.Water
           weakAgainst = MonsterElement.Leaf
           GameState.sharedInstance.battle.playerHealth.setupWater()
-        case MonsterElement.Leaf:
+        case "leaf":
           sprite = CCBReader.load("LeafBack", owner:self)
           self.addChild(sprite)
+          monsterElement = MonsterElement.Leaf
           weakAgainst = MonsterElement.Fire
           GameState.sharedInstance.battle.playerHealth.setupLeaf()
+        default:
+          monsterElement = MonsterElement.None
+          element = "none"
       }
-      GameState.sharedInstance.battle.setupEnemy(element)
+      GameState.sharedInstance.battle.setupEnemy(monsterElement)
     }
   }
-  var level: Double = 5.0 {
+  var level: Double = 1.0 {
     didSet {
-      health = level * 5.0
-      totalHealth = health
       if isEnemy {
         GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(level))"
       } else {
+        if level < 1.0 {
+          level = 1.0
+        } else if level > 99.0 {
+          level = 99.0
+        }
         GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(level))"
       }
+      health = level * 5.0
+      totalHealth = health
     }
   }
   var health = 25.0
@@ -62,6 +74,7 @@ class Monster: CCNode {
   
   // TODO: refactor to use this more often
   var opponent: Monster!
+  var opponentWeakAgainst: String!
   let nextMove = MonsterAttack()
   var weakAgainst = MonsterElement.None
   var damageToDo = 0.0
@@ -87,6 +100,14 @@ class Monster: CCNode {
     nextMove.swipe()
   }
   
+  func performSing() {
+    nextMove.sing()
+  }
+  
+  func performPowerup() {
+    nextMove.powerUp()
+  }
+  
   func executeTackle() {
     var messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -110,7 +131,8 @@ class Monster: CCNode {
     } else {
       nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     }
-    if opponent.weakAgainst == element {
+    // TODO: Consider changing this to use the string
+    if opponent.weakAgainst == monsterElement {
       messageBox.setNextMessage("elemental", name:nameString)
       messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
       sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
@@ -141,6 +163,47 @@ class Monster: CCNode {
     if nextMove.numberOfTimes == 0 {
       nextMove.resetAttack()
     }
+  }
+  
+  func executeSing() {
+    var messageBox = GameState.sharedInstance.battle.messageBox
+    var nameString: String!
+    if isEnemy {
+      nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
+    } else {
+      nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+    }
+    if opponent.level < level {
+      messageBox.setNextMessage("sing", name:nameString)
+      messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
+      sprite.animationManager.runAnimationsForSequenceNamed("Sing")
+      damageToDo = level * 2
+      nextMove.numberOfTimes--
+      if nextMove.numberOfTimes == 0 {
+        nextMove.resetAttack()
+      }
+    } else {
+      messageBox.setNextMessage("missed", name:nameString)
+      messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
+      sprite.animationManager.runAnimationsForSequenceNamed("Missed")
+      damageToDo = 0
+      nextMove.resetAttack()
+    }
+  }
+  
+  func executePowerUp() {
+    var messageBox = GameState.sharedInstance.battle.messageBox
+    var nameString: String!
+    if isEnemy {
+      nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
+    } else {
+      nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+    }
+    messageBox.setNextMessage("powerUp", name:nameString)
+    messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
+    sprite.animationManager.runAnimationsForSequenceNamed("PowerUp")
+    damageToDo = level * 1.5
+    nextMove.resetAttack()
   }
   
   func damageOpponent() {
@@ -192,7 +255,7 @@ class Monster: CCNode {
   
   func addElementalToOpponent() {
     var anim: CCNode!
-    switch element {
+    switch monsterElement {
       case MonsterElement.Fire:
         anim = CCBReader.load("FireElemental")
       case MonsterElement.Water:
@@ -207,7 +270,7 @@ class Monster: CCNode {
   
   func addTackleToOpponent() {
     var anim: CCNode!
-    switch element {
+    switch monsterElement {
     case MonsterElement.Fire:
       anim = CCBReader.load("TackleRed")
     case MonsterElement.Water:
@@ -225,22 +288,33 @@ class Monster: CCNode {
     opponent.attackAnimationNode.addChild(anim)
   }
   
-  func addToBattle() {
+  func addSingToOpponent() {
+    var anim: CCNode = CCBReader.load("Sing")
+    opponent.attackAnimationNode.addChild(anim)
+  }
+  
+  func initialize() {
     
   }
   
-  func tackleMove() {
+  func tackleButtonPressed() {
+    
+  }
+
+  func swipeButtonPressed(numberOfSwipes: Int) {
     
   }
   
-  func elementalMove() {
+  func elementalButtonPressed() {
     
   }
   
-  func swipeMove(numberOfSwipes: Int) {
+  func powerUpButtonPressed() {
     
   }
   
-  
+  func singButtonPressed() {
+    
+  }
 
 }
