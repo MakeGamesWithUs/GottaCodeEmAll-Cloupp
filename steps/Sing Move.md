@@ -37,7 +37,7 @@ Next is the if-then-else statement. This time, we are checking to see if our mon
 
 Otherwise, if the answer to that question is false, then the computer will run the code inside the second pair of curly brackets, after the ```else```.
 
-For-loop with singMove()
+For-loop with performSing()
 =====
 The code that gets run if the answer to "is ```level``` a bigger number than ```enemyLevel```?" is ```YES``` has a for-loop. This for-loop means that ```singMove()``` will get called from the **Attack Library** once for each level that your monster is above the enemy level. If your monster is level 7 and the enemy is level 4, then the code will get run 3 times  (```level - enemyLevel = 7 - 4 = 3```).
 

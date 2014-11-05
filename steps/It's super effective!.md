@@ -14,7 +14,7 @@ Add the following code between ```// elementalButtonPressed goes below this``` a
     	}
     	else
     	{
-      		performTackle()
+    		performTackle()
     	}
 	}
 
