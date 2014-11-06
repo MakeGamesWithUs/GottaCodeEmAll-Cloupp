@@ -72,13 +72,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
+				<string>You haven't set your monster's type. Continue onto the next step to learn how!</string>
 				<key>en</key>
-				<string>Looks like you have an initialize function but you haven't set your monster's type! Try again.</string>
+				<string>You haven't set your monster's type. Continue onto the next step to learn how!</string>
 				<key>es</key>
-				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
+				<string>You haven't set your monster's type. Continue onto the next step to learn how!</string>
 				<key>fr</key>
-				<string>Looks like you have an addToBattle function but you haven't set your monster's type!</string>
+				<string>You haven't set your monster's type. Continue onto the next step to learn how!</string>
 			</dict>
 		</dict>
 		<dict>

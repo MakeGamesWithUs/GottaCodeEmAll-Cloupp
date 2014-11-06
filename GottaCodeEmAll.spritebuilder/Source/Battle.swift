@@ -78,7 +78,7 @@ class Battle: CCScene {
     enemy.isEnemy = true
     
     enemyHealth.opacity = 0.0
-    playerHealth.opacity = 0.0
+//    playerHealth.opacity = 0.0
     
     checkCodeForCurrentStep()
   }
@@ -104,6 +104,7 @@ class Battle: CCScene {
         if !player.respondsToSelector(Selector("initialize")) {
           messageBox.setNextMessage("noMonster")
         } else {
+          player.initialize()
           if player.monsterElement == MonsterElement.None {
             messageBox.setNextMessage("noMonsterType")
           } else {
