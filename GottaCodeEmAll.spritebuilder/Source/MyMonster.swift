@@ -5,20 +5,20 @@ class MyMonster: Monster
     func initialize()
     {
         // The code in this function runs first
-        nickname = "Morty"
+        nickname = "Cloud"
     }
   
-    func setupMonsterStats()
+    func setupCritterStats()
     {
-        element = "None"
-        level = 1
+        myElement = "None"
+        myLevel = 1
     }
   
-    // tackleButtonPressed goes below this
+    // dashButtonPressed goes below this
     
     
     
-    // tackleButtonPressed goes above this
+    // dashButtonPressed goes above this
     
     
     
