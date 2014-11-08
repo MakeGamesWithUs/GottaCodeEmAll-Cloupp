@@ -1,32 +1,32 @@
 Leveling-Up!
 =====
 
-We want the monster's level to increase by 5. That means we need to *add 5* to the monster's level. We can do this with the line:
+We want the critter’s level to be the opponent critter’s level increased by 5. That means we need to set our critter’s level equal to the *opponent critter’s level* and *add 5*. We can do this with the line:
 
-	level = level + 5
+	myLevel = opponentLevel + 5
 	
-That sets the variable level to the value of the monster's current level, plus 5! Add that line underneath where it says ```//YOUR CODE HERE```. This is what your ```singButtonPressed``` function should look like:
+That sets the variable level to the value of the critter’s current level, plus 5! Add that line underneath where it says ```//YOUR CODE HERE```. This is what your ```singButtonPressed``` function should look like:
 
 	func singButtonPressed()
 	{
-	 	if level > enemyLevel 
+	 	if myLevel > opponentLevel 
 	 	{
-	 		for counter in 1...(level - enemyLevel) 
+	 		for counter in 1...(myLevel - opponentLevel) 
 	 		{
 	 			performSing()
 	 		}
 	 	}
 	 	else
 	 	{
-	 		level = level + 5
+	 		myLevel = opponentLevel + 5
 	 	}
 	 }
 	 
-Try beating the enemy monster!
+Try beating the opponent critter!
 
 Final Recap
 ========
-Congratulations! You have beat the final and hardest monster!
+Congratulations! You have beat the final and hardest critter!
 
 Let's quickly summarize what you have learned today:
 
