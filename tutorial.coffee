@@ -9,10 +9,10 @@ changeStep = (to) ->
 
 exports.Tutorial = () ->
   step "Welcome",                   changeStep "InitMonster"
-  step "Creating your monster",     changeStep "InitMonster"
-  step "Setting up your monster",   changeStep "InitMonster"
-  step "Customizing your monster",  changeStep "Customize"
-  step "Your monster's first move", changeStep "TeachTackle"
+  step "Creating your critter",     changeStep "InitMonster"
+  step "Setting up your critter",   changeStep "InitMonster"
+  step "Customizing your critter",  changeStep "Customize"
+  step "Your critter's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
   step "Swipe over and over",       changeStep "TeachSwipes"
   step "Quick recap",               changeStep "TeachSwipes"
