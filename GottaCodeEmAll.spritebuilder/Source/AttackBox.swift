@@ -79,6 +79,7 @@ class AttackBox: CCNode {
     tackleButton.userInteractionEnabled = false
     elementalButton.userInteractionEnabled = false
     swipeButton.userInteractionEnabled = false
+    singButton.userInteractionEnabled = false
   }
   
   func fadeIn() {
@@ -86,6 +87,7 @@ class AttackBox: CCNode {
     tackleButton.userInteractionEnabled = true
     elementalButton.userInteractionEnabled = true
     swipeButton.userInteractionEnabled = true
+    singButton.userInteractionEnabled = true
   }
 
 }
