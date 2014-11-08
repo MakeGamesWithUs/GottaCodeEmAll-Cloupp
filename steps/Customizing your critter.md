@@ -7,6 +7,15 @@ Below the line where we assign the ```nickname``` variable in the ```initialize`
 
 	setupCritterStats()
 	
+Your intialize function should now look like this:
+
+	func initialize()
+	{
+		// The code in this function runs first
+		nickname = "Cloud"
+		setupCritterStats()
+	}
+	
 Now run your code! What changed?
 	
 When we run the program, the initialize function automatically gets run. When the initialize function calls ```setupCritterStats()```, all the code in that function also gets run. You added the code defining ```myLevel``` and ```myElement``` to the code that the computer will run. That is why when you run the program, you can now see a **Leaf, Fire, or Water element** critter -- not just a formless one!
