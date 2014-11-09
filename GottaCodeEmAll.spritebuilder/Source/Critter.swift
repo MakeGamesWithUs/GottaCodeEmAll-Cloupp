@@ -1,5 +1,5 @@
 //
-//  Monster.swift
+//  Critter.swift
 //  GottaCodeEmAll
 //
 //  Created by Dion Larson on 9/15/14.
@@ -9,13 +9,13 @@
 import Foundation
 //import Cocoa
 
-enum MonsterElement {
+enum CritterElement {
   case Water, Fire, Leaf, None
 }
 
-class Monster: CCNode {
+class Critter: CCNode {
   
-  var monsterElement = MonsterElement.None
+  var monsterElement = CritterElement.None
   
   var myElement: String = "none" {
     didSet {
@@ -25,28 +25,28 @@ class Monster: CCNode {
           self.removeAllChildren()
           sprite = CCBReader.load("FireBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Fire
-          weakAgainst = MonsterElement.Water
+          monsterElement = CritterElement.Fire
+          weakAgainst = CritterElement.Water
           GameState.sharedInstance.battle.playerHealth.setupFire()
         case "water":
           self.removeAllChildren()
           sprite = CCBReader.load("WaterBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Water
-          weakAgainst = MonsterElement.Leaf
+          monsterElement = CritterElement.Water
+          weakAgainst = CritterElement.Leaf
           GameState.sharedInstance.battle.playerHealth.setupWater()
         case "leaf":
           self.removeAllChildren()
           sprite = CCBReader.load("LeafBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Leaf
-          weakAgainst = MonsterElement.Fire
+          monsterElement = CritterElement.Leaf
+          weakAgainst = CritterElement.Fire
           GameState.sharedInstance.battle.playerHealth.setupLeaf()
         default:
-          monsterElement = MonsterElement.None
+          monsterElement = CritterElement.None
           myElement = "none"
       }
-      if monsterElement != MonsterElement.None {
+      if monsterElement != CritterElement.None {
         GameState.sharedInstance.battle.setupEnemy(monsterElement)
       }
     }
@@ -83,10 +83,10 @@ class Monster: CCNode {
   }
   
   // TODO: refactor to use this more often
-  var opponent: Monster!
+  var opponent: Critter!
   var elementMyOpponentIsWeakAgainst: String!
-  let nextMove = MonsterAttack()
-  var weakAgainst = MonsterElement.None
+  let nextMove = CritterAttack()
+  var weakAgainst = CritterElement.None
   var damageToDo = 0.0
   var sprite: CCNode!
   var isEnemy = false
@@ -265,13 +265,13 @@ class Monster: CCNode {
   func addElementalToOpponent() {
     var anim: CCNode!
     switch monsterElement {
-      case MonsterElement.Fire:
+      case CritterElement.Fire:
         anim = CCBReader.load("FireElemental")
-      case MonsterElement.Water:
+      case CritterElement.Water:
         anim = CCBReader.load("WaterElemental")
-      case MonsterElement.Leaf:
+      case CritterElement.Leaf:
         anim = CCBReader.load("LeafElemental")
-      case MonsterElement.None:
+      case CritterElement.None:
         anim = CCBReader.load("FireElemental")
     }
     opponent.attackAnimationNode.addChild(anim)
@@ -280,13 +280,13 @@ class Monster: CCNode {
   func addTackleToOpponent() {
     var anim: CCNode!
     switch monsterElement {
-    case MonsterElement.Fire:
+    case CritterElement.Fire:
       anim = CCBReader.load("TackleRed")
-    case MonsterElement.Water:
+    case CritterElement.Water:
       anim = CCBReader.load("TackleBlue")
-    case MonsterElement.Leaf:
+    case CritterElement.Leaf:
       anim = CCBReader.load("TackleGreen")
-    case MonsterElement.None:
+    case CritterElement.None:
       anim = CCBReader.load("TackleRed")
     }
     opponent.attackAnimationNode.addChild(anim)

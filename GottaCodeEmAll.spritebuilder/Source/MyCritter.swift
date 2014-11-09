@@ -1,4 +1,4 @@
-class MyMonster: Monster
+class MyCritter: Critter
 {
 
 

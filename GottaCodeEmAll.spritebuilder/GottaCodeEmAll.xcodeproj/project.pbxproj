@@ -37,11 +37,11 @@
 		B77F1B4217B978D7009739AE /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B77F1B4117B978D7009739AE /* CoreText.framework */; };
 		BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2AD19CCAF6E00309135 /* MessageBox.swift */; };
 		BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2B019CCAF8700309135 /* HealthBox.swift */; };
-		BC11E69719CCE50C00F14992 /* EnemyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyMonster.swift */; };
+		BC11E69719CCE50C00F14992 /* EnemyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyCritter.swift */; };
 		BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackBox.swift */; };
-		BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* MonsterAttack.swift */; };
-		BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
-		BCF642E219C78B5F0084D32F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
+		BC49B68419CA0E9B00324923 /* CritterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* CritterAttack.swift */; };
+		BC55B90019C8ADDF007555F8 /* MyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */; };
+		BCF642E219C78B5F0084D32F /* Critter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Critter.swift */; };
 		BCF642E419C78B6B0084D32F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E319C78B6B0084D32F /* Battle.swift */; };
 		BEC40D9C19DA638900ACDA8F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9B19DA638900ACDA8F /* AppDelegate.m */; };
 		BEC40D9E19DA638900ACDA8F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BEC40D9D19DA638900ACDA8F /* main.m */; };
@@ -63,10 +63,10 @@
 		BEC40DD919DA679900ACDA8F /* AttackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackBox.swift */; };
 		BEC40DDA19DA679900ACDA8F /* MessageBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2AD19CCAF6E00309135 /* MessageBox.swift */; };
 		BEC40DDB19DA679900ACDA8F /* HealthBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC01F2B019CCAF8700309135 /* HealthBox.swift */; };
-		BEC40DDC19DA679900ACDA8F /* MonsterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* MonsterAttack.swift */; };
-		BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Monster.swift */; };
-		BEC40DDE19DA679900ACDA8F /* EnemyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyMonster.swift */; };
-		BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */; };
+		BEC40DDC19DA679900ACDA8F /* CritterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* CritterAttack.swift */; };
+		BEC40DDD19DA679900ACDA8F /* Critter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Critter.swift */; };
+		BEC40DDE19DA679900ACDA8F /* EnemyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyCritter.swift */; };
+		BEC40DDF19DA679900ACDA8F /* MyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */; };
 		BEC40DE119DA679F00ACDA8F /* Published-iOS in Resources */ = {isa = PBXBuildFile; fileRef = B737893A180761570076A88C /* Published-iOS */; };
 /* End PBXBuildFile section */
 
@@ -150,14 +150,14 @@
 		B7B3713D180358F1007369CC /* libObjectiveChipmunk.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libObjectiveChipmunk.a; path = "../libs/cocos2d-iphone/external/Chipmunk/xcode/build/Debug-iphoneos/libObjectiveChipmunk.a"; sourceTree = "<group>"; };
 		BC01F2AD19CCAF6E00309135 /* MessageBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MessageBox.swift; path = Source/MessageBox.swift; sourceTree = "<group>"; };
 		BC01F2B019CCAF8700309135 /* HealthBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HealthBox.swift; path = Source/HealthBox.swift; sourceTree = "<group>"; };
-		BC11E69619CCE50C00F14992 /* EnemyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnemyMonster.swift; path = Source/EnemyMonster.swift; sourceTree = "<group>"; };
+		BC11E69619CCE50C00F14992 /* EnemyCritter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnemyCritter.swift; path = Source/EnemyCritter.swift; sourceTree = "<group>"; };
 		BC11E69819CCED6C00F14992 /* AttackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttackBox.swift; path = Source/AttackBox.swift; sourceTree = "<group>"; };
-		BC49B68319CA0E9B00324923 /* MonsterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MonsterAttack.swift; path = Source/MonsterAttack.swift; sourceTree = "<group>"; };
-		BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyMonster.swift; path = Source/MyMonster.swift; sourceTree = "<group>"; };
+		BC49B68319CA0E9B00324923 /* CritterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CritterAttack.swift; path = Source/CritterAttack.swift; sourceTree = "<group>"; };
+		BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCritter.swift; path = Source/MyCritter.swift; sourceTree = "<group>"; };
 		BC5B537E19E4ADBD00E16F89 /* cocos2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2d.h; path = "Source/libs/cocos2d-iphone/cocos2d/cocos2d.h"; sourceTree = "<group>"; };
 		BCEE6A7B19E4AE26004B9A0D /* cocos2d-ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cocos2d-ui.h"; path = "Source/libs/cocos2d-iphone/cocos2d-ui/cocos2d-ui.h"; sourceTree = "<group>"; };
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
-		BCF642E119C78B5F0084D32F /* Monster.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Monster.swift; path = Source/Monster.swift; sourceTree = "<group>"; };
+		BCF642E119C78B5F0084D32F /* Critter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Critter.swift; path = Source/Critter.swift; sourceTree = "<group>"; };
 		BCF642E319C78B6B0084D32F /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Source/Battle.swift; sourceTree = "<group>"; };
 		BEC40D9619DA638900ACDA8F /* GottaCodeEmAllOSX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GottaCodeEmAllOSX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEC40D9919DA638900ACDA8F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -245,10 +245,10 @@
 				BC11E69819CCED6C00F14992 /* AttackBox.swift */,
 				BC01F2AD19CCAF6E00309135 /* MessageBox.swift */,
 				BC01F2B019CCAF8700309135 /* HealthBox.swift */,
-				BC49B68319CA0E9B00324923 /* MonsterAttack.swift */,
-				BCF642E119C78B5F0084D32F /* Monster.swift */,
-				BC11E69619CCE50C00F14992 /* EnemyMonster.swift */,
-				BC55B8FF19C8ADDF007555F8 /* MyMonster.swift */,
+				BC49B68319CA0E9B00324923 /* CritterAttack.swift */,
+				BCF642E119C78B5F0084D32F /* Critter.swift */,
+				BC11E69619CCE50C00F14992 /* EnemyCritter.swift */,
+				BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */,
@@ -608,16 +608,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCF642E219C78B5F0084D32F /* Monster.swift in Sources */,
+				BCF642E219C78B5F0084D32F /* Critter.swift in Sources */,
 				B737893F1807617C0076A88C /* AppDelegate.m in Sources */,
 				BCF642E419C78B6B0084D32F /* Battle.swift in Sources */,
 				BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
 				BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */,
 				BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */,
-				BC11E69719CCE50C00F14992 /* EnemyMonster.swift in Sources */,
-				BC49B68419CA0E9B00324923 /* MonsterAttack.swift in Sources */,
-				BC55B90019C8ADDF007555F8 /* MyMonster.swift in Sources */,
+				BC11E69719CCE50C00F14992 /* EnemyCritter.swift in Sources */,
+				BC49B68419CA0E9B00324923 /* CritterAttack.swift in Sources */,
+				BC55B90019C8ADDF007555F8 /* MyCritter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -626,15 +626,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				BEC40D9E19DA638900ACDA8F /* main.m in Sources */,
-				BEC40DDD19DA679900ACDA8F /* Monster.swift in Sources */,
-				BEC40DDF19DA679900ACDA8F /* MyMonster.swift in Sources */,
+				BEC40DDD19DA679900ACDA8F /* Critter.swift in Sources */,
+				BEC40DDF19DA679900ACDA8F /* MyCritter.swift in Sources */,
 				BEC40DD919DA679900ACDA8F /* AttackBox.swift in Sources */,
 				BEC40DD719DA66FC00ACDA8F /* MSCaptureGLView.m in Sources */,
 				BEC40DDA19DA679900ACDA8F /* MessageBox.swift in Sources */,
 				BEC40DDB19DA679900ACDA8F /* HealthBox.swift in Sources */,
 				BEC40D9C19DA638900ACDA8F /* AppDelegate.m in Sources */,
-				BEC40DDE19DA679900ACDA8F /* EnemyMonster.swift in Sources */,
-				BEC40DDC19DA679900ACDA8F /* MonsterAttack.swift in Sources */,
+				BEC40DDE19DA679900ACDA8F /* EnemyCritter.swift in Sources */,
+				BEC40DDC19DA679900ACDA8F /* CritterAttack.swift in Sources */,
 				BEC40DD819DA679900ACDA8F /* Battle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
