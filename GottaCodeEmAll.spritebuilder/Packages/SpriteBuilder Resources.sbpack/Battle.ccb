@@ -704,7 +704,7 @@
 						<key>children</key>
 						<array/>
 						<key>customClass</key>
-						<string>EnemyMonster</string>
+						<string>EnemyCritter</string>
 						<key>displayName</key>
 						<string>enemyLocation</string>
 						<key>memberVarAssignmentName</key>
@@ -842,12 +842,10 @@
 										<string>UnknownMonster.ccb</string>
 									</dict>
 								</array>
-								<key>selected</key>
-								<true/>
 							</dict>
 						</array>
 						<key>customClass</key>
-						<string>MyMonster</string>
+						<string>MyCritter</string>
 						<key>displayName</key>
 						<string>playerLocation</string>
 						<key>memberVarAssignmentName</key>
