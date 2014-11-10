@@ -51,7 +51,7 @@
 			<key>comment</key>
 			<string></string>
 			<key>key</key>
-			<string>noMonster</string>
+			<string>noCritter</string>
 			<key>translations</key>
 			<dict>
 				<key>de</key>
@@ -68,7 +68,7 @@
 			<key>comment</key>
 			<string></string>
 			<key>key</key>
-			<string>noMonsterType</string>
+			<string>noCritterType</string>
 			<key>translations</key>
 			<dict>
 				<key>de</key>
