@@ -1,5 +1,5 @@
 exports             = exports ? @
-exports.DefaultFile = "GottaCodeEmAll.spritebuilder/Source/MyMonster.swift"
+exports.DefaultFile = "GottaCodeEmAll.spritebuilder/Source/MyCritter.swift"
 exports.Files       = [ "GottaCodeEmAll.spritebuilder/Source/Battle.swift" ]
 
 changeStep = (to) ->
@@ -8,9 +8,9 @@ changeStep = (to) ->
     files[path] = files[path].replace /(var\scurrentStep:\sCodeStep\s=\sCodeStep.)([\S]*)/igm, "$1#{to}"
 
 exports.Tutorial = () ->
-  step "Welcome",                   changeStep "InitMonster"
-  step "Creating your critter",     changeStep "InitMonster"
-  step "Setting up your critter",   changeStep "InitMonster"
+  step "Welcome",                   changeStep "InitCritter"
+  step "Creating your critter",     changeStep "InitCritter"
+  step "Setting up your critter",   changeStep "InitCritter"
   step "Customizing your critter",  changeStep "Customize"
   step "Your critter's first move", changeStep "TeachTackle"
   step "It's super effective!",     changeStep "TeachElemental"
@@ -21,5 +21,5 @@ exports.Tutorial = () ->
 
 
 exports.Preprocess = (files) ->
-  path        = "GottaCodeEmAll.spritebuilder/Source/MyMonster.swift"
+  path        = "GottaCodeEmAll.spritebuilder/Source/MyCritter.swift"
   files[path] = files[path].replace /func(\s+\w+ButtonPressed[\s\S]+?{)/igm, "override func$1"

@@ -1,5 +1,5 @@
 //
-//  MonsterAttack.swift
+//  CritterAttack.swift
 //  GottaCodeEmAll
 //
 //  Created by Dion Larson on 9/17/14.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MonsterAttackType {
+enum CritterAttackType {
   case None, Tackle, Elemental, Swipe, Sing, PowerUp
   
   func description() -> String {
@@ -29,24 +29,24 @@ enum MonsterAttackType {
   }
 }
 
-class MonsterAttack {
-  var attack = MonsterAttackType.None
+class CritterAttack {
+  var attack = CritterAttackType.None
   var numberOfTimes = 0 // only relevant for swipe
   
   func resetAttack() {
-    attack = MonsterAttackType.None
+    attack = CritterAttackType.None
     numberOfTimes = 0
   }
   
   func tackle() {
     resetAttack()
-    attack = MonsterAttackType.Tackle
+    attack = CritterAttackType.Tackle
   }
   
   func swipe() {
-    if attack != MonsterAttackType.Swipe {
+    if attack != CritterAttackType.Swipe {
       resetAttack()
-      attack = MonsterAttackType.Swipe
+      attack = CritterAttackType.Swipe
     }
     numberOfTimes++
     
@@ -57,18 +57,18 @@ class MonsterAttack {
   
   func elemental() {
     resetAttack()
-    attack = MonsterAttackType.Elemental
+    attack = CritterAttackType.Elemental
   }
   
   func powerUp() {
     resetAttack()
-    attack = MonsterAttackType.PowerUp
+    attack = CritterAttackType.PowerUp
   }
   
   func sing() {
-    if attack != MonsterAttackType.Sing {
+    if attack != CritterAttackType.Sing {
       resetAttack()
-      attack = MonsterAttackType.Sing
+      attack = CritterAttackType.Sing
     }
     numberOfTimes++
   }

@@ -1,5 +1,5 @@
 //
-//  EnemyMonster.swift
+//  EnemyCritter.swift
 //  GottaCodeEmAll
 //
 //  Created by Dion Larson on 9/19/14.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class EnemyMonster: Monster {
+class EnemyCritter: Critter {
   
   override init() {
     super.init()
