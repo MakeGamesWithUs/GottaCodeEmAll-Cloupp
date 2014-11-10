@@ -13,12 +13,12 @@ enum BattleState {
 }
 
 enum CodeStep {
-  case InitMonster, Customize, TeachTackle, TeachElemental, TeachSwipes, TeachSing
+  case InitCritter, Customize, TeachTackle, TeachElemental, TeachSwipes, TeachSing
   
   func description() -> String {
     switch self {
-      case .InitMonster:
-        return "InitMonster"
+      case .InitCritter:
+        return "InitCritter"
       case .Customize:
         return "Customize"
       case .TeachTackle:
@@ -43,25 +43,25 @@ class GameState {
   }
   
   var battle: Battle!
-  var enemy: EnemyMonster!
-  var player: MyMonster!
+  var enemy: EnemyCritter!
+  var player: MyCritter!
   var gameOver: Bool = false
   
 }
 
 class Battle: CCScene {
 
-  let playerAttack = MonsterAttack()
+  let playerAttack = CritterAttack()
   
-  var currentStep: CodeStep = CodeStep.InitMonster
+  var currentStep: CodeStep = CodeStep.InitCritter
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
   var attackBox: AttackBox!
   var playerHealth: HealthBox!
   var enemyHealth: HealthBox!
-  var player: MyMonster!
-  var enemy: EnemyMonster!
+  var player: MyCritter!
+  var enemy: EnemyCritter!
   
   override init() {
     super.init()
@@ -78,7 +78,6 @@ class Battle: CCScene {
     enemy.isEnemy = true
     
     enemyHealth.opacity = 0.0
-//    playerHealth.opacity = 0.0
     
     checkCodeForCurrentStep()
   }
@@ -100,27 +99,27 @@ class Battle: CCScene {
   func checkCodeForCurrentStep() {
     var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     switch currentStep {
-      case CodeStep.InitMonster:
+      case CodeStep.InitCritter:
         if !player.respondsToSelector(Selector("initialize")) {
-          messageBox.setNextMessage("noMonster")
+          messageBox.setNextMessage("noCritter")
         } else {
           player.initialize()
-          if player.monsterElement == MonsterElement.None {
-            messageBox.setNextMessage("noMonsterType")
+          if player.monsterElement == CritterElement.None {
+            messageBox.setNextMessage("noCritterType")
           } else {
             setupBattlefield()
             messageBox.setNextMessage("customize")
           }
         }
-        enemy.level = player.level
+        enemy.myLevel = player.myLevel
       case CodeStep.Customize:
         setupBattlefield()
-        if player.monsterElement == MonsterElement.None {
-          messageBox.setNextMessage("noMonsterType")
+        if player.monsterElement == CritterElement.None {
+          messageBox.setNextMessage("noCritterType")
         } else {
           messageBox.setNextMessage("teachMoves")
         }
-        enemy.level = player.level
+        enemy.myLevel = player.myLevel
       case CodeStep.TeachTackle:
         setupBattlefield()
         if !player.respondsToSelector(Selector("tackleButtonPressed")) {
@@ -129,10 +128,10 @@ class Battle: CCScene {
         } else {
           attackBox.tackleStep()
         }
-        enemy.level = player.level
+        enemy.myLevel = player.myLevel
       case CodeStep.TeachElemental:
         setupBattlefield()
-        enemy.level = player.level * 2
+        enemy.myLevel = player.myLevel * 2
         if !player.respondsToSelector(Selector("elementalButtonPressed")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noElemental", name:nameLabel)
@@ -141,7 +140,7 @@ class Battle: CCScene {
         }
       case CodeStep.TeachSwipes:
         setupBattlefield()
-        enemy.level = Int(Double(player.level) * 1.5)
+        enemy.myLevel = Int(Double(player.myLevel) * 1.5)
         if !player.respondsToSelector(Selector("swipeButtonPressed:")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noSwipe", name:nameLabel)
@@ -150,7 +149,7 @@ class Battle: CCScene {
         }
       case CodeStep.TeachSing:
         setupBattlefield()
-        enemy.level = player.level + 1
+        enemy.myLevel = player.myLevel * 2
         if !player.respondsToSelector(Selector("singButtonPressed")) {
           // TODO: MAKE THIS WORK
           messageBox.setNextMessage("noSing", name:nameLabel)
@@ -158,7 +157,7 @@ class Battle: CCScene {
       default:
         break
     }
-    player.enemyLevel = enemy.level
+    player.opponentLevel = enemy.myLevel
   }
   
   func setupBattlefield() {
@@ -172,66 +171,66 @@ class Battle: CCScene {
     var player = GameState.sharedInstance.player
     var playerAttack = player.nextMove
     switch playerAttack.attack {
-      case MonsterAttackType.Tackle:
+      case CritterAttackType.Tackle:
         player.executeTackle()
-      case MonsterAttackType.Elemental:
+      case CritterAttackType.Elemental:
         player.executeElemental()
-      case MonsterAttackType.Swipe:
+      case CritterAttackType.Swipe:
         player.executeSwipe()
-      case MonsterAttackType.Sing:
+      case CritterAttackType.Sing:
         player.executeSing()
-      case MonsterAttackType.PowerUp:
+      case CritterAttackType.PowerUp:
         player.executePowerUp()
-      case MonsterAttackType.None:
+      case CritterAttackType.None:
         GameState.sharedInstance.enemy.executeTackle()
     }
   }
   
-  func setupEnemy(playerType: MonsterElement) {
-    if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes {
+  func setupEnemy(playerType: CritterElement) {
+    if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes || GameState.sharedInstance.battle.currentStep == CodeStep.TeachSing {
       switch playerType {
-        case MonsterElement.None:
+        case CritterElement.None:
           break
-        case MonsterElement.Leaf:
+        case CritterElement.Leaf:
           enemy.sprite = CCBReader.load("FireFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Water
-          player.opponentWeakAgainst = "water"
+          enemy.weakAgainst = CritterElement.Water
+          player.elementMyOpponentIsWeakAgainst = "water"
           enemyHealth.setupFire()
-        case MonsterElement.Fire:
+        case CritterElement.Fire:
           enemy.sprite = CCBReader.load("WaterFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Leaf
-          player.opponentWeakAgainst = "leaf"
+          enemy.weakAgainst = CritterElement.Leaf
+          player.elementMyOpponentIsWeakAgainst = "leaf"
           enemyHealth.setupWater()
-        case MonsterElement.Water:
+        case CritterElement.Water:
           enemy.sprite = CCBReader.load("LeafFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Fire
-          player.opponentWeakAgainst = "fire"
+          enemy.weakAgainst = CritterElement.Fire
+          player.elementMyOpponentIsWeakAgainst = "fire"
           enemyHealth.setupLeaf()
       }
     } else {
       switch playerType {
-        case MonsterElement.None:
+        case CritterElement.None:
           break
-        case MonsterElement.Water:
+        case CritterElement.Water:
           enemy.sprite = CCBReader.load("FireFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Water
-          player.opponentWeakAgainst = "water"
+          enemy.weakAgainst = CritterElement.Water
+          player.elementMyOpponentIsWeakAgainst = "water"
           enemyHealth.setupFire()
-        case MonsterElement.Leaf:
+        case CritterElement.Leaf:
           enemy.sprite = CCBReader.load("WaterFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Leaf
-          player.opponentWeakAgainst = "leaf"
+          enemy.weakAgainst = CritterElement.Leaf
+          player.elementMyOpponentIsWeakAgainst = "leaf"
           enemyHealth.setupWater()
-        case MonsterElement.Fire:
+        case CritterElement.Fire:
           enemy.sprite = CCBReader.load("LeafFront", owner:enemy)
           enemy.addChild(enemy.sprite)
-          enemy.weakAgainst = MonsterElement.Fire
-          player.opponentWeakAgainst = "fire"
+          enemy.weakAgainst = CritterElement.Fire
+          player.elementMyOpponentIsWeakAgainst = "fire"
           enemyHealth.setupLeaf()
       }
     }

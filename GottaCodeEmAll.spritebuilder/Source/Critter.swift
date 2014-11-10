@@ -1,5 +1,5 @@
 //
-//  Monster.swift
+//  Critter.swift
 //  GottaCodeEmAll
 //
 //  Created by Dion Larson on 9/15/14.
@@ -9,66 +9,67 @@
 import Foundation
 //import Cocoa
 
-enum MonsterElement {
+enum CritterElement {
   case Water, Fire, Leaf, None
 }
 
-class Monster: CCNode {
+class Critter: CCNode {
   
-  var monsterElement = MonsterElement.None
+  var monsterElement = CritterElement.None
   
-  var element: String = "none" {
+  var myElement: String = "none" {
     didSet {
-      element = element.lowercaseString
-      switch element {
+      myElement = myElement.lowercaseString
+      switch myElement {
         case "fire":
           self.removeAllChildren()
           sprite = CCBReader.load("FireBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Fire
-          weakAgainst = MonsterElement.Water
+          monsterElement = CritterElement.Fire
+          weakAgainst = CritterElement.Water
           GameState.sharedInstance.battle.playerHealth.setupFire()
         case "water":
           self.removeAllChildren()
           sprite = CCBReader.load("WaterBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Water
-          weakAgainst = MonsterElement.Leaf
+          monsterElement = CritterElement.Water
+          weakAgainst = CritterElement.Leaf
           GameState.sharedInstance.battle.playerHealth.setupWater()
         case "leaf":
           self.removeAllChildren()
           sprite = CCBReader.load("LeafBack", owner:self)
           self.addChild(sprite)
-          monsterElement = MonsterElement.Leaf
-          weakAgainst = MonsterElement.Fire
+          monsterElement = CritterElement.Leaf
+          weakAgainst = CritterElement.Fire
           GameState.sharedInstance.battle.playerHealth.setupLeaf()
         default:
-          monsterElement = MonsterElement.None
-          element = "none"
+          monsterElement = CritterElement.None
+          myElement = "none"
       }
-      if monsterElement != MonsterElement.None {
+      if monsterElement != CritterElement.None {
         GameState.sharedInstance.battle.setupEnemy(monsterElement)
       }
     }
   }
-  var level: Int = 1 {
+  var myLevel: Int = 1 {
     didSet {
       if isEnemy {
-        GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(level))"
-      } else {
-        if level < 1 {
-          level = 1
-        } else if level > 99 {
-          level = 99
+        GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(myLevel))"
+      } else if GameState.sharedInstance.battle.playerHealth.levelLabel.string == "Level 1" {
+        if myLevel < 1 {
+          myLevel = 1
+        } else if myLevel > 99 {
+          myLevel = 99
         }
-        GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(level))"
+        GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(myLevel))"
       }
-      health = Double(level) * 5.0
-      totalHealth = health
+      var oldHealthPercent = health / totalHealth
+      totalHealth = Double(myLevel) * 5.0
+      health = totalHealth * oldHealthPercent
     }
   }
   
-  var enemyLevel = 1
+  var opponentLevel = 1
   var levelDifference = 0
   
   var health = 25.0
@@ -82,10 +83,10 @@ class Monster: CCNode {
   }
   
   // TODO: refactor to use this more often
-  var opponent: Monster!
-  var opponentWeakAgainst: String!
-  let nextMove = MonsterAttack()
-  var weakAgainst = MonsterElement.None
+  var opponent: Critter!
+  var elementMyOpponentIsWeakAgainst: String!
+  let nextMove = CritterAttack()
+  var weakAgainst = CritterElement.None
   var damageToDo = 0.0
   var sprite: CCNode!
   var isEnemy = false
@@ -97,7 +98,7 @@ class Monster: CCNode {
     self.cascadeOpacityEnabled = true
   }
   
-  func performTackle() {
+  func performDash() {
     nextMove.tackle()
   }
   
@@ -128,7 +129,7 @@ class Monster: CCNode {
     messageBox.setNextMessage("tackle", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Tackle")
-    damageToDo = Double(level) * 1.5
+    damageToDo = Double(myLevel) * 1.5
     nextMove.resetAttack()
   }
   
@@ -145,7 +146,7 @@ class Monster: CCNode {
       messageBox.setNextMessage("elemental", name:nameString)
       messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
       sprite.animationManager.runAnimationsForSequenceNamed("Elemental")
-      damageToDo = Double(level) * 5
+      damageToDo = Double(myLevel) * 5
       nextMove.resetAttack()
     } else {
       messageBox.setNextMessage("missed", name:nameString)
@@ -167,7 +168,7 @@ class Monster: CCNode {
     messageBox.setNextMessage("swipe", name:nameString)
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
     sprite.animationManager.runAnimationsForSequenceNamed("Swipe")
-    damageToDo = Double(level)
+    damageToDo = Double(myLevel)
     nextMove.numberOfTimes--
     if nextMove.numberOfTimes == 0 {
       nextMove.resetAttack()
@@ -182,11 +183,11 @@ class Monster: CCNode {
     } else {
       nameString = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     }
-    if opponent.level < level {
+    if opponent.myLevel < myLevel {
       messageBox.setNextMessage("sing", name:nameString)
       messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
       sprite.animationManager.runAnimationsForSequenceNamed("Sing")
-      damageToDo = Double(level) * 2
+      damageToDo = Double(myLevel) * 2
       nextMove.numberOfTimes--
       if nextMove.numberOfTimes == 0 {
         nextMove.resetAttack()
@@ -264,13 +265,13 @@ class Monster: CCNode {
   func addElementalToOpponent() {
     var anim: CCNode!
     switch monsterElement {
-      case MonsterElement.Fire:
+      case CritterElement.Fire:
         anim = CCBReader.load("FireElemental")
-      case MonsterElement.Water:
+      case CritterElement.Water:
         anim = CCBReader.load("WaterElemental")
-      case MonsterElement.Leaf:
+      case CritterElement.Leaf:
         anim = CCBReader.load("LeafElemental")
-      case MonsterElement.None:
+      case CritterElement.None:
         anim = CCBReader.load("FireElemental")
     }
     opponent.attackAnimationNode.addChild(anim)
@@ -279,13 +280,13 @@ class Monster: CCNode {
   func addTackleToOpponent() {
     var anim: CCNode!
     switch monsterElement {
-    case MonsterElement.Fire:
+    case CritterElement.Fire:
       anim = CCBReader.load("TackleRed")
-    case MonsterElement.Water:
+    case CritterElement.Water:
       anim = CCBReader.load("TackleBlue")
-    case MonsterElement.Leaf:
+    case CritterElement.Leaf:
       anim = CCBReader.load("TackleGreen")
-    case MonsterElement.None:
+    case CritterElement.None:
       anim = CCBReader.load("TackleRed")
     }
     opponent.attackAnimationNode.addChild(anim)
@@ -301,7 +302,7 @@ class Monster: CCNode {
     opponent.attackAnimationNode.addChild(anim)
   }
   
-  func tackleButtonPressed() {
+  func dashButtonPressed() {
     
   }
 

@@ -18,7 +18,7 @@ class AttackBox: CCNode {
   func touchedTackle() {
     println("Touched Tackle")
     var player = GameState.sharedInstance.player
-    player.tackleButtonPressed()
+    player.dashButtonPressed()
     self.startAttacks()
   }
 
@@ -40,9 +40,9 @@ class AttackBox: CCNode {
   func touchedSing() {
     println("Touched Sing")
     var player = GameState.sharedInstance.player
-    var oldLevel = player.level
+    var oldLevel = player.myLevel
     player.singButtonPressed()
-    if oldLevel != player.level {
+    if oldLevel != player.myLevel {
       player.performPowerup()
     }
     self.startAttacks()

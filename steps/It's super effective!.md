@@ -1,42 +1,46 @@
 Let's get elemental!
 ====================
-Now that you've won your first battle, let's teach your monster its elemental move. The elemental move will help your monster take advantage of strengths it has over monsters with different elements. 
+Now that you've won your first competition, let's teach your critter its elemental move. The elemental move will help your critter take advantage of strengths it has over critters with different elements. 
 
-We have to be careful though, if our monster tries to use it's elemental attack against a monster that is not susceptible to it, then the move will not do anything! We will solve this by coding it so your monster will revert back to using its Tackle if the opponent is not weak to its elemental.
+We have to be careful though: each critter is susceptible to only one kind of elemental move. In Rock-Paper-Scissors, Rock is damaged by Paper, but not damaged at all by Scissors. Similarly, Fire-element creatures are damaged by Water-elemental moves, but a Leaf-elemental move won’t do anything! 
+
+We will solve this by coding it so your critter will revert back to using its Dash if the opponent is not weak to its elemental. We can check what element damages our opponent with the variable ```elementMyOpponentIsWeakAgainst```. 
+
+If our critter is competing against a Fire-element critter, then the variable ```elementMyOpponentIsWeakAgainst``` would be set to ```“Water”```. If our critter’s variable ```myElement``` is also equal to ```“Water”```, then we want to use its Elemental move. Otherwise, we want to use the Dash move.
 
 Add the following code between ```// elementalButtonPressed goes below this``` and ```// elementalButtonPressed goes above this```:
 
 	func elementalButtonPressed()
 	{
-    	if opponentWeakAgainst == element
+    	if elementMyOpponentIsWeakAgainst == myElement
     	{
     		performElemental()
     	}
     	else
     	{
-    		performTackle()
+    		performDash()
     	}
 	}
 
-Again, some of this should look familiar to you. We are declaring a new function called ```elementalButtonPressed```. In this function we are using something new -- an if-then-else statement.
+Again, some of this may look familiar to you. We are declaring a new function called ```elementalButtonPressed```. In this function we are using something new -- an if-then-else statement.
 
 If-then-else statements
 =======================
-If-then-else statements allow our code to react to things. In this case, we only want to use our elemental move if our opponent is weak to it. If we accidentally used it on an opponent that was not weak to it, our monster's attack will miss and nothing will happen. An if-then-else statement looks like:
+If-then-else statements allow our code to react to things. In this case, we only want to use our elemental move if our opponent is damaged by it. If we accidentally used it on an opponent that was not damaged by it, our critter’s move will miss and nothing will happen. An if-then-else statement looks like:
 
 	if statement
 	{
-		// code to execute if the statement is true
+		// code that runs if the statement is true
 	}
 	else
 	{
-		// code to execute if the statement is false
+		// code that runs if the statement is false
 	}
 
 The part to pay attention to here is the ```statement```. ```statement``` can be any sort of comparison. We can use greater-than (```>```) and less-than (```<```) to compare numbers. In our function we are using equal-to (```==```) to check if two things are the same. 
 
-```opponentWeakAgainst``` is the ```MonsterElement``` that your opponent is weak to. ```element``` is *your* ```MonsterElement```. The part with ```==``` is essentially asking: "Is ```oponentWeakAgainst``` equal to ```element```?"
+```elementMyOpponentIsWeakAgainst ``` is the ```CritterElement``` that your opponent is weak to. ```myElement``` is *your* ```CritterElement```. The part with ```==``` is essentially asking: "Is ```elementMyOpponentIsWeakAgainst ``` equal to ```myElement```?"
 
-If the two are equal, your monster will perform an elemental attack --  the code inside the first pair of curly brackets before the ```else```. If they are not, your monster will Tackle since according to the rules, it would miss it's attack if it tried to use an elemental -- the code in the curly brackets *after* the ```else```.
+If the two are equal, your critter will perform an Elemental move --  the code inside the first pair of curly brackets before the ```else```. If they are not, your critter will Dash -- the code in the curly brackets *after* the ```else``` —- since according to the rules, it would miss its move if it tried to use an Elemental .
 
-Now that your monster knows it's elemental attack, run the code and see if you can win the second battle. Be careful, your opponent is a much higher level than you this time!
+Now that your critter knows it's Elemental move, run the code and see if you can win the second round. Be careful, your opponent is a much higher level than you this time!
