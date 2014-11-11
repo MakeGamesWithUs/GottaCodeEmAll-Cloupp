@@ -6,17 +6,20 @@ class MyCritter: Critter
     {
         // The code in this function runs first
         nickname = "Cloud"
+        setupCritterStats()
     }
   
     func setupCritterStats()
     {
-        myElement = "None"
-        myLevel = 1
+        myElement = "Fire"
+        myLevel = 5
     }
   
     // dashButtonPressed goes below this
     
-    
+    override func dashButtonPressed() {
+        performDash()
+    }
     
     // dashButtonPressed goes above this
     

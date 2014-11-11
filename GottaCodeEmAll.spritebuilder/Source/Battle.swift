@@ -95,15 +95,14 @@ class Battle: CCScene {
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
-  
   func checkCodeForCurrentStep() {
-    var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
     switch currentStep {
       case CodeStep.InitCritter:
         if !player.respondsToSelector(Selector("initialize")) {
           messageBox.setNextMessage("noCritter")
         } else {
           player.initialize()
+          var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
           if player.monsterElement == CritterElement.None {
             messageBox.setNextMessage("noCritterType")
           } else {
@@ -122,8 +121,9 @@ class Battle: CCScene {
         enemy.myLevel = player.myLevel
       case CodeStep.TeachTackle:
         setupBattlefield()
-        if !player.respondsToSelector(Selector("tackleButtonPressed")) {
+        if !player.respondsToSelector(Selector("dashButtonPressed")) {
           // TODO: MAKE THIS WORK
+          var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
           messageBox.setNextMessage("noMoves", name:nameLabel)
         } else {
           attackBox.tackleStep()
@@ -134,6 +134,7 @@ class Battle: CCScene {
         enemy.myLevel = player.myLevel * 2
         if !player.respondsToSelector(Selector("elementalButtonPressed")) {
           // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
           messageBox.setNextMessage("noElemental", name:nameLabel)
         } else {
           attackBox.elementalStep()
@@ -143,6 +144,7 @@ class Battle: CCScene {
         enemy.myLevel = Int(Double(player.myLevel) * 1.5)
         if !player.respondsToSelector(Selector("swipeButtonPressed:")) {
           // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
           messageBox.setNextMessage("noSwipe", name:nameLabel)
         } else {
           attackBox.swipeStep()
@@ -152,6 +154,7 @@ class Battle: CCScene {
         enemy.myLevel = player.myLevel * 2
         if !player.respondsToSelector(Selector("singButtonPressed")) {
           // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
           messageBox.setNextMessage("noSing", name:nameLabel)
         }
       default:
