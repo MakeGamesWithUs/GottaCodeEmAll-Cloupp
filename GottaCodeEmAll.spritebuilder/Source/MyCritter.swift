@@ -5,13 +5,12 @@ class MyCritter: Critter
     {
         // The code in this function runs first
         nickname = "Cloud"
-        setupCritterStats()
     }
   
     func setupCritterStats()
     {
-        myElement = "Fire"
-        myLevel = 5
+        myElement = "None"
+        myLevel = 1
     }
   
     // dashButtonPressed goes below this
