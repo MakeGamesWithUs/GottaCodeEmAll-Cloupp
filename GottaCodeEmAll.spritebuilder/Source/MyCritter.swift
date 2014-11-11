@@ -1,7 +1,6 @@
 class MyCritter: Critter
 {
 
-
     func initialize()
     {
         // The code in this function runs first
@@ -16,13 +15,10 @@ class MyCritter: Critter
     }
   
     // dashButtonPressed goes below this
+
     
-    override func dashButtonPressed() {
-        performDash()
-    }
     
     // dashButtonPressed goes above this
-    
     
     
     // elementalButtonPressed goes below this
@@ -32,13 +28,11 @@ class MyCritter: Critter
     // elementalButtonPressed goes above this
     
     
-    
     // swipeButtonPressed goes below this
     
     
     
     // swipeButtonPressed goes above this
-    
     
     
     // singButtonPressed goes below this

@@ -7,7 +7,7 @@ Below the line where we assign the ```nickname``` variable in the ```initialize`
 
 	setupCritterStats()
 	
-Your intialize function should now look like this:
+Your initialize function should now look like this:
 
 	func initialize()
 	{
