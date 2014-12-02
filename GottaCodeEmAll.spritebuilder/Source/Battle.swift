@@ -115,6 +115,8 @@ class Battle: CCScene {
         setupBattlefield()
         if player.monsterElement == CritterElement.None {
           messageBox.setNextMessage("noCritterType")
+        } else if player.myLevel < 2{
+            messageBox.setNextMessage("levelTooLow")
         } else {
           messageBox.setNextMessage("teachMoves")
         }

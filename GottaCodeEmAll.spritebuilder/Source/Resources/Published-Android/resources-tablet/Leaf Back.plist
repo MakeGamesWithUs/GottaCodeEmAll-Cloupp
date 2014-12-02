@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>Leaf Back/armLeft.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{78, 384}, {111, 70}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {111, 70}}</string>
+			<key>sourceSize</key>
+			<string>{111, 70}</string>
+		</dict>
+		<key>Leaf Back/armRight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 384}, {121, 75}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {121, 75}}</string>
+			<key>sourceSize</key>
+			<string>{121, 75}</string>
+		</dict>
+		<key>Leaf Back/eyeRight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{150, 384}, {92, 96}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {92, 96}}</string>
+			<key>sourceSize</key>
+			<string>{92, 96}</string>
+		</dict>
+		<key>Leaf Back/head.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {270, 381}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {270, 381}}</string>
+			<key>sourceSize</key>
+			<string>{270, 381}</string>
+		</dict>
+		<key>Leaf Back/legLeft.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{244, 447}, {51, 37}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {51, 37}}</string>
+			<key>sourceSize</key>
+			<string>{51, 37}</string>
+		</dict>
+		<key>Leaf Back/legRight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{244, 384}, {61, 42}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {61, 42}}</string>
+			<key>sourceSize</key>
+			<string>{61, 42}</string>
+		</dict>
+		<key>Leaf Back/stem.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{273, 1}, {109, 365}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {109, 365}}</string>
+			<key>sourceSize</key>
+			<string>{109, 365}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{512, 512}</string>
+		<key>textureFileName</key>
+		<string>Leaf Back.png</string>
+	</dict>
+</dict>
+</plist>

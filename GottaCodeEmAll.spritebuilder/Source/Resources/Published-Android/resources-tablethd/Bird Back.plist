@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>Bird Back/body.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {610, 486}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {610, 486}}</string>
+			<key>sourceSize</key>
+			<string>{610, 486}</string>
+		</dict>
+		<key>Bird Back/eye1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{841, 277}, {152, 160}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {152, 160}}</string>
+			<key>sourceSize</key>
+			<string>{152, 160}</string>
+		</dict>
+		<key>Bird Back/fire1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 1}, {240, 284}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {240, 284}}</string>
+			<key>sourceSize</key>
+			<string>{240, 284}</string>
+		</dict>
+		<key>Bird Back/legLeft1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{899, 1}, {122, 136}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {122, 136}}</string>
+			<key>sourceSize</key>
+			<string>{122, 136}</string>
+		</dict>
+		<key>Bird Back/legLeft2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 411}, {144, 134}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 134}}</string>
+			<key>sourceSize</key>
+			<string>{144, 134}</string>
+		</dict>
+		<key>Bird Back/legLeft3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{199, 935}, {196, 60}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {196, 60}}</string>
+			<key>sourceSize</key>
+			<string>{196, 60}</string>
+		</dict>
+		<key>Bird Back/legRight1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{899, 139}, {122, 136}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {122, 136}}</string>
+			<key>sourceSize</key>
+			<string>{122, 136}</string>
+		</dict>
+		<key>Bird Back/legRight2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{759, 431}, {144, 134}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {144, 134}}</string>
+			<key>sourceSize</key>
+			<string>{144, 134}</string>
+		</dict>
+		<key>Bird Back/legRight3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 935}, {196, 60}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {196, 60}}</string>
+			<key>sourceSize</key>
+			<string>{196, 60}</string>
+		</dict>
+		<key>Bird Back/mouth1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 243}, {226, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {226, 166}}</string>
+			<key>sourceSize</key>
+			<string>{226, 166}</string>
+		</dict>
+		<key>Bird Back/wingLeft.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 489}, {444, 258}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {444, 258}}</string>
+			<key>sourceSize</key>
+			<string>{444, 258}</string>
+		</dict>
+		<key>Bird Back/wingRight.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{261, 489}, {444, 258}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {444, 258}}</string>
+			<key>sourceSize</key>
+			<string>{444, 258}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{1024, 1024}</string>
+		<key>textureFileName</key>
+		<string>Bird Back.png</string>
+	</dict>
+</dict>
+</plist>

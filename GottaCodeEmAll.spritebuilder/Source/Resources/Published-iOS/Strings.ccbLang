@@ -336,6 +336,21 @@
 				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
 			</dict>
 		</dict>
+		<dict>
+			<key>key</key>
+			<string>levelTooLow</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>en</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>es</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>fr</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+			</dict>
+		</dict>
 	</array>
 </dict>
 </plist>
