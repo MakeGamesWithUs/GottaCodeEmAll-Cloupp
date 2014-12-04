@@ -23,5 +23,4 @@ exports.Tutorial = () ->
 exports.Preprocess = (files) ->
   path        = "GottaCodeEmAll.spritebuilder/Source/MyCritter.swift"
   files[path] = files[path].replace /func(\s+\w+ButtonPressed[\s\S]+?{)/igm, "override func$1"
-  files[path] = files[path].replace /(func initialize)/igm, "override $1"
   files[path] = files[path].replace /([\s\S]+)/igm, "class MyCritter: Critter {$1}"

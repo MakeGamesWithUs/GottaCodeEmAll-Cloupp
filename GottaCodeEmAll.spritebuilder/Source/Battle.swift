@@ -53,7 +53,7 @@ class Battle: CCScene {
 
   let playerAttack = CritterAttack()
   
-  var currentStep: CodeStep = CodeStep.TeachSwipes
+  var currentStep: CodeStep = CodeStep.InitCritter
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
@@ -96,114 +96,79 @@ class Battle: CCScene {
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
   func checkCodeForCurrentStep() {
-    player.initialize()
     switch currentStep {
       case CodeStep.InitCritter:
-        checkInit()
+        if !player.respondsToSelector(Selector("initialize")) {
+          messageBox.setNextMessage("noCritter")
+        } else {
+          player.initialize()
+          var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+          if player.monsterElement == CritterElement.None {
+            messageBox.setNextMessage("noCritterType")
+          } else {
+            setupBattlefield()
+            messageBox.setNextMessage("customize")
+          }
+        }
         enemy.myLevel = player.myLevel
       case CodeStep.Customize:
-        checkCustomize()
+        setupBattlefield()
+        if player.monsterElement == CritterElement.None {
+          messageBox.setNextMessage("noCritterType")
+        } else if player.myLevel < 2{
+            messageBox.setNextMessage("levelTooLow")
+        } else {
+          messageBox.setNextMessage("teachMoves")
+        }
         enemy.myLevel = player.myLevel
       case CodeStep.TeachTackle:
-        checkTackle()
+        setupBattlefield()
+        if !player.respondsToSelector(Selector("dashButtonPressed")) {
+          // TODO: MAKE THIS WORK
+          var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+          messageBox.setNextMessage("noMoves", name:nameLabel)
+        } else {
+          attackBox.tackleStep()
+        }
         enemy.myLevel = player.myLevel
       case CodeStep.TeachElemental:
-        checkElemental()
+        setupBattlefield()
         enemy.myLevel = player.myLevel * 2
+        if !player.respondsToSelector(Selector("elementalButtonPressed")) {
+          // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+          messageBox.setNextMessage("noElemental", name:nameLabel)
+        } else {
+          attackBox.elementalStep()
+        }
       case CodeStep.TeachSwipes:
-        checkSwipes()
+        setupBattlefield()
         enemy.myLevel = Int(Double(player.myLevel) * 1.5)
+        if !player.respondsToSelector(Selector("swipeButtonPressed:")) {
+          // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+          messageBox.setNextMessage("noSwipe", name:nameLabel)
+        } else {
+          attackBox.swipeStep()
+        }
       case CodeStep.TeachSing:
-        checkSing()
+        setupBattlefield()
         enemy.myLevel = player.myLevel * 2
+        if !player.respondsToSelector(Selector("singButtonPressed")) {
+          // TODO: MAKE THIS WORK
+            var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+          messageBox.setNextMessage("noSing", name:nameLabel)
+        }
       default:
         break
     }
     player.opponentLevel = enemy.myLevel
   }
-    
-  func checkInit() {
-    if player.noInitialize {
-      messageBox.setNextMessage("noCritter")
-    } else {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
-      if player.monsterElement == CritterElement.None {
-        messageBox.setNextMessage("noCritterType")
-      } else if currentStep == CodeStep.InitCritter{
-        messageBox.setNextMessage("customize")
-      }
-    }
-  }
-  
-  func checkCustomize() {
-    if player.myLevel < 2{
-      messageBox.setNextMessage("levelTooLow")
-    } else {
-      setupBattlefield()
-    }
-    if currentStep == CodeStep.Customize{
-      messageBox.setNextMessage("teachMoves")
-    }
-    checkInit()
-  }
-  
-  func checkTackle() {
-    player.overridden = true
-    player.buttonStepCheck = false
-    player.dashButtonPressed()
-    player.buttonStepCheck = true
-    if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
-      messageBox.setNextMessage("noMoves", name:nameLabel)
-    } else if currentStep == CodeStep.TeachTackle {
-      attackBox.tackleStep()
-    }
-    checkCustomize()
-  }
-  
-  func checkElemental() {
-    player.overridden = true
-    player.buttonStepCheck = false
-    player.elementalButtonPressed()
-    player.buttonStepCheck = true
-    if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
-      messageBox.setNextMessage("noElemental", name:nameLabel)
-    } else if currentStep == CodeStep.TeachElemental {
-      attackBox.elementalStep()
-    }
-    checkTackle()
-  }
-  
-  func checkSwipes() {
-    player.overridden = true
-    player.buttonStepCheck = false
-    player.swipeButtonPressed(3)
-    player.buttonStepCheck = true
-    if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
-      messageBox.setNextMessage("noSwipe", name:nameLabel)
-    } else if currentStep == CodeStep.TeachSwipes{
-      attackBox.swipeStep()
-    }
-    checkElemental()
-  }
-  
-  func checkSing() {
-    player.overridden = true
-    player.buttonStepCheck = false
-    player.swipeButtonPressed(3)
-    player.buttonStepCheck = true
-    if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
-      messageBox.setNextMessage("noSing", name:nameLabel)
-    }
-    checkSwipes()
-  }
   
   func setupBattlefield() {
     enemyHealth.opacity = 1.0
     playerHealth.opacity = 1.0
+    player.initialize()
   }
   
   func processAttacks() {

@@ -92,10 +92,6 @@ class Critter: CCNode {
   var isEnemy = false
   var healthBox: HealthBox!
   var attackAnimationNode: CCNode!
-  var buttonStepCheck = false
-  var overridden = true
-  var noInitialize = false
-
   
   override init() {
     super.init()
@@ -103,33 +99,23 @@ class Critter: CCNode {
   }
   
   func performDash() {
-    if buttonStepCheck {
-        nextMove.tackle()
-    }
+    nextMove.tackle()
   }
   
   func performElemental() {
-    if buttonStepCheck {
-        nextMove.elemental()
-    }
+    nextMove.elemental()
   }
   
   func performSwipe() {
-    if buttonStepCheck {
-        nextMove.swipe()
-    }
+    nextMove.swipe()
   }
   
   func performSing() {
-    if buttonStepCheck {
-        nextMove.sing()
-    }
+    nextMove.sing()
   }
   
   func performPowerup() {
-    if buttonStepCheck {
-        nextMove.powerUp()
-    }
+    nextMove.powerUp()
   }
   
   func executeTackle() {
@@ -316,24 +302,20 @@ class Critter: CCNode {
     opponent.attackAnimationNode.addChild(anim)
   }
   
-  func initialize() {
-    noInitialize = true
-  }
-  
   func dashButtonPressed() {
-    overridden = false
+    
   }
 
   func swipeButtonPressed(numberOfSwipes: Int) {
-    overridden = false
+    
   }
   
   func elementalButtonPressed() {
-    overridden = false
+    
   }
   
   func singButtonPressed() {
-    overridden = false
+    
   }
 
 }

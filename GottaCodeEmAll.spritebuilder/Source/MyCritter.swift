@@ -2,11 +2,12 @@ func initialize()
 {
     // The code in this function runs first
     nickname = "Cloud"
+    setupCritterStats()
 }
 
 func setupCritterStats()
 {
-    myElement = "None"
+    myElement = "Fire"
     myLevel = 1
 }
 
