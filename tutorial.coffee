@@ -31,4 +31,5 @@ exports.PreprocessFiles = (files) ->
   files[SOURCE_PATH] = files[TEMPLATE_PATH]
 
 exports.PreprocessErrors = (results) ->
-  console.log results
+  error.line   -= 1 for error   in results.errors
+  warning.line -= 1 for warning in results.warnings
