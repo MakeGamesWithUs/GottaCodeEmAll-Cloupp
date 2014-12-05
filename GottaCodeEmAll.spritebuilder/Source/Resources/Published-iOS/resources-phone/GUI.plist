@@ -7,13 +7,13 @@
 		<key>GUI/backgroundBars1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 1}, {510, 472}}</string>
+			<string>{{1, 1}, {510, 480}}</string>
 			<key>offset</key>
-			<string>{0, 1}</string>
+			<string>{0, 0}</string>
 			<key>rotated</key>
 			<false/>
 			<key>sourceColorRect</key>
-			<string>{{0, 3}, {510, 472}}</string>
+			<string>{{0, 0}, {510, 480}}</string>
 			<key>sourceSize</key>
 			<string>{510, 480}</string>
 		</dict>
@@ -85,7 +85,7 @@
 		<key>GUI/elementNormal1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{302, 626}, {73, 74}}</string>
+			<string>{{302, 634}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -98,7 +98,7 @@
 		<key>GUI/elementPressed1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{151, 552}, {73, 74}}</string>
+			<string>{{151, 560}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -163,7 +163,7 @@
 		<key>GUI/infoBase1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{226, 552}, {197, 72}}</string>
+			<string>{{226, 560}, {197, 72}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -176,7 +176,7 @@
 		<key>GUI/platformBig1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{188, 475}, {281, 75}}</string>
+			<string>{{188, 483}, {281, 75}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -202,7 +202,7 @@
 		<key>GUI/singNormal1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{425, 552}, {73, 74}}</string>
+			<string>{{425, 560}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -215,7 +215,7 @@
 		<key>GUI/singPressed1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 552}, {73, 74}}</string>
+			<string>{{1, 560}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -228,7 +228,7 @@
 		<key>GUI/swipeNormal1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{76, 475}, {73, 74}}</string>
+			<string>{{76, 483}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -241,7 +241,7 @@
 		<key>GUI/swipePressed1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{76, 552}, {73, 74}}</string>
+			<string>{{76, 560}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -254,7 +254,7 @@
 		<key>GUI/tackleNormal1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{1, 475}, {73, 74}}</string>
+			<string>{{1, 483}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>
@@ -267,7 +267,7 @@
 		<key>GUI/tacklePressed1.png</key>
 		<dict>
 			<key>frame</key>
-			<string>{{226, 626}, {73, 74}}</string>
+			<string>{{226, 634}, {73, 74}}</string>
 			<key>offset</key>
 			<string>{0, 0}</string>
 			<key>rotated</key>

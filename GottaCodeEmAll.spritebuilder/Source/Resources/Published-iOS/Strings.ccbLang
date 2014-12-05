@@ -74,7 +74,7 @@
 				<key>de</key>
 				<string>You haven't set your critter's type. Continue onto the next step to learn how!</string>
 				<key>en</key>
-				<string>You haven't set your critter's type. Continue onto the next step to learn how!</string>
+				<string>You haven't set your critter's type. Go to Step 3 to learn how!</string>
 				<key>es</key>
 				<string>You haven't set your critter's type. Continue onto the next step to learn how!</string>
 				<key>fr</key>
@@ -89,13 +89,13 @@
 			<key>translations</key>
 			<dict>
 				<key>de</key>
-				<string> doesn’t know any moves! Make sure to teach it dash.</string>
+				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
 				<key>en</key>
-				<string> doesn’t know any moves! Make sure to teach it dash.</string>
+				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
 				<key>es</key>
-				<string> doesn’t know any moves! Make sure to teach it dash.</string>
+				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
 				<key>fr</key>
-				<string> doesn’t know any moves! Make sure to teach it dash.</string>
+				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
 			</dict>
 		</dict>
 		<dict>
@@ -334,6 +334,21 @@
 				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
 				<key>fr</key>
 				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
+			</dict>
+		</dict>
+		<dict>
+			<key>key</key>
+			<string>levelTooLow</string>
+			<key>translations</key>
+			<dict>
+				<key>de</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>en</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>es</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
+				<key>fr</key>
+				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
 			</dict>
 		</dict>
 	</array>
