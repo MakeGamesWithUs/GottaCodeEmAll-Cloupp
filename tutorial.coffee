@@ -4,7 +4,7 @@ TEMPLATE_PATH = "MyCritter.txt"
 
 exports             = exports ? @
 exports.DefaultFile = SOURCE_PATH
-exports.Files       = [ BATTLE_PATH, SOURCE_PATH ]
+exports.Files       = [ BATTLE_PATH, SOURCE_PATH, TEMPLATE_PATH ]
 
 changeStep = (to) ->
   (files) ->
