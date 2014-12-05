@@ -11,7 +11,7 @@ Add the following code between ```// singButtonPressed goes below this``` and ``
 	{
 	 	if myLevel > opponentLevel 
 	 	{
-	 		for counter in 1…(myLevel - opponentLevel) 
+	 		for counter in 1...(myLevel - opponentLevel) 
 	 		{
 	 			performSing()
 	 		}
