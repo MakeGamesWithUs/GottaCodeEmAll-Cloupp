@@ -30,7 +30,9 @@ Congratulations! You have beat the final and hardest critter!
 
 Let's quickly summarize what you have learned today:
 
+
 - **Variables**: an easy way to store information
+
 
 - **Functions**: an easy way to reuse code or call code from other parts of the program
 
