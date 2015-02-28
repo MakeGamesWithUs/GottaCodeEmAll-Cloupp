@@ -55,7 +55,7 @@ class Critter: CCNode {
     didSet {
       if isEnemy {
         GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(myLevel))"
-      } else if GameState.sharedInstance.battle.playerHealth.levelLabel.string == "Level 1" {
+      } else {
         if myLevel < 1 {
           myLevel = 1
         } else if myLevel > 99 {
