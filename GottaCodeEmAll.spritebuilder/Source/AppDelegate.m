@@ -27,6 +27,7 @@
 
 #import "AppDelegate.h"
 #import "CCBuilderReader.h"
+#import "Loader.h"
 
 @implementation AppController
 
@@ -59,7 +60,7 @@
 
 - (CCScene*) startScene
 {
-    return [CCBReader loadAsScene:@"Battle"];
+    return [[Loader alloc] init];
 }
 
 @end
