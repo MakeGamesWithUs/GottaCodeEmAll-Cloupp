@@ -16,31 +16,31 @@ class AttackBox: CCNode {
   var singButton: CCButton!
 
   func touchedTackle() {
-    println("Touched Tackle")
-    var player = GameState.sharedInstance.player
+    print("Touched Tackle")
+    let player = GameState.sharedInstance.player
     player.dashButtonPressed()
     self.startAttacks()
   }
 
   func touchedElement() {
-    println("Touched Element")
-    var player = GameState.sharedInstance.player
+    print("Touched Element")
+    let player = GameState.sharedInstance.player
     player.elementalButtonPressed()
     self.startAttacks()
   }
 
   func touchedSwipe() {
-    println("Touched Swipe")
-    var player = GameState.sharedInstance.player
-    var numberOfSwipes: Int = Int(arc4random_uniform(3)) + 3
+    print("Touched Swipe")
+    let player = GameState.sharedInstance.player
+    let numberOfSwipes: Int = Int(arc4random_uniform(3)) + 3
     player.swipeButtonPressed(numberOfSwipes)
     self.startAttacks()
   }
   
   func touchedSing() {
-    println("Touched Sing")
-    var player = GameState.sharedInstance.player
-    var oldLevel = player.myLevel
+    print("Touched Sing")
+    let player = GameState.sharedInstance.player
+    let oldLevel = player.myLevel
     player.singButtonPressed()
     if oldLevel != player.myLevel {
       player.performPowerup()

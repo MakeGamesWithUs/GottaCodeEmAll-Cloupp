@@ -86,12 +86,12 @@ class Battle: CCScene {
     GameState.sharedInstance.gameOver = true
     if playerWon {
       messageBox.setNextMessage("playerWon")
-      enemy.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
-      enemyHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
+      enemy.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      enemyHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
     } else {
       messageBox.setNextMessage("playerLost")
-      player.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
-      playerHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as CCAction)
+      player.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      playerHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
@@ -153,7 +153,7 @@ class Battle: CCScene {
     player.dashButtonPressed()
     player.buttonStepCheck = true
     if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+      let nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       messageBox.setNextMessage("noMoves", name:nameLabel)
     } else if currentStep == CodeStep.TeachTackle {
       attackBox.tackleStep()
@@ -167,7 +167,7 @@ class Battle: CCScene {
     player.elementalButtonPressed()
     player.buttonStepCheck = true
     if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+      let nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       messageBox.setNextMessage("noElemental", name:nameLabel)
     } else if currentStep == CodeStep.TeachElemental {
       attackBox.elementalStep()
@@ -181,7 +181,7 @@ class Battle: CCScene {
     player.swipeButtonPressed(3)
     player.buttonStepCheck = true
     if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+      let nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       messageBox.setNextMessage("noSwipe", name:nameLabel)
     } else if currentStep == CodeStep.TeachSwipes{
       attackBox.swipeStep()
@@ -195,7 +195,7 @@ class Battle: CCScene {
     player.swipeButtonPressed(3)
     player.buttonStepCheck = true
     if !player.overridden {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
+      let nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       messageBox.setNextMessage("noSing", name:nameLabel)
     }
     checkSwipes()
@@ -208,8 +208,8 @@ class Battle: CCScene {
   
   func processAttacks() {
     state = BattleState.Attacking
-    var player = GameState.sharedInstance.player
-    var playerAttack = player.nextMove
+    let player = GameState.sharedInstance.player
+    let playerAttack = player.nextMove
     switch playerAttack.attack {
       case CritterAttackType.Tackle:
         player.executeTackle()
