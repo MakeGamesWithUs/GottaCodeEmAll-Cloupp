@@ -26,8 +26,8 @@ exports.Tutorial = () ->
   step "Final Recap",               changeStep "TeachSing"
 
 exports.Preprocess = (files) ->
-  files[SOURCE_PATH] = files[SOURCE_PATH].replace /func(\s+\w+ButtonPressed[\s\S]+?{)/igm, "override func$1"
-  files[SOURCE_PATH] = files[SOURCE_PATH].replace /(func initialize)/igm, "override $1"
+  files[SOURCE_PATH] = files[SOURCE_PATH].replace /func(\s+\w+ButtonPressed[\s\S]+?{)/igm, "public override func$1"
+  files[SOURCE_PATH] = files[SOURCE_PATH].replace /(func initialize)/igm, "public override $1"
   files[SOURCE_PATH] = files[SOURCE_PATH].replace /([\s\S]+)/igm, "import Foundation; import GottaCodeEmAll; @objc(MyCritter) public class MyCritter : Critter { public func getCurrentStep() -> CodeStep { return CodeStep.#{CURRENT_STEP} };\n$1\n}"
 
 exports.PreprocessFiles = (files) ->
