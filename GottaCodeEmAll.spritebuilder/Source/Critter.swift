@@ -63,7 +63,7 @@ class Critter: CCNode {
         }
         GameState.sharedInstance.battle.playerHealth.levelLabel.string = "Level \(Int(myLevel))"
       }
-      var oldHealthPercent = health / totalHealth
+      let oldHealthPercent = health / totalHealth
       totalHealth = Double(myLevel) * 5.0
       health = totalHealth * oldHealthPercent
     }
@@ -133,7 +133,7 @@ class Critter: CCNode {
   }
   
   func executeTackle() {
-    var messageBox = GameState.sharedInstance.battle.messageBox
+    let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
     if isEnemy {
       nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
@@ -148,7 +148,7 @@ class Critter: CCNode {
   }
   
   func executeElemental() {
-    var messageBox = GameState.sharedInstance.battle.messageBox
+    let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
     if isEnemy {
       nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
@@ -172,7 +172,7 @@ class Critter: CCNode {
   }
   
   func executeSwipe() {
-    var messageBox = GameState.sharedInstance.battle.messageBox
+    let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
     if isEnemy {
       nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
@@ -190,7 +190,7 @@ class Critter: CCNode {
   }
   
   func executeSing() {
-    var messageBox = GameState.sharedInstance.battle.messageBox
+    let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
     if isEnemy {
       nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
@@ -216,7 +216,7 @@ class Critter: CCNode {
   }
   
   func executePowerUp() {
-    var messageBox = GameState.sharedInstance.battle.messageBox
+    let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
     if isEnemy {
       nameString = GameState.sharedInstance.battle.enemyHealth.nameLabel.string
@@ -267,11 +267,11 @@ class Critter: CCNode {
     var healthBar = healthBox.hpBar
     
     if health <= 0 {
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:0.0, scaleY:1.0) as CCAction
+      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:0.0, scaleY:1.0) as! CCAction
       healthBar.runAction(hpShrink)
     } else {
       var hpScale = Float(health / totalHealth)
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:hpScale, scaleY:1.0) as CCAction
+      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:hpScale, scaleY:1.0) as! CCAction
       healthBar.runAction(hpShrink)
     }
   }
@@ -307,12 +307,12 @@ class Critter: CCNode {
   }
   
   func addSwipeToOpponent() {
-    var anim: CCNode = CCBReader.load("Slash")
+    let anim: CCNode = CCBReader.load("Slash")
     opponent.attackAnimationNode.addChild(anim)
   }
   
   func addSingToOpponent() {
-    var anim: CCNode = CCBReader.load("Sing")
+    let anim: CCNode = CCBReader.load("Sing")
     opponent.attackAnimationNode.addChild(anim)
   }
   

@@ -10,7 +10,7 @@ import Foundation
 
 class LocalizedMessage: CCLabelTTF {
   var nextMessage = ""
-  var localizer = CCBLocalizationManager.sharedManager() as CCBLocalizationManager
+  var localizer = CCBLocalizationManager.sharedManager() as! CCBLocalizationManager
 }
 
 class MessageBox: CCNode {
@@ -19,7 +19,7 @@ class MessageBox: CCNode {
   var tapToContinue: CCLabelTTF!
   
   func handleTouch() {
-    println("Touched message box!")
+    print("Touched message box!")
     if message.nextMessage == "" {
       goToAttackChoice()
     } else if message.nextMessage != message.string {
@@ -42,7 +42,7 @@ class MessageBox: CCNode {
   }
   
   #if os(iOS)
-  override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+  override func touchBegan(touch: CCTouch, withEvent event: CCTouchEvent) {
     handleTouch()
   }
   #elseif os(OSX)
