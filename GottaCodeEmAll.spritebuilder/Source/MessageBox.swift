@@ -10,7 +10,7 @@ import Foundation
 
 class LocalizedMessage: CCLabelTTF {
   var nextMessage = ""
-  var localizer = CCBLocalizationManager.sharedManager() as! CCBLocalizationManager
+  var localizer = CCBLocalizationManager.sharedManager()
 }
 
 class MessageBox: CCNode {

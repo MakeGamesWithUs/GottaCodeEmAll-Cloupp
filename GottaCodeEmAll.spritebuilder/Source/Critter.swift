@@ -264,14 +264,14 @@ class Critter: CCNode {
   
   func takeDamage(damage: Double) {
     health = health - damage
-    var healthBar = healthBox.hpBar
+    let healthBar = healthBox.hpBar
     
     if health <= 0 {
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:0.0, scaleY:1.0) as! CCAction
+      let hpShrink = CCActionScaleTo(duration: 1.0, scaleX:0.0, scaleY:1.0)
       healthBar.runAction(hpShrink)
     } else {
-      var hpScale = Float(health / totalHealth)
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:hpScale, scaleY:1.0) as! CCAction
+      let hpScale = Float(health / totalHealth)
+      let hpShrink = CCActionScaleTo(duration: 1.0, scaleX:hpScale, scaleY:1.0)
       healthBar.runAction(hpShrink)
     }
   }

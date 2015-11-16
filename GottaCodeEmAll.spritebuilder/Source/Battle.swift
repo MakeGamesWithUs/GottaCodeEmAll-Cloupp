@@ -86,12 +86,12 @@ class Battle: CCScene {
     GameState.sharedInstance.gameOver = true
     if playerWon {
       messageBox.setNextMessage("playerWon")
-      enemy.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
-      enemyHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      enemy.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
+      enemyHealth.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
     } else {
       messageBox.setNextMessage("playerLost")
-      player.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
-      playerHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      player.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
+      playerHealth.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
@@ -116,8 +116,6 @@ class Battle: CCScene {
       case CodeStep.TeachSing:
         checkSing()
         enemy.myLevel = player.myLevel * 2
-      default:
-        break
     }
     player.opponentLevel = enemy.myLevel
   }
@@ -126,7 +124,6 @@ class Battle: CCScene {
     if player.noInitialize {
       messageBox.setNextMessage("noCritter")
     } else {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       if player.monsterElement == CritterElement.None {
         messageBox.setNextMessage("noCritterType")
       } else if currentStep == CodeStep.InitCritter{
