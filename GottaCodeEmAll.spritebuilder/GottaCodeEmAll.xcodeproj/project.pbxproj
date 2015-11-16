@@ -64,20 +64,6 @@
 			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
 			remoteInfo = cocos2d;
 		};
-		BEC40DBC19DA63A500ACDA8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = E01E663D121CA00A001A484F;
-			remoteInfo = cocos2d;
-		};
-		BEC40DBE19DA63A500ACDA8F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = D37EE9FC187D4E7700CB5EF2;
-			remoteInfo = ObjectiveChipmunk;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -130,7 +116,6 @@
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCF642E119C78B5F0084D32F /* Critter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Critter.swift; path = Source/Critter.swift; sourceTree = "<group>"; };
 		BCF642E319C78B6B0084D32F /* Battle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Battle.swift; path = Source/Battle.swift; sourceTree = "<group>"; };
-		BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "cocos2d-osx.xcodeproj"; path = "Source/libs/cocos2d-iphone/cocos2d-osx.xcodeproj"; sourceTree = "<group>"; };
 		BEC40DC319DA640F00ACDA8F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		BEC40DC519DA641800ACDA8F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/AudioToolbox.framework; sourceTree = DEVELOPER_DIR; };
 		BEC40DC719DA642100ACDA8F /* OpenAL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenAL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.10.sdk/System/Library/Frameworks/OpenAL.framework; sourceTree = DEVELOPER_DIR; };
@@ -177,7 +162,6 @@
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
-				BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */,
 				B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */,
 			);
 			name = libs;
@@ -209,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
+				BCC5B1521BFA45E50057C5F5 /* libcocos2dAndroid.a */,
+				BCC5B1541BFA45E50057C5F5 /* libcocos2d-mac.a */,
+				BCC5B1561BFA45E50057C5F5 /* cocos2dMacFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -302,15 +289,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		BEC40DB819DA63A400ACDA8F /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				BEC40DBD19DA63A500ACDA8F /* libcocos2d.a */,
-				BEC40DBF19DA63A500ACDA8F /* libObjectiveChipmunk.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -370,10 +348,6 @@
 					ProductGroup = B7378941180761A80076A88C /* Products */;
 					ProjectRef = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
 				},
-				{
-					ProductGroup = BEC40DB819DA63A400ACDA8F /* Products */;
-					ProjectRef = BEC40DB719DA63A400ACDA8F /* cocos2d-osx.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
@@ -390,18 +364,22 @@
 			remoteRef = B737894A180761A90076A88C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BEC40DBD19DA63A500ACDA8F /* libcocos2d.a */ = {
+		BCC5B1521BFA45E50057C5F5 /* libcocos2dAndroid.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libcocos2d.a;
-			remoteRef = BEC40DBC19DA63A500ACDA8F /* PBXContainerItemProxy */;
+			path = libcocos2dAndroid.a;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BEC40DBF19DA63A500ACDA8F /* libObjectiveChipmunk.a */ = {
+		BCC5B1541BFA45E50057C5F5 /* libcocos2d-mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
-			path = libObjectiveChipmunk.a;
-			remoteRef = BEC40DBE19DA63A500ACDA8F /* PBXContainerItemProxy */;
+			path = "libcocos2d-mac.a";
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		BCC5B1561BFA45E50057C5F5 /* cocos2dMacFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = cocos2dMacFramework.framework;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */

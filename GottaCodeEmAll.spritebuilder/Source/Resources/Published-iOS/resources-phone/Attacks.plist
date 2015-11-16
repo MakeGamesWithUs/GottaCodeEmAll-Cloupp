@@ -1,0 +1,655 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>frames</key>
+	<dict>
+		<key>Attacks/crack1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{863, 983}, {140, 33}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {140, 33}}</string>
+			<key>sourceSize</key>
+			<string>{140, 33}</string>
+		</dict>
+		<key>Attacks/emberA1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{979, 166}, {33, 163}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {33, 163}}</string>
+			<key>sourceSize</key>
+			<string>{33, 163}</string>
+		</dict>
+		<key>Attacks/emberA7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{567, 910}, {33, 163}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {33, 163}}</string>
+			<key>sourceSize</key>
+			<string>{33, 163}</string>
+		</dict>
+		<key>Attacks/emberA8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{979, 1}, {33, 163}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {33, 163}}</string>
+			<key>sourceSize</key>
+			<string>{33, 163}</string>
+		</dict>
+		<key>Attacks/emberB1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{715, 945}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{297, 938}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{695, 217}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 137}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{361, 716}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{863, 928}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{361, 420}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberB9.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{272, 365}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{149, 967}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{361, 568}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{567, 945}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{949, 331}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 285}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/emberC8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 967}, {53, 146}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {53, 146}}</string>
+			<key>sourceSize</key>
+			<string>{53, 146}</string>
+		</dict>
+		<key>Attacks/glowBlue1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{297, 1}, {214, 481}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {214, 481}}</string>
+			<key>sourceSize</key>
+			<string>{214, 481}</string>
+		</dict>
+		<key>Attacks/glowGreen1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 1}, {214, 481}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {214, 481}}</string>
+			<key>sourceSize</key>
+			<string>{214, 481}</string>
+		</dict>
+		<key>Attacks/glowRed1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{1, 484}, {214, 481}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {214, 481}}</string>
+			<key>sourceSize</key>
+			<string>{214, 481}</string>
+		</dict>
+		<key>Attacks/leafElemental1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{735, 784}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental10.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 602}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental11.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 770}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental12.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 334}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental13.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{735, 496}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{735, 640}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 433}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{750, 352}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 766}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 622}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/leafElemental9.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 478}, {142, 166}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {142, 166}}</string>
+			<key>sourceSize</key>
+			<string>{142, 166}</string>
+		</dict>
+		<key>Attacks/slash1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 1}, {36, 67}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {36, 67}}</string>
+			<key>sourceSize</key>
+			<string>{36, 67}</string>
+		</dict>
+		<key>Attacks/slash2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{217, 39}, {57, 96}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {57, 96}}</string>
+			<key>sourceSize</key>
+			<string>{57, 96}</string>
+		</dict>
+		<key>Attacks/slash3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{918, 479}, {88, 121}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {88, 121}}</string>
+			<key>sourceSize</key>
+			<string>{88, 121}</string>
+		</dict>
+		<key>Attacks/slash4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 365}, {111, 135}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<true/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {111, 135}}</string>
+			<key>sourceSize</key>
+			<string>{111, 135}</string>
+		</dict>
+		<key>Attacks/tackleBlue1.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{750, 235}, {197, 115}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 115}}</string>
+			<key>sourceSize</key>
+			<string>{197, 115}</string>
+		</dict>
+		<key>Attacks/tackleBlue2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{496, 217}, {197, 115}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 115}}</string>
+			<key>sourceSize</key>
+			<string>{197, 115}</string>
+		</dict>
+		<key>Attacks/tackleBlue3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{297, 217}, {197, 115}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 115}}</string>
+			<key>sourceSize</key>
+			<string>{197, 115}</string>
+		</dict>
+		<key>Attacks/tackleBlue4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{780, 118}, {197, 115}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 115}}</string>
+			<key>sourceSize</key>
+			<string>{197, 115}</string>
+		</dict>
+		<key>Attacks/tackleBlue5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{780, 1}, {197, 115}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {197, 115}}</string>
+			<key>sourceSize</key>
+			<string>{197, 115}</string>
+		</dict>
+		<key>Attacks/thorn2.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{903, 818}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn3.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{903, 710}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn4.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{903, 602}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn5.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{445, 910}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn6.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 694}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn7.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 586}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn8.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 478}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+		<key>Attacks/thorn9.png</key>
+		<dict>
+			<key>frame</key>
+			<string>{{613, 802}, {120, 106}}</string>
+			<key>offset</key>
+			<string>{0, 0}</string>
+			<key>rotated</key>
+			<false/>
+			<key>sourceColorRect</key>
+			<string>{{0, 0}, {120, 106}}</string>
+			<key>sourceSize</key>
+			<string>{120, 106}</string>
+		</dict>
+	</dict>
+	<key>metadata</key>
+	<dict>
+		<key>format</key>
+		<integer>2</integer>
+		<key>size</key>
+		<string>{2048, 1024}</string>
+		<key>textureFileName</key>
+		<string>Attacks.png</string>
+	</dict>
+</dict>
+</plist>

@@ -148,7 +148,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental1.png</string>
+														<string>Attacks/leafElemental1.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -166,7 +166,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental2.png</string>
+														<string>Attacks/leafElemental2.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -184,7 +184,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental3.png</string>
+														<string>Attacks/leafElemental3.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -202,7 +202,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental4.png</string>
+														<string>Attacks/leafElemental4.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -220,7 +220,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental5.png</string>
+														<string>Attacks/leafElemental5.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -238,7 +238,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental6.png</string>
+														<string>Attacks/leafElemental6.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -256,7 +256,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental7.png</string>
+														<string>Attacks/leafElemental7.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -274,7 +274,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental8.png</string>
+														<string>Attacks/leafElemental8.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -292,7 +292,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental9.png</string>
+														<string>Attacks/leafElemental9.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -310,7 +310,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental10.png</string>
+														<string>Attacks/leafElemental10.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -328,7 +328,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental11.png</string>
+														<string>Attacks/leafElemental11.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -346,7 +346,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental12.png</string>
+														<string>Attacks/leafElemental12.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -364,7 +364,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental13.png</string>
+														<string>Attacks/leafElemental13.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -465,7 +465,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental1.png</string>
+														<string>Attacks/leafElemental1.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -483,7 +483,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental2.png</string>
+														<string>Attacks/leafElemental2.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -501,7 +501,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental3.png</string>
+														<string>Attacks/leafElemental3.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -519,7 +519,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental4.png</string>
+														<string>Attacks/leafElemental4.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -537,7 +537,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental5.png</string>
+														<string>Attacks/leafElemental5.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -555,7 +555,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental6.png</string>
+														<string>Attacks/leafElemental6.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -573,7 +573,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental7.png</string>
+														<string>Attacks/leafElemental7.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -591,7 +591,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental8.png</string>
+														<string>Attacks/leafElemental8.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -609,7 +609,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental9.png</string>
+														<string>Attacks/leafElemental9.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -627,7 +627,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental10.png</string>
+														<string>Attacks/leafElemental10.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -645,7 +645,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental11.png</string>
+														<string>Attacks/leafElemental11.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -663,7 +663,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental12.png</string>
+														<string>Attacks/leafElemental12.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -681,7 +681,7 @@
 													<integer>7</integer>
 													<key>value</key>
 													<array>
-														<string>Leaf Elemental/leafElemental13.png</string>
+														<string>Attacks/leafElemental13.png</string>
 														<string>Use regular file</string>
 													</array>
 												</dict>
@@ -756,7 +756,7 @@
 									<dict>
 										<key>baseValue</key>
 										<array>
-											<string>Leaf Elemental/leafElemental1.png</string>
+											<string>Attacks/leafElemental1.png</string>
 											<string>Use regular file</string>
 										</array>
 										<key>name</key>
@@ -766,7 +766,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Leaf Elemental/leafElemental1.png</string>
+											<string>Attacks/leafElemental1.png</string>
 										</array>
 									</dict>
 									<dict>

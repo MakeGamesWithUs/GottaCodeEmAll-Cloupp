@@ -173,7 +173,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Slash/slash1.png</string>
+									<string>Attacks/slash1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -320,7 +320,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Slash/slash2.png</string>
+									<string>Attacks/slash2.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -467,7 +467,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Slash/slash3.png</string>
+									<string>Attacks/slash3.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -647,7 +647,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Slash/slash4.png</string>
+									<string>Attacks/slash4.png</string>
 								</array>
 							</dict>
 							<dict>

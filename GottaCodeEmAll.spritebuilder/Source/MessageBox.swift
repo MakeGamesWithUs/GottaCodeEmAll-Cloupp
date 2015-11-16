@@ -10,14 +10,14 @@ import Foundation
 
 class LocalizedMessage: CCLabelTTF {
   var nextMessage = ""
-  var localizer = CCBLocalizationManager.sharedManager() as! CCBLocalizationManager
+  var localizer = CCBLocalizationManager.sharedManager()
 }
 
 class MessageBox: CCNode {
-  
+
   var message: LocalizedMessage!
   var tapToContinue: CCLabelTTF!
-  
+
   func handleTouch() {
     print("Touched message box!")
     if message.nextMessage == "" {
@@ -26,23 +26,23 @@ class MessageBox: CCNode {
       self.animationManager.runAnimationsForSequenceNamed("UpdateMessageFinal")
     }
   }
-  
+
   func goToAttackChoice() {
     self.animationManager.runAnimationsForSequenceNamed("EaseOut")
     GameState.sharedInstance.battle.attackBox.animationManager.runAnimationsForSequenceNamed("EaseIn")
     self.userInteractionEnabled = false
   }
-  
+
   func setNextMessage(key: String, name: String = "") {
     message.nextMessage = name + message.localizer.localizedStringForKey(key)
   }
-  
+
   func updateMessage() {
     message.string = message.nextMessage
   }
-  
+
   #if os(iOS)
-  override func touchBegan(touch: UITouch, withEvent event: UIEvent) {
+  override func touchBegan(touch: CCTouch, withEvent event: CCTouchEvent) {
     handleTouch()
   }
   #elseif os(OSX)
@@ -50,17 +50,17 @@ class MessageBox: CCNode {
     handleTouch()
   }
   #endif
-  
+
   func touchActive() {
     self.userInteractionEnabled = true
   }
-  
+
   func fadeOut() {
     self.animationManager.runAnimationsForSequenceNamed("EaseOut")
   }
-  
+
   func fadeIn() {
     self.animationManager.runAnimationsForSequenceNamed("EaseInNoTouch")
   }
-  
+
 }

@@ -9,21 +9,14 @@
 	</dict>
 	<key>spriteFrameFiles</key>
 	<array>
-		<string>Leaf Front.plist</string>
-		<string>Water Elemental.plist</string>
-		<string>Leaf Elemental.plist</string>
-		<string>Crab Back.plist</string>
-		<string>Slash.plist</string>
-		<string>TackleBlue.plist</string>
-		<string>tackleGreen.plist</string>
-		<string>Bird Back.plist</string>
-		<string>GUI.plist</string>
 		<string>Bird Assets.plist</string>
-		<string>Thorn.plist</string>
-		<string>Glows.plist</string>
+		<string>GUI.plist</string>
+		<string>Leaf Front.plist</string>
 		<string>Crab.plist</string>
-		<string>Fire Elemental.plist</string>
 		<string>Leaf Back.plist</string>
+		<string>Bird Back.plist</string>
+		<string>Crab Back.plist</string>
+		<string>Attacks.plist</string>
 	</array>
 </dict>
 </plist>

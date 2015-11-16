@@ -14,9 +14,9 @@ enum CritterElement {
 }
 
 public class Critter: CCNode {
-  
+
   var monsterElement = CritterElement.None
-  
+
   public var myElement: String = "none" {
     didSet {
       myElement = myElement.lowercaseString
@@ -68,10 +68,10 @@ public class Critter: CCNode {
       health = totalHealth * oldHealthPercent
     }
   }
-  
+
   public var opponentLevel = 1
   var levelDifference = 0
-  
+
   var health = 25.0
   var totalHealth = 25.0
   public var nickname: String = "" {
@@ -81,7 +81,7 @@ public class Critter: CCNode {
       }
     }
   }
-  
+
   // TODO: refactor to use this more often
   var opponent: Critter!
   public var elementMyOpponentIsWeakAgainst: String!
@@ -96,42 +96,42 @@ public class Critter: CCNode {
   var overridden = true
   var noInitialize = false
 
-  
+
   override init() {
     super.init()
     self.cascadeOpacityEnabled = true
   }
-  
+
   public func performDash() {
     if buttonStepCheck {
         nextMove.tackle()
     }
   }
-  
+
   public func performElemental() {
     if buttonStepCheck {
         nextMove.elemental()
     }
   }
-  
+
   public func performSwipe() {
     if buttonStepCheck {
         nextMove.swipe()
     }
   }
-  
+
   public func performSing() {
     if buttonStepCheck {
         nextMove.sing()
     }
   }
-  
+
   public func performPowerup() {
     if buttonStepCheck {
         nextMove.powerUp()
     }
   }
-  
+
   func executeTackle() {
     let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -146,7 +146,7 @@ public class Critter: CCNode {
     damageToDo = Double(myLevel) * 1.5
     nextMove.resetAttack()
   }
-  
+
   func executeElemental() {
     let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -170,7 +170,7 @@ public class Critter: CCNode {
       nextMove.resetAttack()
     }
   }
-  
+
   func executeSwipe() {
     let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -188,7 +188,7 @@ public class Critter: CCNode {
       nextMove.resetAttack()
     }
   }
-  
+
   func executeSing() {
     let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -214,7 +214,7 @@ public class Critter: CCNode {
       nextMove.resetAttack()
     }
   }
-  
+
   func executePowerUp() {
     let messageBox = GameState.sharedInstance.battle.messageBox
     var nameString: String!
@@ -228,7 +228,7 @@ public class Critter: CCNode {
     sprite.animationManager.runAnimationsForSequenceNamed("PowerUp")
     nextMove.resetAttack()
   }
-  
+
   func damageOpponent() {
     if isEnemy {
       GameState.sharedInstance.player.takeDamage(damageToDo)
@@ -236,7 +236,7 @@ public class Critter: CCNode {
       GameState.sharedInstance.enemy.takeDamage(damageToDo)
     }
   }
-  
+
   func nextAttack() {
     if opponent.health > 0 {
       GameState.sharedInstance.battle.processAttacks()
@@ -248,7 +248,7 @@ public class Critter: CCNode {
       }
     }
   }
-  
+
   func attacksDone() {
     if opponent.health > 0 {
       GameState.sharedInstance.battle.messageBox.fadeOut()
@@ -261,21 +261,21 @@ public class Critter: CCNode {
       }
     }
   }
-  
+
   func takeDamage(damage: Double) {
     health = health - damage
-    var healthBar = healthBox.hpBar
-    
+    let healthBar = healthBox.hpBar
+
     if health <= 0 {
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:0.0, scaleY:1.0) as! CCAction
+      let hpShrink = CCActionScaleTo(duration: 1.0, scaleX:0.0, scaleY:1.0)
       healthBar.runAction(hpShrink)
     } else {
-      var hpScale = Float(health / totalHealth)
-      var hpShrink = CCActionScaleTo.actionWithDuration(1.0, scaleX:hpScale, scaleY:1.0) as! CCAction
+      let hpScale = Float(health / totalHealth)
+      let hpShrink = CCActionScaleTo(duration: 1.0, scaleX:hpScale, scaleY:1.0)
       healthBar.runAction(hpShrink)
     }
   }
-  
+
   func addElementalToOpponent() {
     var anim: CCNode!
     switch monsterElement {
@@ -290,7 +290,7 @@ public class Critter: CCNode {
     }
     opponent.attackAnimationNode.addChild(anim)
   }
-  
+
   func addTackleToOpponent() {
     var anim: CCNode!
     switch monsterElement {
@@ -305,21 +305,21 @@ public class Critter: CCNode {
     }
     opponent.attackAnimationNode.addChild(anim)
   }
-  
+
   func addSwipeToOpponent() {
     let anim: CCNode = CCBReader.load("Slash")
     opponent.attackAnimationNode.addChild(anim)
   }
-  
+
   func addSingToOpponent() {
     let anim: CCNode = CCBReader.load("Sing")
     opponent.attackAnimationNode.addChild(anim)
   }
-  
+
   public func initialize() {
     noInitialize = true
   }
-  
+
   public func dashButtonPressed() {
     overridden = false
   }
@@ -327,11 +327,11 @@ public class Critter: CCNode {
   public func swipeButtonPressed(numberOfSwipes: Int) {
     overridden = false
   }
-  
+
   public func elementalButtonPressed() {
     overridden = false
   }
-  
+
   public func singButtonPressed() {
     overridden = false
   }

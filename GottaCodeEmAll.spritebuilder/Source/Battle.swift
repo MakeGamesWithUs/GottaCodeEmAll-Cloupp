@@ -14,7 +14,7 @@ enum BattleState {
 
 public enum CodeStep {
   case InitCritter, Customize, TeachTackle, TeachElemental, TeachSwipes, TeachSing
-  
+
   func description() -> String {
     switch self {
       case .InitCritter:
@@ -34,40 +34,40 @@ public enum CodeStep {
 }
 
 class GameState {
-  
+
   class var sharedInstance : GameState {
   struct Static {
     static let instance : GameState = GameState()
     }
     return Static.instance
   }
-  
+
   var battle: Battle!
   var enemy: EnemyCritter!
   var player: MyCritter!
   var gameOver: Bool = false
-  
+
 }
 
 class Battle: CCScene {
 
   let playerAttack = CritterAttack()
-  
-  var currentStep: CodeStep = CodeStep.InitCritter
+
+  var currentStep: CodeStep = CodeStep.TeachTackle
   var state: BattleState = BattleState.FixCode
-  
+
   var messageBox: MessageBox!
   var attackBox: AttackBox!
   var playerHealth: HealthBox!
   var enemyHealth: HealthBox!
   var player: MyCritter!
   var enemy: EnemyCritter!
-  
+
   override init() {
     super.init()
     GameState.sharedInstance.battle = self
   }
-  
+
   func didLoadFromCCB() {
     currentStep = player.getCurrentStep()
     GameState.sharedInstance.player = player
@@ -77,22 +77,22 @@ class Battle: CCScene {
     enemy.opponent = player
     enemy.healthBox = enemyHealth
     enemy.isEnemy = true
-    
+
     enemyHealth.opacity = 0.0
-    
+
     checkCodeForCurrentStep()
   }
-  
+
   func playerWins(playerWon: Bool) {
     GameState.sharedInstance.gameOver = true
     if playerWon {
       messageBox.setNextMessage("playerWon")
-      enemy.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
-      enemyHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      enemy.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
+      enemyHealth.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
     } else {
       messageBox.setNextMessage("playerLost")
-      player.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
-      playerHealth.runAction(CCActionFadeTo.actionWithDuration(0.5, opacity: 0.0) as! CCAction)
+      player.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
+      playerHealth.runAction(CCActionFadeTo(duration: 0.5, opacity: 0.0))
     }
     messageBox.animationManager.runAnimationsForSequenceNamed("UpdateMessageNoTouch")
   }
@@ -117,17 +117,14 @@ class Battle: CCScene {
       case CodeStep.TeachSing:
         checkSing()
         enemy.myLevel = player.myLevel * 2
-      default:
-        break
     }
     player.opponentLevel = enemy.myLevel
   }
-    
+
   func checkInit() {
     if player.noInitialize {
       messageBox.setNextMessage("noCritter")
     } else {
-      var nameLabel = GameState.sharedInstance.battle.playerHealth.nameLabel.string
       if player.monsterElement == CritterElement.None {
         messageBox.setNextMessage("noCritterType")
       } else if currentStep == CodeStep.InitCritter{
@@ -135,7 +132,7 @@ class Battle: CCScene {
       }
     }
   }
-  
+
   func checkCustomize() {
     if player.myLevel < 2{
       messageBox.setNextMessage("levelTooLow")
@@ -147,7 +144,7 @@ class Battle: CCScene {
     }
     checkInit()
   }
-  
+
   func checkTackle() {
     player.overridden = true
     player.buttonStepCheck = false
@@ -161,7 +158,7 @@ class Battle: CCScene {
     }
     checkCustomize()
   }
-  
+
   func checkElemental() {
     player.overridden = true
     player.buttonStepCheck = false
@@ -175,7 +172,7 @@ class Battle: CCScene {
     }
     checkTackle()
   }
-  
+
   func checkSwipes() {
     player.overridden = true
     player.buttonStepCheck = false
@@ -189,7 +186,7 @@ class Battle: CCScene {
     }
     checkElemental()
   }
-  
+
   func checkSing() {
     player.overridden = true
     player.buttonStepCheck = false
@@ -201,12 +198,12 @@ class Battle: CCScene {
     }
     checkSwipes()
   }
-  
+
   func setupBattlefield() {
     enemyHealth.opacity = 1.0
     playerHealth.opacity = 1.0
   }
-  
+
   func processAttacks() {
     state = BattleState.Attacking
     let player = GameState.sharedInstance.player
@@ -226,7 +223,7 @@ class Battle: CCScene {
         GameState.sharedInstance.enemy.executeTackle()
     }
   }
-  
+
   func setupEnemy(playerType: CritterElement) {
     if GameState.sharedInstance.battle.currentStep == CodeStep.TeachSwipes || GameState.sharedInstance.battle.currentStep == CodeStep.TeachSing {
       switch playerType {
@@ -276,5 +273,5 @@ class Battle: CCScene {
       }
     }
   }
-  
+
 }
