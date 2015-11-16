@@ -13,11 +13,11 @@ enum CritterElement {
   case Water, Fire, Leaf, None
 }
 
-class Critter: CCNode {
+public class Critter: CCNode {
   
   var monsterElement = CritterElement.None
   
-  var myElement: String = "none" {
+  public var myElement: String = "none" {
     didSet {
       myElement = myElement.lowercaseString
       switch myElement {
@@ -51,7 +51,7 @@ class Critter: CCNode {
       }
     }
   }
-  var myLevel: Int = 1 {
+  public var myLevel: Int = 1 {
     didSet {
       if isEnemy {
         GameState.sharedInstance.battle.enemyHealth.levelLabel.string = "Level \(Int(myLevel))"
@@ -69,12 +69,12 @@ class Critter: CCNode {
     }
   }
   
-  var opponentLevel = 1
+  public var opponentLevel = 1
   var levelDifference = 0
   
   var health = 25.0
   var totalHealth = 25.0
-  var nickname: String = "" {
+  public var nickname: String = "" {
     didSet {
       if nickname != "" {
         GameState.sharedInstance.battle.playerHealth.nameLabel.string = nickname
@@ -84,7 +84,7 @@ class Critter: CCNode {
   
   // TODO: refactor to use this more often
   var opponent: Critter!
-  var elementMyOpponentIsWeakAgainst: String!
+  public var elementMyOpponentIsWeakAgainst: String!
   let nextMove = CritterAttack()
   var weakAgainst = CritterElement.None
   var damageToDo = 0.0
@@ -102,31 +102,31 @@ class Critter: CCNode {
     self.cascadeOpacityEnabled = true
   }
   
-  func performDash() {
+  public func performDash() {
     if buttonStepCheck {
         nextMove.tackle()
     }
   }
   
-  func performElemental() {
+  public func performElemental() {
     if buttonStepCheck {
         nextMove.elemental()
     }
   }
   
-  func performSwipe() {
+  public func performSwipe() {
     if buttonStepCheck {
         nextMove.swipe()
     }
   }
   
-  func performSing() {
+  public func performSing() {
     if buttonStepCheck {
         nextMove.sing()
     }
   }
   
-  func performPowerup() {
+  public func performPowerup() {
     if buttonStepCheck {
         nextMove.powerUp()
     }
@@ -316,23 +316,23 @@ class Critter: CCNode {
     opponent.attackAnimationNode.addChild(anim)
   }
   
-  func initialize() {
+  public func initialize() {
     noInitialize = true
   }
   
-  func dashButtonPressed() {
+  public func dashButtonPressed() {
     overridden = false
   }
 
-  func swipeButtonPressed(numberOfSwipes: Int) {
+  public func swipeButtonPressed(numberOfSwipes: Int) {
     overridden = false
   }
   
-  func elementalButtonPressed() {
+  public func elementalButtonPressed() {
     overridden = false
   }
   
-  func singButtonPressed() {
+  public func singButtonPressed() {
     overridden = false
   }
 

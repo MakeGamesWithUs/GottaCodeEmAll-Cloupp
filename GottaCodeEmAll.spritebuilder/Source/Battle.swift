@@ -12,7 +12,7 @@ enum BattleState {
   case FixCode, ChooseAttack, Attacking, Win, Lose
 }
 
-enum CodeStep {
+public enum CodeStep {
   case InitCritter, Customize, TeachTackle, TeachElemental, TeachSwipes, TeachSing
   
   func description() -> String {
@@ -53,7 +53,7 @@ class Battle: CCScene {
 
   let playerAttack = CritterAttack()
   
-  var currentStep: CodeStep = CodeStep.TeachSwipes
+  var currentStep: CodeStep = CodeStep.InitCritter
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!
@@ -69,6 +69,7 @@ class Battle: CCScene {
   }
   
   func didLoadFromCCB() {
+    currentStep = player.getCurrentStep()
     GameState.sharedInstance.player = player
     GameState.sharedInstance.enemy = enemy
     player.opponent = enemy

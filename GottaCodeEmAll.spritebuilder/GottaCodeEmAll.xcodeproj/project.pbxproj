@@ -9,7 +9,9 @@
 /* Begin PBXBuildFile section */
 		74CA111F1BE1DEAD00352F50 /* GottaCodeEmAll.swiftmodule in Resources */ = {isa = PBXBuildFile; fileRef = 74CA111E1BE1DEAD00352F50 /* GottaCodeEmAll.swiftmodule */; };
 		74CA11301BE1DFAC00352F50 /* Loader.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CA112F1BE1DFAC00352F50 /* Loader.m */; };
-		74CA11321BE1E20400352F50 /* MBProgressHUD in Resources */ = {isa = PBXBuildFile; fileRef = 74CA11311BE1E20400352F50 /* MBProgressHUD */; };
+		74CA11371BE1E34500352F50 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 74CA11341BE1E34500352F50 /* LICENSE */; };
+		74CA11381BE1E34500352F50 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 74CA11361BE1E34500352F50 /* MBProgressHUD.m */; };
+		74CA113A1BE1F24300352F50 /* MyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74CA11391BE1F24300352F50 /* MyCritter.swift */; };
 		8392007A18EE8E3300B6C429 /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8392007918EE8E3300B6C429 /* GLKit.framework */; };
 		B71F5911188484E7003F4D28 /* iPad-old.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5907188484E7003F4D28 /* iPad-old.png */; };
 		B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B71F5908188484E7003F4D28 /* iPad-old@2x.png */; };
@@ -43,7 +45,6 @@
 		BC11E69719CCE50C00F14992 /* EnemyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69619CCE50C00F14992 /* EnemyCritter.swift */; };
 		BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC11E69819CCED6C00F14992 /* AttackBox.swift */; };
 		BC49B68419CA0E9B00324923 /* CritterAttack.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC49B68319CA0E9B00324923 /* CritterAttack.swift */; };
-		BC55B90019C8ADDF007555F8 /* MyCritter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */; };
 		BCF642E219C78B5F0084D32F /* Critter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E119C78B5F0084D32F /* Critter.swift */; };
 		BCF642E419C78B6B0084D32F /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF642E319C78B6B0084D32F /* Battle.swift */; };
 /* End PBXBuildFile section */
@@ -83,7 +84,10 @@
 		74CA111E1BE1DEAD00352F50 /* GottaCodeEmAll.swiftmodule */ = {isa = PBXFileReference; lastKnownFileType = file; path = GottaCodeEmAll.swiftmodule; sourceTree = BUILT_PRODUCTS_DIR; };
 		74CA112E1BE1DFAC00352F50 /* Loader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Loader.h; path = Source/Loader.h; sourceTree = "<group>"; };
 		74CA112F1BE1DFAC00352F50 /* Loader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Loader.m; path = Source/Loader.m; sourceTree = "<group>"; };
-		74CA11311BE1E20400352F50 /* MBProgressHUD */ = {isa = PBXFileReference; lastKnownFileType = folder; path = MBProgressHUD; sourceTree = "<group>"; };
+		74CA11341BE1E34500352F50 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = MBProgressHUD/LICENSE; sourceTree = "<group>"; };
+		74CA11351BE1E34500352F50 /* MBProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MBProgressHUD.h; path = MBProgressHUD/MBProgressHUD.h; sourceTree = "<group>"; };
+		74CA11361BE1E34500352F50 /* MBProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MBProgressHUD.m; path = MBProgressHUD/MBProgressHUD.m; sourceTree = "<group>"; };
+		74CA11391BE1F24300352F50 /* MyCritter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCritter.swift; path = Source/MyCritter.swift; sourceTree = "<group>"; };
 		8392007918EE8E3300B6C429 /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
 		B71F5907188484E7003F4D28 /* iPad-old.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old.png"; path = "Icons/iPad-old.png"; sourceTree = "<group>"; };
 		B71F5908188484E7003F4D28 /* iPad-old@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPad-old@2x.png"; path = "Icons/iPad-old@2x.png"; sourceTree = "<group>"; };
@@ -121,7 +125,6 @@
 		BC11E69619CCE50C00F14992 /* EnemyCritter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EnemyCritter.swift; path = Source/EnemyCritter.swift; sourceTree = "<group>"; };
 		BC11E69819CCED6C00F14992 /* AttackBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AttackBox.swift; path = Source/AttackBox.swift; sourceTree = "<group>"; };
 		BC49B68319CA0E9B00324923 /* CritterAttack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CritterAttack.swift; path = Source/CritterAttack.swift; sourceTree = "<group>"; };
-		BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MyCritter.swift; path = Source/MyCritter.swift; sourceTree = "<group>"; };
 		BC5B537E19E4ADBD00E16F89 /* cocos2d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cocos2d.h; path = "Source/libs/cocos2d-iphone/cocos2d/cocos2d.h"; sourceTree = "<group>"; };
 		BCEE6A7B19E4AE26004B9A0D /* cocos2d-ui.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "cocos2d-ui.h"; path = "Source/libs/cocos2d-iphone/cocos2d-ui/cocos2d-ui.h"; sourceTree = "<group>"; };
 		BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GottaCodeEmAll-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -161,6 +164,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		74CA11331BE1E32800352F50 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				74CA11341BE1E34500352F50 /* LICENSE */,
+				74CA11351BE1E34500352F50 /* MBProgressHUD.h */,
+				74CA11361BE1E34500352F50 /* MBProgressHUD.m */,
+			);
+			name = MBProgressHUD;
+			sourceTree = "<group>";
+		};
 		9222E2B918734FF800A246C7 /* libs */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +186,7 @@
 		B737893C1807616C0076A88C /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				74CA11391BE1F24300352F50 /* MyCritter.swift */,
 				BCF642E319C78B6B0084D32F /* Battle.swift */,
 				BC11E69819CCED6C00F14992 /* AttackBox.swift */,
 				BC01F2AD19CCAF6E00309135 /* MessageBox.swift */,
@@ -180,7 +194,6 @@
 				BC49B68319CA0E9B00324923 /* CritterAttack.swift */,
 				BCF642E119C78B5F0084D32F /* Critter.swift */,
 				BC11E69619CCE50C00F14992 /* EnemyCritter.swift */,
-				BC55B8FF19C8ADDF007555F8 /* MyCritter.swift */,
 				B737893D1807617C0076A88C /* AppDelegate.h */,
 				B737893E1807617C0076A88C /* AppDelegate.m */,
 				BCF642DB19C77D8A0084D32F /* GottaCodeEmAll-Bridging-Header.h */,
@@ -224,8 +237,8 @@
 		B77F1B2517B978D7009739AE = {
 			isa = PBXGroup;
 			children = (
+				74CA11331BE1E32800352F50 /* MBProgressHUD */,
 				74CA111E1BE1DEAD00352F50 /* GottaCodeEmAll.swiftmodule */,
-				74CA11311BE1E20400352F50 /* MBProgressHUD */,
 				B737893C1807616C0076A88C /* Source */,
 				B77F1B4617B978D7009739AE /* Resources */,
 				9222E2B918734FF800A246C7 /* libs */,
@@ -406,9 +419,9 @@
 				B71F5912188484E7003F4D28 /* iPad-old@2x.png in Resources */,
 				B71F5916188484E7003F4D28 /* iPhone-old@2x.png in Resources */,
 				B737893B180761570076A88C /* Published-iOS in Resources */,
+				74CA11371BE1E34500352F50 /* LICENSE in Resources */,
 				B71F591A188484E7003F4D28 /* Settings@2x.png in Resources */,
 				B7378976180762440076A88C /* Default-Landscape~ipad.png in Resources */,
-				74CA11321BE1E20400352F50 /* MBProgressHUD in Resources */,
 				B71F5915188484E7003F4D28 /* iPhone-old.png in Resources */,
 				B71F5917188484E7003F4D28 /* iPhone.png in Resources */,
 				B7378975180762440076A88C /* Default-568h@2x.png in Resources */,
@@ -447,12 +460,13 @@
 				BCF642E419C78B6B0084D32F /* Battle.swift in Sources */,
 				BC01F2B119CCAF8700309135 /* HealthBox.swift in Sources */,
 				B73789871807631A0076A88C /* main.m in Sources */,
+				74CA113A1BE1F24300352F50 /* MyCritter.swift in Sources */,
 				BC01F2AE19CCAF6E00309135 /* MessageBox.swift in Sources */,
 				BC11E69919CCED6C00F14992 /* AttackBox.swift in Sources */,
+				74CA11381BE1E34500352F50 /* MBProgressHUD.m in Sources */,
 				BC11E69719CCE50C00F14992 /* EnemyCritter.swift in Sources */,
 				BC49B68419CA0E9B00324923 /* CritterAttack.swift in Sources */,
 				74CA11301BE1DFAC00352F50 /* Loader.m in Sources */,
-				BC55B90019C8ADDF007555F8 /* MyCritter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
