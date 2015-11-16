@@ -584,7 +584,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Water Elemental/spiral1.png</string>
+											<string>Attacks/spiral1.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -973,7 +973,7 @@
 								<key>value</key>
 								<array>
 									<string></string>
-									<string>Water Elemental/gradient1.png</string>
+									<string>Attacks/gradient1.png</string>
 								</array>
 							</dict>
 							<dict>
@@ -1477,7 +1477,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Water Elemental/drops1.png</string>
+											<string>Attacks/drops1.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -2010,7 +2010,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Water Elemental/drops2.png</string>
+											<string>Attacks/drops2.png</string>
 										</array>
 									</dict>
 									<dict>

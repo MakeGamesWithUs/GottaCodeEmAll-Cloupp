@@ -53,7 +53,7 @@ class Battle: CCScene {
 
   let playerAttack = CritterAttack()
   
-  var currentStep: CodeStep = CodeStep.TeachSwipes
+  var currentStep: CodeStep = CodeStep.TeachTackle
   var state: BattleState = BattleState.FixCode
   
   var messageBox: MessageBox!

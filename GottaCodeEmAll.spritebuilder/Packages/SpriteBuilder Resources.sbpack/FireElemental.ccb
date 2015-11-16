@@ -278,7 +278,7 @@
 										<key>value</key>
 										<array>
 											<string></string>
-											<string>Fire Elemental/crack1.png</string>
+											<string>Attacks/crack1.png</string>
 										</array>
 									</dict>
 									<dict>
@@ -525,7 +525,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA1.png</string>
+																<string>Attacks/emberA1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -543,7 +543,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA2.png</string>
+																<string>Attacks/emberA2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -561,7 +561,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA3.png</string>
+																<string>Attacks/emberA3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -579,7 +579,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA4.png</string>
+																<string>Attacks/emberA4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -597,7 +597,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA5.png</string>
+																<string>Attacks/emberA5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -615,7 +615,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA6.png</string>
+																<string>Attacks/emberA6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -633,7 +633,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA7.png</string>
+																<string>Attacks/emberA7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -651,7 +651,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA8.png</string>
+																<string>Attacks/emberA8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -669,7 +669,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA9.png</string>
+																<string>Attacks/emberA9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -740,7 +740,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA1.png</string>
+																<string>Attacks/emberA1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -758,7 +758,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA2.png</string>
+																<string>Attacks/emberA2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -776,7 +776,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA3.png</string>
+																<string>Attacks/emberA3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -794,7 +794,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA4.png</string>
+																<string>Attacks/emberA4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -812,7 +812,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA5.png</string>
+																<string>Attacks/emberA5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -830,7 +830,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA6.png</string>
+																<string>Attacks/emberA6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -848,7 +848,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA7.png</string>
+																<string>Attacks/emberA7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -866,7 +866,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA8.png</string>
+																<string>Attacks/emberA8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -884,7 +884,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberA9.png</string>
+																<string>Attacks/emberA9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -959,7 +959,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/emberA1.png</string>
+													<string>Attacks/emberA1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -969,7 +969,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/emberA1.png</string>
+													<string>Attacks/emberA1.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1214,7 +1214,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB1.png</string>
+																<string>Attacks/emberB1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1232,7 +1232,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB2.png</string>
+																<string>Attacks/emberB2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1250,7 +1250,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB3.png</string>
+																<string>Attacks/emberB3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1268,7 +1268,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB4.png</string>
+																<string>Attacks/emberB4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1286,7 +1286,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB5.png</string>
+																<string>Attacks/emberB5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1304,7 +1304,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB6.png</string>
+																<string>Attacks/emberB6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1322,7 +1322,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB7.png</string>
+																<string>Attacks/emberB7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1340,7 +1340,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB8.png</string>
+																<string>Attacks/emberB8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1358,7 +1358,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB9.png</string>
+																<string>Attacks/emberB9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1429,7 +1429,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB1.png</string>
+																<string>Attacks/emberB1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1447,7 +1447,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB2.png</string>
+																<string>Attacks/emberB2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1465,7 +1465,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB3.png</string>
+																<string>Attacks/emberB3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1483,7 +1483,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB4.png</string>
+																<string>Attacks/emberB4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1501,7 +1501,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB5.png</string>
+																<string>Attacks/emberB5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1519,7 +1519,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB6.png</string>
+																<string>Attacks/emberB6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1537,7 +1537,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB7.png</string>
+																<string>Attacks/emberB7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1555,7 +1555,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB8.png</string>
+																<string>Attacks/emberB8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1573,7 +1573,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberB9.png</string>
+																<string>Attacks/emberB9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1648,7 +1648,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/emberB1.png</string>
+													<string>Attacks/emberB1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -1658,7 +1658,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/emberB1.png</string>
+													<string>Attacks/emberB1.png</string>
 												</array>
 											</dict>
 											<dict>
@@ -1903,7 +1903,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC1.png</string>
+																<string>Attacks/emberC1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1921,7 +1921,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC2.png</string>
+																<string>Attacks/emberC2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1939,7 +1939,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC3.png</string>
+																<string>Attacks/emberC3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1957,7 +1957,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC4.png</string>
+																<string>Attacks/emberC4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1975,7 +1975,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC5.png</string>
+																<string>Attacks/emberC5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -1993,7 +1993,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC6.png</string>
+																<string>Attacks/emberC6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2011,7 +2011,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC7.png</string>
+																<string>Attacks/emberC7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2029,7 +2029,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC8.png</string>
+																<string>Attacks/emberC8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2047,7 +2047,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC9.png</string>
+																<string>Attacks/emberC9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2118,7 +2118,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC1.png</string>
+																<string>Attacks/emberC1.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2136,7 +2136,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC2.png</string>
+																<string>Attacks/emberC2.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2154,7 +2154,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC3.png</string>
+																<string>Attacks/emberC3.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2172,7 +2172,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC4.png</string>
+																<string>Attacks/emberC4.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2190,7 +2190,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC5.png</string>
+																<string>Attacks/emberC5.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2208,7 +2208,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC6.png</string>
+																<string>Attacks/emberC6.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2226,7 +2226,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC7.png</string>
+																<string>Attacks/emberC7.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2244,7 +2244,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC8.png</string>
+																<string>Attacks/emberC8.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2262,7 +2262,7 @@
 															<integer>7</integer>
 															<key>value</key>
 															<array>
-																<string>Fire Elemental/emberC9.png</string>
+																<string>Attacks/emberC9.png</string>
 																<string>Use regular file</string>
 															</array>
 														</dict>
@@ -2337,7 +2337,7 @@
 											<dict>
 												<key>baseValue</key>
 												<array>
-													<string>Fire Elemental/emberC1.png</string>
+													<string>Attacks/emberC1.png</string>
 													<string>Use regular file</string>
 												</array>
 												<key>name</key>
@@ -2347,7 +2347,7 @@
 												<key>value</key>
 												<array>
 													<string></string>
-													<string>Fire Elemental/emberC1.png</string>
+													<string>Attacks/emberC1.png</string>
 												</array>
 											</dict>
 											<dict>

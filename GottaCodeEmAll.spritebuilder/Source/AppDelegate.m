@@ -59,6 +59,7 @@
 
 - (CCScene*) startScene
 {
+    [[CCDirector sharedDirector] setAnimationInterval:1/12.f];
     return [CCBReader loadAsScene:@"Battle"];
 }
 

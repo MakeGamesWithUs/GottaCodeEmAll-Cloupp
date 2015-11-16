@@ -4,7 +4,7 @@
 <dict>
 	<key>activeLanguages</key>
 	<array>
-		<string>en-US</string>
+		<string>en</string>
 		<string>fr</string>
 		<string>es</string>
 		<string>de</string>
@@ -22,7 +22,7 @@
 			<dict>
 				<key>de</key>
 				<string>Willkommen auf Gotta Code Em All!	</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Welcome to Gotta Code Em All!</string>
 				<key>es</key>
 				<string>Bienvenido a Gotta Code Em All!</string>
@@ -39,7 +39,7 @@
 			<dict>
 				<key>de</key>
 				<string>Tap to continue...</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Tap to continue...</string>
 				<key>es</key>
 				<string>Tap to continue...</string>
@@ -56,7 +56,7 @@
 			<dict>
 				<key>de</key>
 				<string>Oh no, you don't have a critter yet! Make sure your code has an intialize function.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Oh no, you don't have a critter yet! Make sure your code has an intialize function.</string>
 				<key>es</key>
 				<string>Oh no, you don't have a critter yet! Make sure your code has an intialize function.</string>
@@ -73,7 +73,7 @@
 			<dict>
 				<key>de</key>
 				<string>You haven't set your critter's type. Continue onto the next step to learn how!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>You haven't set your critter's type. Go to Step 3 to learn how!</string>
 				<key>es</key>
 				<string>You haven't set your critter's type. Continue onto the next step to learn how!</string>
@@ -90,7 +90,7 @@
 			<dict>
 				<key>de</key>
 				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
 				<key>es</key>
 				<string> doesn’t know dash! Make sure to teach it the dash move (Step 5).</string>
@@ -107,7 +107,7 @@
 			<dict>
 				<key>de</key>
 				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
 				<key>es</key>
 				<string> doesn't know elemental! Make sure to add elementalButtonPressed.</string>
@@ -124,7 +124,7 @@
 			<dict>
 				<key>de</key>
 				<string> doesn't know swipe! Make sure to add swipeButtonPressed.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> doesn't know swipe! Make sure to add swipeButtonPressed.</string>
 				<key>es</key>
 				<string> doesn't know swipe! Make sure to add swipeButtonPressed.</string>
@@ -141,7 +141,7 @@
 			<dict>
 				<key>de</key>
 				<string>Choose a move:</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Choose a move:</string>
 				<key>es</key>
 				<string>Choose a move:</string>
@@ -158,7 +158,7 @@
 			<dict>
 				<key>de</key>
 				<string> used Dash!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> used Dash!</string>
 				<key>es</key>
 				<string> used Dash!</string>
@@ -175,7 +175,7 @@
 			<dict>
 				<key>de</key>
 				<string> used Swipe!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> used Swipe!</string>
 				<key>es</key>
 				<string> used Swipe!</string>
@@ -192,7 +192,7 @@
 			<dict>
 				<key>de</key>
 				<string> used Elemental! It's super effective!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> used Elemental! It's super effective!</string>
 				<key>es</key>
 				<string> used Elemental! It's super effective!</string>
@@ -209,7 +209,7 @@
 			<dict>
 				<key>de</key>
 				<string>You've got a critter now! Go on to the next step to customize it.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>You've got a critter now! Go on to the next step to customize it.</string>
 				<key>es</key>
 				<string>You've got a critter now! Go on to the next step to customize it.</string>
@@ -226,7 +226,7 @@
 			<dict>
 				<key>de</key>
 				<string>When you're done customizing, go to the next step to teach your critter some moves!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>When you're done customizing, go to the next step to teach your critter some moves!</string>
 				<key>es</key>
 				<string>When you're done customizing, go to the next step to teach your critter some moves!</string>
@@ -243,7 +243,7 @@
 			<dict>
 				<key>de</key>
 				<string>Congrats! You won this round! Go on to the next step.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Congrats! You won this round! Go on to the next step.</string>
 				<key>es</key>
 				<string>Congrats! You won this round! Go on to the next step.</string>
@@ -260,7 +260,7 @@
 			<dict>
 				<key>de</key>
 				<string>Oh no! You lost! Try using your new move...</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Oh no! You lost! Try using your new move...</string>
 				<key>es</key>
 				<string>Oh no! You lost! Try using your new move...</string>
@@ -277,7 +277,7 @@
 			<dict>
 				<key>de</key>
 				<string>'s move missed! Check your if statement.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>'s move missed! Check your if statement.</string>
 				<key>es</key>
 				<string>'s move missed! Check your if statement.</string>
@@ -294,7 +294,7 @@
 			<dict>
 				<key>de</key>
 				<string> used sing!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> used sing!</string>
 				<key>es</key>
 				<string> used sing!</string>
@@ -311,7 +311,7 @@
 			<dict>
 				<key>de</key>
 				<string> increased their level!</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> increased their level!</string>
 				<key>es</key>
 				<string> increased their level!</string>
@@ -328,7 +328,7 @@
 			<dict>
 				<key>de</key>
 				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string> doesn't know Sing! Make sure to add singButtonPressed.</string>
 				<key>es</key>
 				<string> doesn't know sing! Make sure to add singButtonPressed.</string>
@@ -343,7 +343,7 @@
 			<dict>
 				<key>de</key>
 				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
-				<key>en-US</key>
+				<key>en</key>
 				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
 				<key>es</key>
 				<string>Oh no, your critter is too weak to compete! Try increasing its level.</string>
