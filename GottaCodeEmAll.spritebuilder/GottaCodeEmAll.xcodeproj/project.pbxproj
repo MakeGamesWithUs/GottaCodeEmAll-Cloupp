@@ -64,6 +64,27 @@
 			remoteGlobalIDString = 5018F24C0DFDEAC400C013A5;
 			remoteInfo = cocos2d;
 		};
+		BCCE5FDF1CAC6EF9008B9C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2FEB74F194F6C9E00FC0574;
+			remoteInfo = cocos2dAndroid;
+		};
+		BCCE5FE11CAC6EF9008B9C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7A4037A819E37038007B6E8F;
+			remoteInfo = "cocos2d-mac";
+		};
+		BCCE5FE31CAC6EF9008B9C2A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B7378940180761A80076A88C /* cocos2d-ios.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = B7E7DE341A76DB7D004234B7;
+			remoteInfo = cocos2dMacFramework;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
@@ -193,9 +214,9 @@
 			isa = PBXGroup;
 			children = (
 				B737894B180761A90076A88C /* libcocos2d.a */,
-				BCC5B1521BFA45E50057C5F5 /* libcocos2dAndroid.a */,
-				BCC5B1541BFA45E50057C5F5 /* libcocos2d-mac.a */,
-				BCC5B1561BFA45E50057C5F5 /* cocos2dMacFramework.framework */,
+				BCCE5FE01CAC6EF9008B9C2A /* libcocos2dAndroid.a */,
+				BCCE5FE21CAC6EF9008B9C2A /* libcocos2d-mac.a */,
+				BCCE5FE41CAC6EF9008B9C2A /* cocos2dMacFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -364,22 +385,25 @@
 			remoteRef = B737894A180761A90076A88C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BCC5B1521BFA45E50057C5F5 /* libcocos2dAndroid.a */ = {
+		BCCE5FE01CAC6EF9008B9C2A /* libcocos2dAndroid.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libcocos2dAndroid.a;
+			remoteRef = BCCE5FDF1CAC6EF9008B9C2A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BCC5B1541BFA45E50057C5F5 /* libcocos2d-mac.a */ = {
+		BCCE5FE21CAC6EF9008B9C2A /* libcocos2d-mac.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = "libcocos2d-mac.a";
+			remoteRef = BCCE5FE11CAC6EF9008B9C2A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		BCC5B1561BFA45E50057C5F5 /* cocos2dMacFramework.framework */ = {
+		BCCE5FE41CAC6EF9008B9C2A /* cocos2dMacFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = cocos2dMacFramework.framework;
+			remoteRef = BCCE5FE31CAC6EF9008B9C2A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
